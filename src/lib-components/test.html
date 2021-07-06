@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+</head>
+<body>
+    <div id="articlePiece">
+        <div class="articleLeft">
+            <div class="articleLeft-Top">
+                <div class="category">
+                    <h1 class="category-text">{{category}}</h1>
+                </div>
+                <div class="author">
+                    <div class="author-icon"></div>
+                    <h1 class="author-text"> {{authorFirstName}} {{authorLastName}} </h1>
+                </div>
+                <h1 class="publishDate"> {{publishDate}} </h1>
+            </div> <!-- End of articleLeft-Top -->
+
+            <div class="articleLeft-Bottom">
+                <h1 class="title"> {{articleTitle}} </h1>
+            </div> <!--End of articleLeft-Bottom-->
+        </div> <!--End of articleLeft-->
+
+        <div class="articleRight">
+            <div class="picture"> {{articlePhoto}} </div>
+        </div> <!--Ed of articleRight-->
+    </div> <!--End of articlePiece-->
+
+
+    <style>
+        #articlePiece {
+            height: 242px;
+            width: 846px;
+            border: 1px solid black;
+        }
+
+        
+        </style>
+        
+        
+        <script>
+            new Vue ({
+                el: "#articlePiece",
+                data: {
+                    category: "News",
+                    authorFirstName: "Daniel",
+                    authorLastName: "Briskman",
+                    publishDate: "JAN 21, 2021",
+                    articleTitle: "Lorem",
+                },
+            })
+        </script>
+    
+</body>
+</html>
+
+

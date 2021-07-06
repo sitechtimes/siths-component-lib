@@ -1,11 +1,10 @@
 <template>
-  <button>Click me</button>
+  <button>Test Test Test</button>
 </template>
 
 <script>
 export default {
-  name: "ArticlePiece", // vue component name
-  data:
+  name: "ArticlePiece", // vue component
 };
 </script>
 
