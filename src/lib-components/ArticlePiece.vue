@@ -1,5 +1,5 @@
 <template>
-  <button>Test Test Test</button>
+  <div class="Test">Test</div>
 </template>
 
 <script>
@@ -9,7 +9,7 @@ export default {
 </script>
 
 <style scoped>
-button {
-  color: blue;
+.Test {
+  background-color: black;
 }
 </style>

@@ -7,12 +7,10 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 </head>
 <body>
-    <div id="articlePiece">
+    <div class="articlePiece">
         <div class="articleLeft">
             <div class="articleLeft-Top">
-                <div class="category">
-                    <h1 class="category-text">{{category}}</h1>
-                </div>
+                <h1 class="category">{{category}}</h1>
                 <div class="author">
                     <div class="author-icon"></div>
                     <h1 class="author-text"> {{authorFirstName}} {{authorLastName}} </h1>
@@ -27,15 +25,41 @@
 
         <div class="articleRight">
             <div class="picture"> {{articlePhoto}} </div>
-        </div> <!--Ed of articleRight-->
+        </div> <!--End of articleRight-->
     </div> <!--End of articlePiece-->
 
 
     <style>
-        #articlePiece {
+        .articlePiece {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
             height: 242px;
             width: 846px;
             border: 1px solid black;
+        }
+
+        .articleLeft {
+            border: 1px solid red;
+            width: 473px;
+        }
+
+        .articleRight {
+            border: 1px solid blue; 
+            width: 339px;
+        }
+
+        .category [
+            background 
+        ]
+
+        .category-text {
+            font-family: Josefin Sans;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 14px;
         }
 
         
@@ -44,7 +68,7 @@
         
         <script>
             new Vue ({
-                el: "#articlePiece",
+                el: ".articlePiece",
                 data: {
                     category: "News",
                     authorFirstName: "Daniel",
