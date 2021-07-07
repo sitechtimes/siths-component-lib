@@ -46,6 +46,10 @@ export default {
 
 @import url("../assets/variables.scss");
 
+:root {
+  --sidebarArticleWidth: 51.5rem;
+}
+
 *,
 html,
 body {
@@ -66,7 +70,7 @@ p {
 
 .sidebar-article {
   height: 13.5rem;
-  width: 51.5rem;
+  width: var(--sidebarArticleWidth);
   display: flex;
   border: var(--toggleBorder);
   background-color: var(--articleBackground);
@@ -88,7 +92,7 @@ p {
 .sidebar-img {
   background: url("../assets/temp image.jpg") var(--centerSquareThumbnail); /* 50% 50% centers image in div */
   height: 100%;
-  width: 12rem;
+  width: 11rem;
   border-radius: 1rem;
 
   border: var(--toggleBorder);
@@ -100,7 +104,7 @@ p {
 } */
 
 .sidebar-article-details {
-  width: 29rem;
+  width: calc(var(--sidebarArticleWidth) - 22.5rem);
   padding-left: 2rem;
   display: flex;
   flex-direction: column;
