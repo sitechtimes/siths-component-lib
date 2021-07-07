@@ -9,8 +9,8 @@ export default {
 </script>
 
 
-<style scoped>
+<style lang="scss">
 button {
-  color: red;
+  background: var(--primary-color);
 }
 </style>
