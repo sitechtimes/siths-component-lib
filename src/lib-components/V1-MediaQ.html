@@ -1,38 +1,35 @@
-<template>
-  <div class="article flex-row">
-    <div class="flex-col left">
-      <div class="flex-row top-left">
-        <h1 class="category">{{ category }}</h1>
-        <h2 class="author-name">{{ authorName }}</h2>
-        <h2 class="date">{{ date }}</h2>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+</head>
+<body>
+    <div class="article flex-row">
+        <div class="flex-col left">
+          <div class="flex-row top-left">
+            <h1 class="category">Category</h1>
+            <h2 class="author-name">FirstName LastName</h2>
+            <h2 class="date">MON XX, XXX</h2>
+          </div>
+          <div class="bottom-left">
+            <h3 class="flex-col title">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.
+            </h3>
+          </div>
+        </div>
+    
+        <div class="photo" alt="Temp Replacement"></div>
       </div>
-      <div class="bottom-left">
-        <h3 class="flex-col title">
-          {{ title }}
-        </h3>
-      </div>
-    </div>
 
-    <div class="photo" alt="Temp Replacement"></div>
-  </div>
-</template>
 
-<script>
-export default {
-  name: "ArticlePiece", // vue component
-  props: {
-    authorName: String,
-    date: String,
-    title: String,
-    category: String,
-  },
-};
-</script>
+<!-- Version 1 -->
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap");
 
-<style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap");
-
-.article {
+    .article {
   display: flex;
   width: 846px;
   height: 242px;
@@ -104,4 +101,10 @@ export default {
   border-radius: 15px;
   background-color: grey;
 }
-</style>
+    </style>
+        
+    
+</body>
+</html>
+
+

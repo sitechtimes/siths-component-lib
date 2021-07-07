@@ -8,21 +8,22 @@
 </head>
 <body>
     <div class="article flex-row"> 
+        <div class="photo" alt="Temp Replacement"></div>
         <div class="flex-col left">
-            <div class="flex-row top-left">
+            <div class="flex-row top-right">
                 <h1 class="category">Category</h1>
                 <h2 class="author-name"> Name {{authorName}} </h2>
                 <h2 class="date"> date {{date}} </h2>
             </div>
-            <div class="bottom-left">
+            <div class="bottom-right">
                 <h3 class="flex-col title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet. {{title}} </h3>
             </div>
         </div>
 
-        <div class="photo" alt="Temp Replacement"></div>
+        
     </div> 
 
-
+<!-- Style 1 -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap');
 
@@ -30,7 +31,6 @@
             display: flex;
             width: 846px;
             height: 242px;
-            border: 1px red solid;
         }
        .flex-row {
            display: flex;
@@ -41,24 +41,26 @@
        }
        .left {
             width: 473px;
-            margin:20px 34px 20px 0;
+            margin:20px 0 20px 51px;
            
        }
 
-       .top-left   {
+       .top-right   {
            height:28px;
            padding-bottom: 20px;
            display: flex;
-
+       }
+       .bottom-right {
+            width: 450px;
+            height: 97px;
        }
 
        .category {      
             background-color: #6638E9;
             border-radius: 8px;
-            height: 15px;
-            padding: 6px 7px 5px 7px;
+            padding: 7.61px 7.61px 6.56px 7.61px;
             width: auto;
-            margin: 0 47.62px 0 0;
+            margin: 0 39px 0 0;
 
             color: #fff;
             font-family: Josefin Sans;
@@ -68,7 +70,7 @@
             text-transform: uppercase;
        }
        .author-name {
-           margin: 7px 34px 0 0;
+           margin: 7.61px 42px 7.61 0;
 
             font-family: Josefin Sans;
             font-style: normal;
@@ -78,8 +80,7 @@
        }
 
        .date {
-           margin: 7px 0 0 0 ;
-           text-align: center;
+           margin: 7.61px 0 7.61px 0  ;
             font-family: Josefin Sans;
             font-style: normal;
             font-weight: 600;
@@ -100,7 +101,7 @@
             width: 339px;
             height: 242px;
             border-radius: 15px;
-           border: 1px solid red;
+           /* border: 1px solid red; */
            background-color: grey;
        }
         
