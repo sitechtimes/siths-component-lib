@@ -2,47 +2,24 @@
   <div class="sidebar-container">
     <h1 class="sidebar-heading">Trending</h1>
     <sidebar
-      category="opinion"
-      author="Charley Baluja"
-      published="Jan 31, 2020"
-      title="Hello this is Dr. Death Defying: MCR ain't dead yet"
-      imgUrl="../assets/temp image.jpg"
+      v-for="article in trending"
+      :key="article"
+      :category="article.category"
+      :author="article.author"
+      :published="article.published"
+      :title="article.title"
+      :imgUrl="article.imgUrl"
     /><!-- css var for imgUrl? -->
-    <sidebar
-      category="opinion"
-      author="Michael Whalen"
-      published="Sept 30, 2020"
-      title="Short Title Testing Testing"
-      imgUrl="../assets/temp image.jpg"
-    />
-    <sidebar
-      category="opinion"
-      author="Very Longnametest"
-      published="Jan 31, 2020"
-      title="Very Long Title Very Long Title Very Long Title Very Long Title"
-      imgUrl="../assets/temp image.jpg"
-    />
+
     <h1 class="sidebar-heading">More Like This</h1>
     <sidebar
-      category="opinion"
-      author="Charley Baluja"
-      published="Jan 31, 2020"
-      title="Hello this is Dr. Death Defying: MCR ain't dead yet"
-      imgUrl="../assets/temp image.jpg"
-    /><!-- css var for imgUrl? -->
-    <sidebar
-      category="opinion"
-      author="Michael Whalen"
-      published="Sept 30, 2020"
-      title="Short Title Testing Testing"
-      imgUrl="../assets/temp image.jpg"
-    />
-    <sidebar
-      category="opinion"
-      author="Very Longnametest"
-      published="Jan 31, 2020"
-      title="Very Long Title Very Long Title Very Long Title Very Long Title"
-      imgUrl="../assets/temp image.jpg"
+      v-for="article in moreLikeThis"
+      :key="article"
+      :category="article.category"
+      :author="article.author"
+      :published="article.published"
+      :title="article.title"
+      :imgUrl="article.imgUrl"
     />
   </div>
 </template>
@@ -50,6 +27,56 @@
 <script>
 export default {
   name: "SidebarContainer",
+  data() {
+    return {
+      trending: [
+        {
+          category: "opinion",
+          author: "Charley Baluja",
+          published: "Jan 31, 2020",
+          title: "Hello this is Dr. Death Defying: MCR ain't dead yet",
+          imgUrl: "../assets/temp image.jpg",
+        },
+        {
+          category: "opinion",
+          author: "Charley Baluja",
+          published: "Jan 32, 2020",
+          title: "Hello this is Dr. Death Defying: MCR ain't dead yet",
+          imgUrl: "../assets/temp image.jpg",
+        },
+        {
+          category: "opinion",
+          author: "Charley Baluja",
+          published: "Jan 33, 2020",
+          title: "Hello this is Dr. Death Defying: MCR ain't dead yet",
+          imgUrl: "../assets/temp image.jpg",
+        },
+      ],
+      moreLikeThis: [
+        {
+          category: "opinion",
+          author: "Charley Baluja",
+          published: "Jan 34, 2020",
+          title: "Hello this is Dr. Death Defying: MCR ain't dead yet",
+          imgUrl: "../assets/temp image.jpg",
+        },
+        {
+          category: "opinion",
+          author: "Charley Baluja",
+          published: "Jan 35, 2020",
+          title: "Hello this is Dr. Death Defying: MCR ain't dead yet",
+          imgUrl: "../assets/temp image.jpg",
+        },
+        {
+          category: "opinion",
+          author: "Charley Baluja",
+          published: "Jan 36, 2020",
+          title: "Hello this is Dr. Death Defying: MCR ain't dead yet",
+          imgUrl: "../assets/temp image.jpg",
+        },
+      ],
+    };
+  },
 };
 </script>
 
