@@ -14,7 +14,6 @@ export default Vue.extend({
 
 <template>
   <div id="app">
-    <Button />
     <ArticlePiece
       category="News"
       authorName="Daniel Briskman"

@@ -104,7 +104,6 @@ export default {
   width: 339px;
   height: 242px;
   border-radius: 15px;
-  border: 1px solid red;
   background-color: grey;
 }
 </style>
