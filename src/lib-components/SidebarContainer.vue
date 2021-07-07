@@ -1,5 +1,5 @@
 <template>
-  <div class="sidebar-container">
+  <section class="sidebar-container">
     <h1 class="sidebar-heading">Trending</h1>
     <sidebar
       v-for="article in trending"
@@ -21,7 +21,7 @@
       :title="article.title"
       :imgUrl="article.imgUrl"
     />
-  </div>
+  </section>
 </template>
 
 <script>
