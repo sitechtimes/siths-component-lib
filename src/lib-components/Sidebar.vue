@@ -44,6 +44,8 @@ export default {
 @import url("https://www.w3schools.com/w3css/4/w3.css");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
+@import url("../assets/variables.scss");
+
 *,
 html,
 body {
@@ -52,7 +54,10 @@ body {
   margin: 0;
   font-size: 62.5%;
 
-  font-family: "Josefin Sans", sans-serif;
+  font-family: var(--mainFont);
+  color: var(--textColorMain);
+
+  transition: all 0.3s ease-out;
 }
 
 p {
@@ -60,12 +65,19 @@ p {
 }
 
 .sidebar-article {
-  height: 10rem;
-  width: 40rem;
+  height: 13.5rem;
+  width: 41.5rem;
   display: flex;
-  border: 1px solid black;
+  border: var(--toggleBorder);
+  background-color: var(--articleBackground);
 
-  float: right;
+  padding: 1.5rem;
+  /* margin-bottom: 2rem; */
+  /* float: right; */
+}
+.sidebar-article:hover {
+  background-color: var(--articleBackgroundHover);
+  cursor: pointer;
 }
 
 /* .sidebar-img {
@@ -74,11 +86,12 @@ p {
   border: 1px solid black;
 } */
 .sidebar-img {
-  background: url("../assets/temp image.jpg") 50% 50%/100% 100% no-repeat; /* 50% 50% centers image in div */
+  background: url("../assets/temp image.jpg") var(--centerSquareThumbnail); /* 50% 50% centers image in div */
   height: 100%;
-  width: 10rem;
+  width: 12rem;
+  border-radius: 1rem;
 
-  border: 1px solid gray;
+  border: var(--toggleBorder);
 }
 /* .thumb1 a {
   display: block;
@@ -87,8 +100,8 @@ p {
 } */
 
 .sidebar-article-details {
-  width: 29rem;
-  padding-left: 1rem;
+  width: 26rem;
+  padding-left: 2rem;
   display: flex;
   flex-direction: column;
 }
@@ -96,19 +109,25 @@ p {
   text-transform: uppercase;
 
   width: max-content;
-  background-color: #6638e9;
-  color: white;
-  font-size: 1rem;
+  background-color: var(--opinionCategoryBackground);
+  color: var(--white);
+  font-size: 0.9rem;
   font-weight: 500;
 
   padding: 0.4rem 0.6rem;
   border-radius: 6px;
 
-  margin-bottom: 0.6rem;
+  margin: 3px 0 0.4rem 0;
+}
+#sidebar-article-details-title {
+  font-weight: bold;
+  font-size: 1.7rem;
+  line-height: 1.35;
 }
 
 .sidebar-article-details-author-date {
   display: flex;
+  margin-bottom: 0.5rem;
 }
 .sidebar-article-details-author-date > p {
   font-size: 1rem;
@@ -126,5 +145,16 @@ p {
 
 #sidebar-article-details-title {
   font-weight: bold;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.example-img {
+  border: var(--toggleBorder);
+  height: 11.7rem;
+  width: 40rem;
 }
 </style>

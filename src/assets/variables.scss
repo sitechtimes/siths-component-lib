@@ -1,0 +1,23 @@
+:root {
+  --toggleBorder: none;
+
+  --mainFont: "Josefin Sans", sans-serif;
+
+  /* Define colors */
+  --black: #000000;
+  --white: #ffffff;
+  --lightGray: #ececec;
+  --purple: #6638e9;
+
+  /* Define Intentions */
+  --textColorMain: var(--black);
+  --opinionCategoryBackground: var(--purple);
+  --articleBackground: var(--white);
+  --articleBackgroundHover: var(--lightGray);
+
+  --centerSquareThumbnail: 50% 50%/100% 100% no-repeat;
+}
+
+//Dark mode change body class
+.dark {
+}
