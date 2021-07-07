@@ -66,12 +66,12 @@ p {
 
 .sidebar-article {
   height: 13.5rem;
-  width: 41.5rem;
+  width: 51.5rem;
   display: flex;
   border: var(--toggleBorder);
   background-color: var(--articleBackground);
 
-  padding: 1.5rem;
+  padding: 1.5rem 5rem;
   /* margin-bottom: 2rem; */
   /* float: right; */
 }
@@ -100,7 +100,7 @@ p {
 } */
 
 .sidebar-article-details {
-  width: 26rem;
+  width: 29rem;
   padding-left: 2rem;
   display: flex;
   flex-direction: column;
