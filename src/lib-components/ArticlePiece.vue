@@ -2,14 +2,13 @@
   <div class="article flex-row">
     <div class="flex-col left">
       <div class="flex-row top-left">
-        <h1 class="category">Category</h1>
-        <h2 class="author-name">Name {{ authorName }}</h2>
-        <h2 class="date">date {{ date }}</h2>
+        <h1 class="category">{{ category }}</h1>
+        <h2 class="author-name">{{ authorName }}</h2>
+        <h2 class="date">{{ date }}</h2>
       </div>
       <div class="bottom-left">
         <h3 class="flex-col title">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-          dolor sit amet. {{ title }}
+          {{ title }}
         </h3>
       </div>
     </div>
@@ -21,10 +20,11 @@
 <script>
 export default {
   name: "ArticlePiece", // vue component
-  data: {
-    authorName: "DANIEL BRISKMAN",
-    date: "Jan 21, 2021",
-    title: "Test",
+  props: {
+    authorName: String,
+    date: String,
+    title: String,
+    category: String,
   },
 };
 </script>
@@ -59,7 +59,7 @@ export default {
   background-color: #6638e9;
   border-radius: 8px;
   height: 15px;
-  padding: 6px 7px 5px 7px;
+  padding: 8px 8px 3px 8px;
   width: auto;
   margin: 0 47.62px 0 0;
 
@@ -78,6 +78,7 @@ export default {
   font-weight: 600;
   font-size: 14px;
   line-height: 14px;
+  text-transform: uppercase;
 }
 
 .date {
@@ -88,6 +89,7 @@ export default {
   font-weight: 600;
   font-size: 14px;
   line-height: 14px;
+  text-transform: uppercase;
 }
 .title {
   margin: 0 0 34px 0;

@@ -15,6 +15,11 @@ export default Vue.extend({
 <template>
   <div id="app">
     <Button />
-    <ArticlePiece />
+    <ArticlePiece
+      category="News"
+      authorName="Daniel Briskman"
+      date="Jan 21, 2021"
+      title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet. "
+    />
   </div>
 </template>
