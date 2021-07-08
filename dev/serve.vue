@@ -1,18 +1,19 @@
 <script>
-import Vue from 'vue';
+import Vue from "vue";
 // Uncomment import and local "components" registration if library is not registered globally.
-import { Button } from "@/entry.esm";
+
+import AuthorAndDate from "../src/lib-components/AuthorAndDate.vue";
 
 export default Vue.extend({
-  name: 'ServeDev',
+  name: "ServeDev",
   components: {
-    Button,
-  }
+    AuthorAndDate,
+  },
 });
 </script>
 
 <template>
   <div id="app">
-    <Button />
+    <author-and-date author="Charley Baluja" published="Jan 31, 2020" />
   </div>
 </template>
