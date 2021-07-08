@@ -42,3 +42,22 @@ body {
   font-size: 1.4rem;
 }
 </style>
+
+<docs>
+The Author of the Article and the Date it was published are shown here. Both are inputs
+
+##Examples
+
+```jsx
+<author-and-date author="Charley Baluja" published="Jan 31, 2020" />
+```
+
+```jsx
+<author-and-date author="Donald Trump" published="Jan 31, 1990" />
+```
+
+```jsx
+<author-and-date author="Mark Twain" published="Jan 31, 2100" />
+```
+
+</docs>
