@@ -1,8 +1,11 @@
+@import "../assets/variables";
+
 :root {
   //colors
   --gold: #d9b75e;
   --light-gold: #fff3d2;
   --off-white: #fffaf4;
+  --white: #ffffff;
   --black: #000;
   --grey: #374151;
   --red: #dc2626;
@@ -43,15 +46,23 @@
   --level-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
-html {
-  @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,300");
-}
+
+  @import "https://fonts.googleapis.com/css?family=Josefin+Sans:400";
+
+*, html,
 body {
-  background: white;
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--white);
   font-family: var(--font);
   font-weight: 400;
   line-height: 1.75;
-  color: #000000;
+  color: var(--black);
 }
 
 p {
@@ -93,4 +104,16 @@ h5 {
 small,
 .text_small {
   font-size: var(--small-text);
+}
+
+
+@media only screen and (max-width: $x-small-screen) {
+}
+@media only screen and (min-width: $small-screen) {
+}
+@media only screen and (min-width: $mid-screen) {
+}
+@media only screen and (min-width: $large-screen) {
+}
+@media only screen and (min-width: $x-large-screen) {
 }
