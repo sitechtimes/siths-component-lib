@@ -1,10 +1,11 @@
 :root {
-  //colors
+  /* colors */
   --gold: #d9b75e;
   --light-gold: #fff3d2;
   --off-white: #fffaf4;
   --black: #000;
   --grey: #374151;
+  --lightGray: #ececec;
   --red: #dc2626;
   --orange: #f59e0b;
   --dark-orange: #b45309;
@@ -14,7 +15,7 @@
   --indigo: #312e81;
   --purple: #5b21b6;
   --pink: #ec4899;
-  //intentions
+  /* intentions */
   --primary-color: var(--gold);
   --accent-color: var(--light-gold);
   --calendar-band: var(--off-white);
@@ -26,7 +27,16 @@
   --events: var(--orange);
   --clubs: var(--blue);
   --sports: var(--dark-orange);
-  //font size
+  --news: var(--dark-blue);
+  --politics: var(--pink);
+  --entertainment: var(--red);
+  --opinion: var(--purple);
+  --science: var(--green);
+  --events: var(--orange);
+  --clubs: var(--blue);
+  --sports: var(--dark-orange);
+  --hover: var(--lightGray);
+  /* font size */
   --font: "Josefin Sans", sans-serif;
   --h1: 5.653rem;
   --h2: 3.998rem;
@@ -34,7 +44,7 @@
   --h4: 1.999rem;
   --h5: 1.414rem;
   --small-text: 0.707rem;
-  //boxshadows
+  /* boxshadows */
   --level-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --level-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);

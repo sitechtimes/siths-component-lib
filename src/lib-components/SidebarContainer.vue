@@ -1,6 +1,6 @@
 <template>
   <section class="sidebar-container">
-    <h1 class="sidebar-heading">Trending</h1>
+    <h3 class="sidebar-heading">Trending</h3>
     <sidebar
       v-for="article in trending"
       :key="article"
@@ -11,7 +11,7 @@
       :imgUrl="article.imgUrl"
     /><!-- css var for imgUrl? -->
 
-    <h1 class="sidebar-heading">More Like This</h1>
+    <h3 class="sidebar-heading">More Like This</h3>
     <sidebar
       v-for="article in moreLikeThis"
       :key="article"
@@ -25,8 +25,11 @@
 </template>
 
 <script>
+import Sidebar from "./Sidebar.vue";
+
 export default {
   name: "SidebarContainer",
+  components: { Sidebar },
   data() {
     return {
       trending: [
@@ -86,7 +89,5 @@ export default {
 }
 .sidebar-heading {
   padding: 1.5rem 5rem;
-  font-size: 3rem;
-  font-weight: bold;
 }
 </style>

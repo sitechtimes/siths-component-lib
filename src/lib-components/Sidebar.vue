@@ -1,14 +1,8 @@
 <template>
   <div class="sidebar-article">
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
     <span class="sidebar-img" />
     <div class="sidebar-article-details">
-      <p class="sidebar-article-details-category" id="sidebar-article-category">
-        {{ category }}
-      </p>
+      <category-icon category="opinion"></category-icon>
       <div class="sidebar-article-details-author-date">
         <span class="sidebar-icon material-icons" id="author-icon"
           >account_circle</span
@@ -27,7 +21,10 @@
 </template>
 
 <script>
+import CategoryIcon from "./CategoryIcon.vue";
+
 export default {
+  components: { CategoryIcon },
   name: "Sidebar",
   props: {
     category: String,
@@ -39,12 +36,13 @@ export default {
 };
 </script>
 
-<style lang="css">
+<style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 @import url("https://www.w3schools.com/w3css/4/w3.css");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
-@import url("../assets/variables.scss");
+@import url("../assets/global.scss");
+@import url("../assets/sidebar.scss");
 
 :root {
   --sidebarArticleWidth: 51.5rem;
@@ -58,29 +56,27 @@ body {
   margin: 0;
   font-size: 62.5%;
 
-  font-family: var(--mainFont);
-  color: var(--textColorMain);
+  font-family: var(--font);
 
   transition: all 0.3s ease-out;
 }
 
-p {
+/* p {
   font-size: 1.6rem;
-}
+} */
 
 .sidebar-article {
   height: 13.5rem;
   width: var(--sidebarArticleWidth);
   display: flex;
   border: var(--toggleBorder);
-  background-color: var(--articleBackground);
 
   padding: 1.5rem 5rem;
   /* margin-bottom: 2rem; */
   /* float: right; */
 }
 .sidebar-article:hover {
-  background-color: var(--articleBackgroundHover);
+  background-color: var(--hover);
   cursor: pointer;
 }
 
@@ -109,20 +105,7 @@ p {
   display: flex;
   flex-direction: column;
 }
-#sidebar-article-category {
-  text-transform: uppercase;
 
-  width: max-content;
-  background-color: var(--opinionCategoryBackground);
-  color: var(--white);
-  font-size: 0.9rem;
-  font-weight: 500;
-
-  padding: 0.4rem 0.6rem;
-  border-radius: 6px;
-
-  margin: 3px 0 0.4rem 0;
-}
 #sidebar-article-details-title {
   font-weight: bold;
   font-size: 1.7rem;
@@ -131,7 +114,6 @@ p {
 
 .sidebar-article-details-author-date {
   display: flex;
-  margin-bottom: 0.5rem;
 }
 .sidebar-article-details-author-date > p {
   font-size: 1rem;
