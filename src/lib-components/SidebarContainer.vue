@@ -15,7 +15,6 @@
     <sidebar
       v-for="article in moreLikeThis"
       :key="article"
-      :category="article.category"
       :author="article.author"
       :published="article.published"
       :title="article.title"

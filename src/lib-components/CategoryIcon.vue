@@ -1,19 +1,27 @@
 <template>
-  <p class="sidebar-article-details-category" id="sidebar-article-category">
-    CATEGORY
-  </p>
+  <div>
+    <p
+      :style="backgroundColor"
+      class="sidebar-article-details-category"
+      id="sidebar-article-category"
+    >
+      {{ category }}
+    </p>
+  </div>
 </template>
 
 <script>
 export default {
   name: "CategoryIcon",
-  props: {
-    category,
-  },
+  props: ["category"],
   data() {
     return {};
   },
-  computed: {},
+  computed: {
+    backgroundColor: function() {
+      return "background-color: var(--" + this.category + ")";
+    },
+  },
 };
 </script>
 
@@ -22,14 +30,14 @@ export default {
   text-transform: uppercase;
 
   width: max-content;
-  background-color: var(--opinion);
+  //background-color: var(--opinion);
   color: var(--off-white);
   font-size: 0.9rem;
   font-weight: 500;
 
-  padding: 0.4rem 0.6rem;
-  border-radius: 6px;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.6rem;
 
-  margin: 3px 0 0.4rem 0;
+  margin: 0.3rem 0 0.5rem 0;
 }
 </style>
