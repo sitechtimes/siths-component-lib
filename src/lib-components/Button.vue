@@ -22,7 +22,7 @@ This is my test button
 Test Button
 
 ```jsx
-<default-button>Sample Secondary </default-button>
+<default-button>Sample Button </default-button>
 ```
 
     
