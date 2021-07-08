@@ -1,18 +1,20 @@
 <script>
-import Vue from 'vue';
+import Vue from "vue";
 // Uncomment import and local "components" registration if library is not registered globally.
-import { Button } from "@/entry.esm";
+import { CategoryIcon } from "@/entry.esm";
 
 export default Vue.extend({
-  name: 'ServeDev',
+  name: "ServeDev",
   components: {
-    Button,
-  }
+    CategoryIcon,
+  },
 });
 </script>
 
 <template>
   <div id="app">
-    <Button />
+    <category-icon category="opinion"></category-icon>
   </div>
 </template>
+
+<style lang="scss"></style>
