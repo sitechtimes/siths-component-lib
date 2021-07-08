@@ -10,12 +10,12 @@
     <div class="article flex-row">
         <div class="flex-col left">
           <div class="flex-row top-left">
-            <h1 class="category">Category</h1>
-            <h2 class="author-name">FirstName LastName</h2>
-            <h2 class="date">MON XX, XXX</h2>
+            <h1 class="txt-overflow category">Category</h1>
+            <h2 class="txt-overflow author-name">FirstName LastName</h2>
+            <h2 class=" date">MON XX, XXX</h2>
           </div>
           <div class="bottom-left">
-            <h3 class="flex-col title">
+            <h3 class="flex-col txt-overflow title">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.
             </h3>
           </div>
@@ -51,13 +51,18 @@
     padding-bottom: 20px;
     display: flex;
   }
+  .txt-overflow {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: wrap;
+  }
 
   .category {
     background-color: #6638e9;
     border-radius: 8px;
     padding: 8px 8px 3px 8px;
     width: auto;
-    margin: 0 47.62px 0 0;
+    margin: 0 20px 0 0;
 
     color: #fff;
     font-family: Josefin Sans;
@@ -67,14 +72,17 @@
     text-transform: uppercase;
   }
   .author-name {
-    margin: 8px 34px 0 0;
+    margin: 8px 20px 0 0;
 
     font-family: Josefin Sans;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 14px;
+     width: 180px; 
+    text-align: right;
     text-transform: uppercase;
+    
   }
 
   .date {
@@ -87,7 +95,8 @@
     text-transform: uppercase;
   }
   .title {
-    margin: 0 0 34px 0;
+    margin: 0 0 0px 0;
+    max-height: 120px;
     font-family: Josefin Sans;
     font-style: normal;
     font-weight: bold;
