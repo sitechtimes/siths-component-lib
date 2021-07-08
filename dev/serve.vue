@@ -7,9 +7,7 @@ import { SeeMoreBtn } from "@/entry.esm";
 export default Vue.extend({
   name: "ServeDev",
   components: {
-    CategoryIcon,
-  },
-    SeeMoreBtn
+    CategoryIcon, SeeMoreBtn
   }
 });
 </script>
