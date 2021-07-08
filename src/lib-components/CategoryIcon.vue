@@ -49,3 +49,34 @@ body {
   margin: 0.3rem 0 0.5rem 0;
 }
 </style>
+
+
+<docs>
+This is the Category Icon which shows individual icons such as Entertainment, Opinion, Sports, etc each with a unique colour.
+## Examples
+
+Category Icons
+
+```jsx
+<category-icon category="opinion"></category-icon>
+```
+
+```jsx
+<category-icon category="entertainment"></category-icon>
+```
+
+```jsx
+<category-icon category="sports"></category-icon>
+```
+```jsx
+<category-icon category="covid"></category-icon>
+```
+
+```jsx
+<category-icon category="covid"></category-icon>
+<category-icon category="sports"></category-icon>
+<category-icon category="entertainment"></category-icon>
+```
+
+
+</docs>

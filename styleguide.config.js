@@ -3,14 +3,14 @@ module.exports = {
   title: "Siths Component Library Documentation",
   components: "src/lib-components/**/[A-Z]*.vue",
   // defaultExample: true,
-  // sections: [
-  //   {
-  //     name: 'First Section',
-  //     components: 'src/components/**/[A-Z]*.vue'
-  //   }
-  // ],
-  // webpackConfig: {
-  //   // custom config goes here
-  // },
-  exampleMode: "expand",
+  sections: [
+    {
+      name: 'Introduction',
+      content: 'docs/introduction.md'
+    },
+     {
+       name: 'UI COmponents',
+       components: 'src/lib-components/**/[A-Z]*.vue'
+     }
+   ]
 };
