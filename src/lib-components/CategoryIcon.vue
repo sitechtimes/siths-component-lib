@@ -26,6 +26,17 @@ export default {
 </script>
 
 <style lang="scss">
+*,
+html,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+
+  font-family: var(--font);
+}
+
 #sidebar-article-category {
   text-transform: uppercase;
   width: max-content;
