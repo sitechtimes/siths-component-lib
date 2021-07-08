@@ -1,19 +1,19 @@
 <template>
   <div class="article flex-row">
+    <div class="photo" alt="Temp Replacement"></div>
     <div class="flex-col left">
-      <div class="flex-row top-left">
-        <h1 class="category">{{ category }}</h1>
-        <h2 class="author-name">{{ authorName }}</h2>
-        <h2 class="date">{{ date }}</h2>
+      <div class="flex-row top-right">
+        <h1 class="txt-overflow category">Category</h1>
+        <h2 class="txt-overflow author-name">FirstName LastName</h2>
+        <h2 class=" date">MON XX, XXX</h2>
       </div>
-      <div class="bottom-left">
-        <h3 class="flex-col title">
-          {{ title }}
+      <div class="bottom-right">
+        <h3 class="flex-col txt-overflow title">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+          dolor sit amet.
         </h3>
       </div>
     </div>
-
-    <div class="photo" alt="Temp Replacement"></div>
   </div>
 </template>
 
@@ -46,21 +46,29 @@ export default {
 }
 .left {
   width: 473px;
-  margin: 20px 34px 20px 0;
+  margin: 20px 0 20px 51px;
 }
 
-.top-left {
+.top-right {
   height: 28px;
   padding-bottom: 20px;
   display: flex;
+}
+.bottom-right {
+  width: 450px;
+  height: 97px;
+}
+.txt-overflow {
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .category {
   background-color: #6638e9;
   border-radius: 8px;
-  padding: 8px 8px 3px 8px;
+  padding: 7.61px 7.61px 6.56px 7.61px;
   width: auto;
-  margin: 0 47.62px 0 0;
+  margin: 0 20px 0 0;
 
   color: #fff;
   font-family: Josefin Sans;
@@ -70,24 +78,25 @@ export default {
   text-transform: uppercase;
 }
 .author-name {
-  margin: 8px 34px 0 0;
+  margin: 7.61px 15px 7.61px 0;
 
   font-family: Josefin Sans;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 14px;
+  width: 180px;
+  text-align: right;
   text-transform: uppercase;
 }
 
 .date {
-  margin: 8px 0 0 0;
+  margin: 7.61px 0 7.61px 0;
   font-family: Josefin Sans;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 14px;
-  text-transform: uppercase;
 }
 .title {
   margin: 0 0 34px 0;
@@ -102,6 +111,7 @@ export default {
   width: 339px;
   height: 242px;
   border-radius: 15px;
+  /* border: 1px solid red; */
   background-color: grey;
 }
 </style>
