@@ -3,16 +3,10 @@
     <span class="sidebar-img" />
     <div class="sidebar-article-details">
       <category-icon category="opinion"></category-icon>
-      <div class="sidebar-article-details-author-date">
-        <span class="sidebar-icon material-icons" id="author-icon"
-          >account_circle</span
-        >
-        <p id="sidebar-article-details-author">{{ author }}</p>
-        <span class="sidebar-icon material-icons" id="published-icon"
-          >query_builder</span
-        >
-        <p id="sidebar-article-details-date">{{ published }}</p>
-      </div>
+      <author-and-date
+        :author="author"
+        :published="published"
+      ></author-and-date>
       <p id="sidebar-article-details-title">
         {{ title }}
       </p>
@@ -22,9 +16,10 @@
 
 <script>
 import CategoryIcon from "./CategoryIcon.vue";
+import AuthorAndDate from "./AuthorAndDate.vue";
 
 export default {
-  components: { CategoryIcon },
+  components: { CategoryIcon, AuthorAndDate },
   name: "Sidebar",
   props: {
     category: String,
