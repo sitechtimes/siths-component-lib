@@ -27,12 +27,14 @@
 
 <!-- Version 1 -->
 <style>
-    @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap");
+@import url(/src/asset/_variables.scss);
+@import url(/src/asset/global.scss);
 
-    .article {
+.article {
   display: flex;
   width: 363px;
-height: 101px;
+  height: 101px;
 /* border: red 1px solid; */
 }
 .flex-row {
@@ -53,14 +55,14 @@ height: 101px;
 }
 
 .category {
-  background-color: #6638e9;
+  background-color: var(--blueviolet);
   border-radius: 8px;
-  padding: 3.86px 3.96px 3px 3.96px;
+  padding: 3px 3.96px 3px 3.96px;
   width: auto;
   margin: 0 9.42px 0 0;
 
   color: #fff;
-  font-family: Josefin Sans;
+  font-family: var(--font);
     font-style: normal;
     font-weight: 600;
     font-size: 8px;
@@ -71,7 +73,7 @@ height: 101px;
     margin: 3.86px 9.42px 0 0;
 
     text-align: right;
-    font-family: Josefin Sans;
+    font-family: var(--font);
     font-style: normal;
     font-weight: 600;
     font-size: 8px;
@@ -81,7 +83,7 @@ height: 101px;
 
 .date {
     margin: 3.86px 0 0 0 ;
-  font-family: Josefin Sans;
+  font-family: var(--font);
 font-style: normal;
 font-weight: 600;
 font-size: 8px;
@@ -90,7 +92,7 @@ line-height: 8px;
 }
 .title {
     margin: 0;
-  font-family: Josefin Sans;
+  font-family: var(--font);
 font-style: normal;
 font-weight: bold;
 font-size: 14px;
@@ -101,7 +103,7 @@ line-height: 15px;
     width: 124px;
 height: 101px;
   border-radius: 15px;
-  background-color: grey;
+  background-color: var(--grey);
 }
     </style>
         

@@ -12,6 +12,9 @@
   --blue: #3b82f6;
   --dark-blue: #1d4ed8;
   --indigo: #312e81;
+
+  --blueviolet: #6638e9;
+
   --purple: #5b21b6;
   --pink: #ec4899;
   //intentions
@@ -27,7 +30,7 @@
   --clubs: var(--blue);
   --sports: var(--dark-orange);
   //font size
-  --font: "Josefin Sans", sans-serif;
+  --font: Josefin Sans, sans-serif;
   --h1: 5.653rem;
   --h2: 3.998rem;
   --h3: 2.827rem;
@@ -44,7 +47,7 @@
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 html {
-  @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,300");
+  @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,600,700");
 }
 body {
   background: white;
