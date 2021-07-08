@@ -1,10 +1,16 @@
 //MEDIA QUERY BREAKPOINTS
 
-/* Small devices (portrait tablets and large phones, below 768px) */
-$small-screen: /* max-width */ 768px;
+/* Extra small devices (phones, 600px and down) */
+$x-small-screen: /* max-width */ 600px;
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+$small-screen: /* min-width */ 600px;
 
 /* Medium devices (landscape tablets, 768px and up) */
 $mid-screen: /* min-width */ 768px;
 
-/* Large devices (laptops and desktops, 1200px and up) */
-$large-screen: /* min-width */ 1200px;
+/* Large devices (laptops/desktops, 992px and up) */
+$large-screen: /* min-width */ 992px;
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+$x-large-screen: /* min-width */ 1200px;
