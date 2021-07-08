@@ -21,8 +21,8 @@ This is my test button
 
 Test Button
 
-```jsx
-<default-button>Sample Button </default-button>
+```jsx 
+<Button>Sample Button</Button>
 ```
 
     
