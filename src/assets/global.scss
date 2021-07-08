@@ -1,8 +1,11 @@
+@import "../assets/variables";
+
 :root {
   //colors
   --gold: #d9b75e;
   --light-gold: #fff3d2;
   --off-white: #fffaf4;
+  --white: #ffffff;
   --black: #000;
   --grey: #374151;
   --red: #dc2626;
@@ -46,12 +49,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap');
 
+*, html,
 body {
-  background: white;
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--white);
   font-family: var(--font);
   font-weight: 400;
   line-height: 1.75;
-  color: #000000;
+  color: var(--black);
 }
 
 p {
@@ -93,4 +104,16 @@ h5 {
 small,
 .text_small {
   font-size: var(--small-text);
+}
+
+
+@media only screen and (max-width: $x-small-screen) {
+}
+@media only screen and (min-width: $small-screen) {
+}
+@media only screen and (min-width: $mid-screen) {
+}
+@media only screen and (min-width: $large-screen) {
+}
+@media only screen and (min-width: $x-large-screen) {
 }
