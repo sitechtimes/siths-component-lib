@@ -1,7 +1,7 @@
 {
   "name": "siths-component-lib",
   "version": "1.0.0",
-  "description": "",
+  "description": "1. Clone the repo and install the dependencies  ```bash git clone https://github.com/sitechtimes/siths-component-lib cd siths-component-lib && npm install ```",
   "main": "dist/siths-component-lib.ssr.js",
   "browser": "dist/siths-component-lib.esm.js",
   "module": "dist/siths-component-lib.esm.js",
@@ -19,7 +19,6 @@
     "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
     "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife"
   },
-  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
@@ -47,5 +46,16 @@
   },
   "engines": {
     "node": ">=12"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sitechtimes/siths-component-lib.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sitechtimes/siths-component-lib/issues"
+  },
+  "homepage": "https://github.com/sitechtimes/siths-component-lib#readme"
 }

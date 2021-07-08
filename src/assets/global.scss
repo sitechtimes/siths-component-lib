@@ -43,9 +43,9 @@
   --level-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
-html {
-  @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,300");
-}
+
+@import 'https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap';
+
 body {
   background: white;
   font-family: var(--font);
