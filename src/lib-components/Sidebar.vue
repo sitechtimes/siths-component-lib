@@ -33,8 +33,6 @@ export default {
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
-@import url("https://www.w3schools.com/w3css/4/w3.css");
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 @import url("../assets/global.scss");
 @import url("../assets/sidebar.scss");

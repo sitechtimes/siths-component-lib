@@ -1,12 +1,8 @@
 <template>
   <div class="sidebar-article-details-author-date">
-    <span class="sidebar-icon material-icons" id="author-icon"
-      >account_circle</span
-    >
+    <font-awesome-icon icon="user" class="sidebar-icon" id="author-icon" />
     <p id="sidebar-article-details-author">{{ author }}</p>
-    <span class="sidebar-icon material-icons" id="published-icon"
-      >query_builder</span
-    >
+    <font-awesome-icon icon="clock" class="sidebar-icon" id="published-icon" />
     <p id="sidebar-article-details-date">{{ published }}</p>
   </div>
 </template>
