@@ -31,12 +31,23 @@ export default {
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap");
+@import url(/src/asset/_variables.scss);
+@import url(/src/asset/global.scss);
 
 .article {
   display: flex;
-  width: 846px;
-  height: 242px;
+  width: 363px;
+  height: 101px;
+  /* border: red 1px solid; */
 }
+@media (min-width: 768px) {
+  .article {
+    width: 846px;
+    height: 242px;
+    flex-direction: row-reverse !important;
+  }
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -44,74 +55,121 @@ export default {
 .flex-col {
   flex-direction: column;
 }
+
 .left {
-  width: 473px;
-  margin: 20px 0 20px 51px;
+  width: 225px;
+  margin: 21px 14px 10px 0;
+}
+@media (min-width: 768px) {
+  .left {
+    width: 473px;
+    margin: 20px 0 20px 51px;
+  }
 }
 
-.top-right {
-  height: 28px;
-  padding-bottom: 20px;
+.top-left {
+  height: 13.52px;
+  padding-bottom: 7.48px;
   display: flex;
 }
-.bottom-right {
-  width: 450px;
-  height: 97px;
-}
-.txt-overflow {
-  text-overflow: ellipsis;
-  overflow: hidden;
+@media (min-width: 768px) {
+  .top-left {
+    height: 28px;
+    padding-bottom: 20px;
+  }
 }
 
 .category {
-  background-color: #6638e9;
+  background-color: var(--opinion);
   border-radius: 8px;
-  padding: 7.61px 7.61px 6.56px 7.61px;
+  padding: 3px 3.96px 3px 3.96px;
   width: auto;
-  margin: 0 20px 0 0;
+  margin: 0 9.42px 0 0;
 
-  color: #fff;
-  font-family: Josefin Sans;
+  color: var(--off-white);
+  font-family: var(--font);
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 8px;
   text-transform: uppercase;
 }
-.author-name {
-  margin: 7.61px 15px 7.61px 0;
+@media (min-width: 768px) {
+  .category {
+    border-radius: 8px;
+    padding: 5.5px 7.61px 6.5px 7.61px;
+    width: auto;
+    margin: 0 20px 0 0;
 
-  font-family: Josefin Sans;
+    font-size: 14px;
+  }
+}
+
+.author-name {
+  /* max-width: 105px; */
+  margin: 3.86px 9.42px 0 0;
+
+  text-align: right;
+  font-family: var(--font);
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 14px;
-  width: 180px;
-  text-align: right;
+  font-size: 8px;
+  line-height: 8px;
   text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .author-name {
+    margin: 7.61px 15px 7.61px 0;
+    font-size: 14px;
+    line-height: 14px;
+    width: 180px;
+  }
 }
 
 .date {
-  margin: 7.61px 0 7.61px 0;
-  font-family: Josefin Sans;
+  margin: 3.86px 0 0 0;
+  font-family: var(--font);
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 8px;
+  line-height: 8px;
+  text-transform: uppercase;
 }
+@media (min-width: 768px) {
+  .date {
+    margin: 7.61px 0 7.61px 0;
+    font-size: 14px;
+
+    line-height: 14px;
+  }
+}
+
 .title {
-  margin: 0 0 34px 0;
-  font-family: Josefin Sans;
+  margin: 0;
+  font-family: var(--font);
   font-style: normal;
   font-weight: bold;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 15px;
+}
+@media (min-width: 768px) {
+  .title {
+    margin: 0 0 34px 0;
+    font-size: 25px;
+    line-height: 30px;
+  }
 }
 
 .photo {
-  width: 339px;
-  height: 242px;
+  width: 124px;
+  height: 101px;
   border-radius: 15px;
-  /* border: 1px solid red; */
-  background-color: grey;
+  background-color: var(--grey);
+}
+@media (min-width: 768px) {
+  .photo {
+    width: 339px;
+    height: 242px;
+    border-radius: 15px;
+  }
 }
 </style>
