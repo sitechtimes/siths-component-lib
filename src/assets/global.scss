@@ -46,6 +46,11 @@
 
 @import 'https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap';
 
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   background: white;
   font-family: var(--font);
