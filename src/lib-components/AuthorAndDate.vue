@@ -44,9 +44,11 @@ body {
 </style>
 
 <docs>
-The Author of the Article and the Date it was published are shown here. Both are inputs
+The Author of the Article and the Date it was published are shown here. Both are inputted to create the component.
 
 ##Examples
+
+Enter an author and a date
 
 ```jsx
 <author-and-date author="Charley Baluja" published="Jan 31, 2020" />
