@@ -8,7 +8,6 @@ export default Vue.extend({
   name: "ServeDev",
   components: {
     CategoryIcon,
-  },
     SeeMoreBtn
   }
 });

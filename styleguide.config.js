@@ -9,7 +9,7 @@ module.exports = {
       content: 'docs/introduction.md'
     },
      {
-       name: 'UI COmponents',
+       name: 'UI Components',
        components: 'src/lib-components/**/[A-Z]*.vue'
      }
    ]

@@ -68,12 +68,8 @@ Category Icons
 ```jsx
 <category-icon category="sports"></category-icon>
 ```
-```jsx
-<category-icon category="covid"></category-icon>
-```
 
 ```jsx
-<category-icon category="covid"></category-icon>
 <category-icon category="sports"></category-icon>
 <category-icon category="entertainment"></category-icon>
 ```
