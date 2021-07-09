@@ -44,11 +44,13 @@ body {
 </style>
 
 <docs>
-The Author of the Article and the Date it was published are shown here. Both are inputted to create the component.
+This component is used in a variety of other Components to form a preview of an article. It shows the date it was published and the author's name side-by-side after both props are entered.
 
-##Examples
+## Variables Used:
+--font: Which controls the font of the page. If for whatever reason the font is changed in a theme, it will change here.
 
-Enter an author and a date
+## Examples
+Enter in an Author and Date to see the dynamic change.
 
 ```jsx
 <author-and-date author="Charley Baluja" published="Jan 31, 2020" />
@@ -57,6 +59,7 @@ Enter an author and a date
 ```jsx
 <author-and-date author="Donald Trump" published="Jan 31, 1990" />
 ```
+
 
 ```jsx
 <author-and-date author="Mark Twain" published="Jan 31, 2100" />
