@@ -21,7 +21,7 @@ name: "SocialMediaIcons"
 </style>
 
 <docs>
-This component is used in the footer's social media section and underneath the articles' main pictures. It's intent is to take the user to the techtimes' social media pages once it is clicked. 
+This component is used in the footer's social media section and underneath the articles' main pictures. In the footer, it takes the user to the Tech Times' social media pages. Underneath the articles, it provides a way for the users to share the article on their favorite social media sites. 
 
 ## Variables Used:
 --primary-color: Primary color is the tech gold color. It is the main color of the page, and will update across the page if it is changed in the scss file.
