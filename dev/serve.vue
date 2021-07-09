@@ -8,6 +8,7 @@ import { GetNotifiedSection } from "@/entry.esm";
 import { SocialMediaIcons } from "@/entry.esm";
 import { ShareIcon } from "@/entry.esm";
 import { EntertainmentSideArticle } from "@/entry.esm";
+import { FooterSocialMedia } from "@/entry.esm";
 export default Vue.extend({
   name: "ServeDev",
   components: {
@@ -18,6 +19,7 @@ export default Vue.extend({
     SocialMediaIcons,
     ShareIcon,
     EntertainmentSideArticle,
+    FooterSocialMedia,
   },
 });
 </script>
@@ -31,6 +33,7 @@ export default Vue.extend({
     <SocialMediaIcons />
       <ShareIcon /> 
       <EntertainmentSideArticle />
+    <FooterSocialMedia />
   </div>
 </template>
 

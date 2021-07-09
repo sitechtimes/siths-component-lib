@@ -6,3 +6,5 @@ export { default as GetNotifiedSection } from "./GetNotifiedSection.vue";
 export { default as SocialMediaIcons } from "./SocialMediaIcons.vue";
 export { default as ShareIcon } from "./ShareIcon.vue";
 export { default as EntertainmentSideArticle } from "./EntertainmentSideArticle.vue";
+export { default as FooterSocialMedia } from "./FooterSocialMedia.vue";
+

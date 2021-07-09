@@ -14,9 +14,9 @@ name: "SocialMediaIcons"
 
 <style>
 .social-media-icon{
-    font-size: 1.4rem;
+    font-size: 3.5rem;
     color: var(--primary-color);
-    margin-left: 1rem;
+    margin-left: 2.5rem;
 }
 </style>
 
