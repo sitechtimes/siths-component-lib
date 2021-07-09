@@ -1,16 +1,15 @@
 <template>
   <div class="article flex-row">
     <div class="photo" alt="Temp Replacement"></div>
-    <div class="flex-col left">
-      <div class="flex-row top-right">
-        <h1 class="txt-overflow category">Category</h1>
-        <h2 class="txt-overflow author-name">FirstName LastName</h2>
-        <h2 class=" date">MON XX, XXX</h2>
+    <div class="flex-col textbox">
+      <div class="flex-row text-top">
+        <h1 class="txt-overflow category">{{category}}</h1>
+        <h2 class="txt-overflow author-name">{{authorName}}</h2>
+        <h2 class=" date">{{date}}</h2>
       </div>
-      <div class="bottom-right">
+      <div class="text-btm">
         <h3 class="flex-col txt-overflow title">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-          dolor sit amet.
+          {{title}}
         </h3>
       </div>
     </div>
@@ -34,13 +33,14 @@ export default {
   display: flex;
   width: 363px;
   height: 101px;
+  flex-direction: row-reverse!important;
   /* border: red 1px solid; */
 }
 @media (min-width: 768px) {
   .article {
     width: 846px;
     height: 242px;
-    flex-direction: row-reverse !important;
+    flex-direction: row !important;
   }
 }
 
@@ -52,33 +52,33 @@ export default {
   flex-direction: column;
 }
 
-.left {
+.textbox {
   width: 225px;
   margin: 21px 14px 10px 0;
 }
 @media (min-width: 768px) {
-  .left {
+  .textbox {
     width: 473px;
     margin: 20px 0 20px 51px;
   }
 }
 
-.top-left {
+.text-top {
   height: 13.52px;
-  padding-bottom: 7.48px;
+  margin-bottom: 7.48px;
   display: flex;
 }
 @media (min-width: 768px) {
-  .top-left {
-    height: 28px;
-    padding-bottom: 20px;
+  .text-top {
+    height: 30px;
+    margin-bottom: 20px;
   }
 }
 
 .category {
   background-color: var(--opinion);
   border-radius: 8px;
-  padding: 3px 3.96px 3px 3.96px;
+  padding: 3px 3.96px 0px 3.96px;
   width: auto;
   margin: 0 9.42px 0 0;
 
@@ -92,7 +92,7 @@ export default {
 @media (min-width: 768px) {
   .category {
     border-radius: 8px;
-    padding: 5.5px 7.61px 6.5px 7.61px;
+    padding: 7px 7.61px 0px 7.61px;
     width: auto;
     margin: 0 20px 0 0;
 
