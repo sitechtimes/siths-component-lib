@@ -29,6 +29,16 @@ export default {
 </script>
 
 <style lang="scss">
+*,
+html,
+body {
+  box-sizing: border-box;
+
+  font-size: 62.5%;
+  font-family: var(--font);
+}
+
+
 .article {
   display: flex;
   width: 363px;
@@ -83,7 +93,6 @@ export default {
   margin: 0 9.42px 0 0;
 
   color: var(--off-white);
-  font-family: var(--font);
   font-style: normal;
   font-weight: 600;
   font-size: 8px;
@@ -105,7 +114,6 @@ export default {
   margin: 3.86px 9.42px 0 0;
 
   text-align: right;
-  font-family: var(--font);
   font-style: normal;
   font-weight: 600;
   font-size: 8px;
@@ -123,7 +131,6 @@ export default {
 
 .date {
   margin: 3.86px 0 0 0;
-  font-family: var(--font);
   font-style: normal;
   font-weight: 600;
   font-size: 8px;
@@ -141,7 +148,6 @@ export default {
 
 .title {
   margin: 0;
-  font-family: var(--font);
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
