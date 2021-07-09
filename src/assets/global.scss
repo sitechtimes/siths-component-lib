@@ -112,7 +112,12 @@ small,
 }
 @media only screen and (min-width: $mid-screen) {
 }
-@media only screen and (min-width: $large-screen) {
+@media only screen and (min-width: $large-screen) and (max-width: $x-large-screen) {
+  *,
+  html,
+  body {
+    font-size: 44.5%;
+  }
 }
 @media only screen and (min-width: $x-large-screen) {
 }
