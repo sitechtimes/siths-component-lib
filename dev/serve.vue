@@ -6,6 +6,8 @@ import { SeeMoreBtn } from "@/entry.esm";
 import AuthorAndDate from "../src/lib-components/AuthorAndDate.vue";
 import { GetNotifiedSection } from "@/entry.esm";
 
+import { SocialMediaIcons } from "@/entry.esm";
+import { ShareIcon } from "@/entry.esm";
 export default Vue.extend({
   name: "ServeDev",
   components: {
@@ -13,6 +15,8 @@ export default Vue.extend({
     SeeMoreBtn,
     AuthorAndDate,
     GetNotifiedSection
+    SocialMediaIcons,
+    ShareIcon,
   },
 });
 </script>
@@ -23,6 +27,8 @@ export default Vue.extend({
     <SeeMoreBtn />
     <author-and-date author="Charley Baluja" published="Jan 31, 2020" />
     <GetNotifiedSection />
+    <SocialMediaIcons />
+      <ShareIcon />
   </div>
 </template>
 
