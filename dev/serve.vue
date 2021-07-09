@@ -7,7 +7,7 @@ import AuthorAndDate from "../src/lib-components/AuthorAndDate.vue";
 import { GetNotifiedSection } from "@/entry.esm";
 import { SocialMediaIcons } from "@/entry.esm";
 import { ShareIcon } from "@/entry.esm";
-import { Article } from "@/entry.esm";
+import { EntertainmentSideArticle } from "@/entry.esm";
 export default Vue.extend({
   name: "ServeDev",
   components: {
@@ -17,20 +17,20 @@ export default Vue.extend({
     GetNotifiedSection,
     SocialMediaIcons,
     ShareIcon,
-    Article,
+    EntertainmentSideArticle,
   },
 });
 </script>
 
 <template>
   <div id="app">
-    <!-- <category-icon category="opinion"></category-icon>
+    <category-icon category="opinion"></category-icon>
     <SeeMoreBtn />
     <author-and-date author="Charley Baluja" published="Jan 31, 2020" />
     <GetNotifiedSection />
     <SocialMediaIcons />
-      <ShareIcon /> -->
-      <Article />
+      <ShareIcon /> 
+      <EntertainmentSideArticle />
   </div>
 </template>
 
