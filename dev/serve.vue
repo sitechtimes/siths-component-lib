@@ -15,9 +15,9 @@ export default Vue.extend({
   <div id="app">
     <ArticlePiece
       category="Opinion"
-      author="Daniel Briskman Daniel BriskmaDaniel BriskmaDaniel Briskma"
+      author="Daniel Briskman"
       date="Jan 21, 2021"
-      title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet. "
+      title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet. "
     />
   </div>
 </template>
