@@ -4,13 +4,16 @@ import Vue from "vue";
 import { CategoryIcon } from "@/entry.esm";
 import { SeeMoreBtn } from "@/entry.esm";
 import AuthorAndDate from "../src/lib-components/AuthorAndDate.vue";
-
+import { SocialMediaIcons } from "@/entry.esm";
+import { ShareIcon } from "@/entry.esm";
 export default Vue.extend({
   name: "ServeDev",
   components: {
     CategoryIcon, 
     SeeMoreBtn,
-    AuthorAndDate
+    AuthorAndDate,
+    SocialMediaIcons,
+    ShareIcon,
   },
 });
 </script>
@@ -20,6 +23,8 @@ export default Vue.extend({
     <category-icon category="opinion"></category-icon>
     <SeeMoreBtn />
     <author-and-date author="Charley Baluja" published="Jan 31, 2020" />
+    <SocialMediaIcons />
+      <ShareIcon />
   </div>
 </template>
 
