@@ -1,7 +1,7 @@
 module.exports = {
   // set your styleguidist configuration here
   title: "Siths Component Library Documentation",
-  // defaultExample: true,
+  defaultExample: true,
   sections: [
     {
       name: 'Introduction',
