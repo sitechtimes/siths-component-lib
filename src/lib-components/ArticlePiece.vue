@@ -1,26 +1,28 @@
 <template>
-  <div class="article flex-row">
-    <div class="photo" alt="Temp Replacement"></div>
-    <div class="flex-col textbox">
-      <div class="flex-row text-top">
-        <h1 class="txt-overflow category">{{category}}</h1>
-        <h2 class="txt-overflow author-name">{{authorName}}</h2>
-        <h2 class=" date">{{date}}</h2>
+  <div class="article">
+    <div class="text-box flex-direction-column">
+
+      <div class="text-box-top flex-direction-row">
+        <h5 class="category">{{category}}</h5>
+        <h5 class="author">{{author}}</h5>
+        <h5 class="date">{{date}}</h5>
       </div>
-      <div class="text-btm">
-        <h3 class="flex-col txt-overflow title">
-          {{title}}
-        </h3>
+
+      <div class="text-box-btm ">
+        <p class="title">{{title}}</p>
       </div>
+
     </div>
+    <div class="img" alt="Temp Replacement"></div>
+
   </div>
 </template>
 
 <script>
 export default {
-  name: "ArticlePiece", // vue component
+  name: "ArticlePiece",
   props: {
-    authorName: String,
+    author: String,
     date: String,
     title: String,
     category: String,
@@ -28,150 +30,156 @@ export default {
 };
 </script>
 
+
 <style lang="scss">
-*,
+:root {
+  --filler: var(--grey);
+  --imgSmallWidth: 124px;
+  --imgSmallHeight: 101px;
+  --imgLargeWidth: 351px ;
+  --imgLargeHeight: 231px;
+  --imgSmallBorderRadius:  6.27423px;
+  --imgLargeBorderRadius: 15px;
+
+  --fontSmallScreenSmall:8px;
+  --fontSmallScreenLarge:14px; 
+  --fontLargeScreenSmall: 14px;
+  --fontLargeScreenLarge: 25px ;
+
+  --textBoxTopHeightSmall:13.52px ;
+  --textBoxTopHeightLarge: 24.39px;
+
+  --textBoxBottomHeightSmall:49px;
+  --textBoxBottomWidthSmall: 225px;
+  --textBoxBottomHeightLarge: 97px;
+  --textBoxBottomWidthLarge: 443px;
+}
+
 html,
 body {
   box-sizing: border-box;
-
   font-size: 62.5%;
   font-family: var(--font);
 }
-
-
-.article {
+.flex-direction-column {
   display: flex;
-  width: 363px;
-  height: 101px;
-  flex-direction: row-reverse!important;
-  /* border: red 1px solid; */
+  flex-direction: column;
 }
-@media (min-width: 768px) {
-  .article {
-    width: 846px;
-    height: 242px;
-    flex-direction: row !important;
-  }
-}
-
-.flex-row {
+.flex-direction-row {
   display: flex;
   flex-direction: row;
 }
-.flex-col {
-  flex-direction: column;
+
+.img {
+  background: var(--filler);
+  width: var(--imgSmallWidth);
+  height: var(--imgSmallHeight);
+  border-radius: var(--imgSmallBorderRadius);
+}
+@media only screen and (min-width: $large-screen){
+  .img{
+    width: var(--imgLargeWidth);
+    height: var(--imgKLargeHeight);
+    border-radius: var(--imgLargeBorderRadius);
+  }
 }
 
-.textbox {
-  width: 225px;
+.article {
+  width: 363px;
+  height: 101px;
+  display: flex;
+  flex-direction: row !important;
+}
+@media only screen and (min-width: $large-screen) {
+  .article {
+    width: 846px;
+    height: 242px;
+    flex-direction: row-reverse !important;
+}
+}
+.text-box {
   margin: 21px 14px 10px 0;
 }
-@media (min-width: 768px) {
-  .textbox {
-    width: 473px;
-    margin: 20px 0 20px 51px;
+@media only screen and (min-width: $large-screen) {
+  .text-box {
+    margin: 25px 0 0 51px;
+    width:443px;
   }
 }
 
-.text-top {
-  height: 13.52px;
-  margin-bottom: 7.48px;
-  display: flex;
+
+.text-box-top {
+  margin-bottom: 7.48px ;
 }
-@media (min-width: 768px) {
-  .text-top {
-    height: 30px;
-    margin-bottom: 20px;
-  }
+
+
+.category, .author, .date {
+  font-family: var(--font);
+  font-size: var(--fontSmallScreenSmall);
+  line-height: var(--fontSmallScreenSmall);
+  text-transform: uppercase;
+
+  padding-top: 3.86px;
+}
+@media only screen and (min-width: $large-screen){
+  .category, .author, .date {
+  font-size: var(--fontLargeScreenSmall);
+  line-height: var(--fontLargeScreenSmall);
+
+  padding-top: 6.97px ;
+}
 }
 
 .category {
-  background-color: var(--opinion);
-  border-radius: 8px;
-  padding: 3px 3.96px 0px 3.96px;
-  width: auto;
-  margin: 0 9.42px 0 0;
-
-  color: var(--off-white);
-  font-style: normal;
-  font-weight: 600;
-  font-size: 8px;
-  text-transform: uppercase;
+  margin-right:31.01px;
+  background-color: var(--opinion) ;
+  color: var(--white);
+  padding: 3.86px 3.96px 2.9px 3.96px;
+  border-radius: 7px;
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: $large-screen){
   .category {
+    margin-right: 39px;
+    padding: 6.97px 7.61px 5.23px 7.61px;
     border-radius: 8px;
-    padding: 7px 7.61px 0px 7.61px;
-    width: auto;
-    margin: 0 20px 0 0;
-
-    font-size: 14px;
+    
   }
 }
 
-.author-name {
-  /* max-width: 105px; */
-  margin: 3.86px 9.42px 0 0;
-
-  text-align: right;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 8px;
-  line-height: 8px;
-  text-transform: uppercase;
+.author {
+  margin-right: 9.16px;
+  width: 82px;
 }
-@media (min-width: 768px) {
-  .author-name {
-    margin: 7.61px 15px 7.61px 0;
-    font-size: 14px;
-    line-height: 14px;
-    width: 180px;
+@media only screen and (min-width: $large-screen){
+  .author {
+    width: 156px;
+    margin-right: 22px;
   }
 }
 
-.date {
-  margin: 3.86px 0 0 0;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 8px;
-  line-height: 8px;
-  text-transform: uppercase;
-}
-@media (min-width: 768px) {
-  .date {
-    margin: 7.61px 0 7.61px 0;
-    font-size: 14px;
 
-    line-height: 14px;
+.text-box-btm {
+  height: var(--textBoxBottomHeightSmall);
+  width: var(--textBoxBottomWidthSmall)
+}
+@media only screen and (min-width: $large-screen){
+  .text-box-btm {
+    height: var(--textBoxBottomHeightLarge);
+  width: var(--textBoxBottomWidthlarge)
   }
 }
-
 .title {
-  margin: 0;
-  font-style: normal;
+  font-family: var(--font);
+  font-size: var(--fontSmallScreenLarge);
+  line-height: 15px ;
   font-weight: bold;
-  font-size: 14px;
-  line-height: 15px;
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: $large-screen){
   .title {
-    margin: 0 0 34px 0;
-    font-size: 25px;
-    line-height: 30px;
+    font-size: var(--fontLargeScreenLarge);
+  line-height: 30px ;
+  font-weight: bold;
   }
 }
-
-.photo {
-  width: 124px;
-  height: 101px;
-  border-radius: 15px;
-  background-color: var(--grey);
-}
-@media (min-width: 768px) {
-  .photo {
-    width: 339px;
-    height: 242px;
-    border-radius: 15px;
-  }
-}
+  
 </style>
