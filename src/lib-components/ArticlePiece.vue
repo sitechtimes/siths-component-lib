@@ -4,12 +4,12 @@
 
       <div class="text-box-top flex-direction-row">
         <h5 class="category">{{category}}</h5>
-        <h5 class="author">{{author}}</h5>
+        <h5 class="author author-overflow">{{author}}</h5>
         <h5 class="date">{{date}}</h5>
       </div>
 
       <div class="text-box-btm ">
-        <p class="title">{{title}}</p>
+        <p class="title title-overflow">{{title}}</p>
       </div>
 
     </div>
@@ -125,26 +125,41 @@ body {
   .category, .author, .date {
   font-size: var(--fontLargeScreenSmall);
   line-height: var(--fontLargeScreenSmall);
+  
 
   padding-top: 6.97px ;
 }
 }
 
 .category {
-  margin-right:31.01px;
   background-color: var(--opinion) ;
   color: var(--white);
+
   padding: 3.86px 3.96px 2.9px 3.96px;
   border-radius: 7px;
+  margin-right:31.01px;
+  height: 13.52px;
 }
 @media only screen and (min-width: $large-screen){
   .category {
     margin-right: 39px;
     padding: 6.97px 7.61px 5.23px 7.61px;
     border-radius: 8px;
+
+    height: 24.39px;
     
   }
 }
+
+.author-overflow {
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; //The Number of Lines Shown Before Cutting Off the Text
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 
 .author {
   margin-right: 9.16px;
@@ -166,6 +181,19 @@ body {
   .text-box-btm {
     height: var(--textBoxBottomHeightLarge);
   width: var(--textBoxBottomWidthlarge)
+  }
+}
+.title-overflow{
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; //The Number of Lines Shown Before Cutting Off the Text
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media only screen and (min-width: $large-screen){
+  .text-overflow {
+    -webkit-line-clamp: 5;
   }
 }
 .title {
