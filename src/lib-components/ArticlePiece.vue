@@ -29,11 +29,7 @@ export default {
 };
 </script>
 
-<style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap");
-@import url(/src/asset/_variables.scss);
-@import url(/src/asset/global.scss);
-
+<style lang="scss">
 .article {
   display: flex;
   width: 363px;
