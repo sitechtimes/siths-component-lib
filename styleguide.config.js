@@ -1,7 +1,6 @@
 module.exports = {
   // set your styleguidist configuration here
   title: "Siths Component Library Documentation",
-  components: "src/lib-components/**/[A-Z]*.vue",
   // defaultExample: true,
   sections: [
     {
@@ -11,6 +10,10 @@ module.exports = {
      {
        name: 'UI Components',
        components: 'src/lib-components/**/[A-Z]*.vue'
+     },
+     {
+       name: 'Credits',
+       content: 'docs/credits.md'
      }
    ]
 };
