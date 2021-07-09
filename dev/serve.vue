@@ -8,15 +8,17 @@ import { GetNotifiedSection } from "@/entry.esm";
 
 import { SocialMediaIcons } from "@/entry.esm";
 import { ShareIcon } from "@/entry.esm";
+import { FooterSocialMedia } from "@/entry.esm";
 export default Vue.extend({
   name: "ServeDev",
   components: {
     CategoryIcon, 
     SeeMoreBtn,
     AuthorAndDate,
-    GetNotifiedSection
+    GetNotifiedSection,
     SocialMediaIcons,
     ShareIcon,
+    FooterSocialMedia,
   },
 });
 </script>
@@ -28,7 +30,8 @@ export default Vue.extend({
     <author-and-date author="Charley Baluja" published="Jan 31, 2020" />
     <GetNotifiedSection />
     <SocialMediaIcons />
-      <ShareIcon />
+    <ShareIcon />
+    <FooterSocialMedia />
   </div>
 </template>
 
