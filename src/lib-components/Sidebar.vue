@@ -3,13 +3,13 @@
     <span class="sidebar-img" />
     <div class="sidebar-article-details">
       <category-icon category="opinion"></category-icon>
+      <p id="sidebar-article-details-title">
+        {{ title }}
+      </p>
       <author-and-date
         :author="author"
         :published="published"
       ></author-and-date>
-      <p id="sidebar-article-details-title">
-        {{ title }}
-      </p>
     </div>
   </div>
 </template>
@@ -33,7 +33,10 @@ export default {
 
 <style lang="scss">
 :root {
-  --sidebarArticleWidth: 51.5rem;
+  --sidebarArticleWidth: 30vw;
+  --sidebarImgWidth: 9rem;
+  --sidebarSidePadding: min(2.5vw, 4.16rem);
+  --sidebarDetailsPaddingLeft: 1.7rem;
   --toggleBorder: none;
   --centerSquareThumbnail: 50% 50%/100% 100% no-repeat;
 }
@@ -55,13 +58,17 @@ body {
   font-size: 1.6rem;
 } */
 
+.temp-img {
+  width: 30vw;
+  height: auto;
+}
 .sidebar-article {
-  height: 13.5rem;
   width: var(--sidebarArticleWidth);
+  max-width: 50rem;
   display: flex;
   border: var(--toggleBorder);
 
-  padding: 1.5rem 5rem;
+  padding: 1.5rem var(--sidebarSidePadding);
   /* margin-bottom: 2rem; */
   /* float: right; */
 }
@@ -77,11 +84,14 @@ body {
 } */
 .sidebar-img {
   background: url("../assets/temp image.jpg") var(--centerSquareThumbnail); /* 50% 50% centers image in div */
-  height: 100%;
-  width: 11rem;
+  height: var(--sidebarImgWidth);
+  width: var(--sidebarImgWidth);
   border-radius: 1rem;
 
   border: var(--toggleBorder);
+
+  display: inline-block;
+  vertical-align: middle;
 }
 /* .thumb1 a {
   display: block;
@@ -90,16 +100,24 @@ body {
 } */
 
 .sidebar-article-details {
-  width: calc(var(--sidebarArticleWidth) - 22.5rem);
-  padding-left: 2rem;
+  width: calc(
+    var(--sidebarArticleWidth) - var(--sidebarImgWidth) -
+      (var(--sidebarSidePadding) * 2)
+  );
+  max-width: 32.65rem;
+  padding-left: var(--sidebarDetailsPaddingLeft);
   display: flex;
   flex-direction: column;
+
+  display: inline-block;
 }
 
 #sidebar-article-details-title {
   font-weight: bold;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   line-height: 1.35;
+
+  margin: 0;
 }
 
 .sidebar-article-details-author-date {
@@ -107,6 +125,7 @@ body {
 }
 .sidebar-article-details-author-date > p {
   font-size: 1rem;
+  //font-size: var(--small-text);
   text-transform: uppercase;
   margin-right: 1.5rem;
 }

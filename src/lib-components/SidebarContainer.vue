@@ -85,8 +85,10 @@ export default {
 <style lang="scss">
 .sidebar-container {
   border-left: 2px solid #d9b75e;
+  max-width: 50rem;
 }
 .sidebar-heading {
-  padding: 1.5rem 5rem;
+  padding: 1.5rem 2.5rem;
+  margin: 0;
 }
 </style>

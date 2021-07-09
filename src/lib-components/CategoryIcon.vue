@@ -42,9 +42,9 @@ body {
   width: max-content;
   //background-color: var(--opinion);
   color: var(--off-white);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 500;
-  padding: 0.3rem 0.6rem;
+  padding: 0.25rem 0.6rem;
   border-radius: 0.6rem;
   margin: 0.3rem 0 0.5rem 0;
 }
