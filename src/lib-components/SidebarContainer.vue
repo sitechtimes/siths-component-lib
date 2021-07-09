@@ -82,7 +82,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .sidebar-container {
   border-left: 2px solid #d9b75e;
 }

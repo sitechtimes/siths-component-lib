@@ -32,13 +32,10 @@ export default {
 </script>
 
 <style lang="scss">
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
-
-@import url("../assets/global.scss");
-@import url("../assets/sidebar.scss");
-
 :root {
   --sidebarArticleWidth: 51.5rem;
+  --toggleBorder: none;
+  --centerSquareThumbnail: 50% 50%/100% 100% no-repeat;
 }
 
 *,
