@@ -5,7 +5,7 @@
       class="sidebar-article-details-category"
       id="sidebar-article-category"
     >
-      {{ category }}
+      {{ category}}
     </p>
   </div>
 </template>

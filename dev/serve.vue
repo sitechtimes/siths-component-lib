@@ -3,15 +3,16 @@ import Vue from "vue";
 // Uncomment import and local "components" registration if library is not registered globally.
 import { SidebarContainer } from "@/entry.esm";
 import { CategoryIcon } from "@/entry.esm";
-import { AuthorAndDate } from "@/entry.esm";
+import AuthorAndDate from "../src/lib-components/AuthorAndDate.vue";
+
 
 export default Vue.extend({
   name: "ServeDev",
   components: {
     SidebarContainer,
     CategoryIcon,
-    AuthorAndDate, 
-  }
+    AuthorAndDate,     
+  },
 });
 </script>
 
