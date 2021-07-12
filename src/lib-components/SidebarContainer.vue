@@ -99,4 +99,11 @@ export default {
   padding: 1.5rem 2.5rem;
   margin: 0;
 }
+
+@media only screen and (max-width: $mid-screen) {
+.sidebar-container {
+  max-width: none;
+  border: none;
+}
+}
 </style>

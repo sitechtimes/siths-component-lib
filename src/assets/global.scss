@@ -121,13 +121,19 @@ small,
   font-size: var(--small-text);
 }
 
-@media only screen and (max-width: $x-small-screen) {
+@media only screen and (max-width: $x-small-screen)  {
 }
-@media only screen and (min-width: $small-screen) {
+@media only screen and (min-width: calc($small-screen + 1px)) and (max-width: $mid-screen) {
+
 }
-@media only screen and (min-width: $mid-screen) {
+@media only screen and (min-width: calc($mid-screen + 1px)) and (max-width: $large-screen) {
+  *,
+  html,
+  body {
+    font-size: 44.5%;
+  }
 }
-@media only screen and (min-width: $large-screen) and (max-width: $x-large-screen) {
+@media only screen and (min-width: calc($large-screen + 1px)) and (max-width: $x-large-screen) {
   *,
   html,
   body {
