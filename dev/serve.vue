@@ -34,6 +34,7 @@ export default Vue.extend({
       <ShareIcon /> 
       <EntertainmentSideArticle />
     <FooterSocialMedia />
+    <Navbar />
   </div>
 </template>
 
