@@ -6,10 +6,7 @@ import { CategoryIconSidebar } from "@/entry.esm";
 import { AuthorAndDateSidebar } from "@/entry.esm";
 import { AuthorAndDate } from "@/entry.esm";
 import { CategoryIcon } from "@/entry.esm";
-
-import { CategoryIcon } from "@/entry.esm";
 import { SeeMoreBtn } from "@/entry.esm";
-import AuthorAndDate from "../src/lib-components/AuthorAndDate.vue";
 import { GetNotifiedSection } from "@/entry.esm";
 import { SocialMediaIcons } from "@/entry.esm";
 import { ShareIcon } from "@/entry.esm";
