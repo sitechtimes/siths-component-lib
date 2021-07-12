@@ -4,3 +4,13 @@ export { default as SidebarContainer } from "./SidebarContainer.vue";
 export { default as CategoryIconSidebar } from "./CategoryIconSidebar.vue";
 export { default as AuthorAndDateSidebar } from "./AuthorAndDateSidebar.vue";
 
+export { default as CategoryIcon } from "./CategoryIcon.vue";
+export { default as SeeMoreBtn } from "./SeeMoreBtn.vue";
+export { default as AuthorAndDate } from "./AuthorAndDate.vue";
+export { default as GetNotifiedSection } from "./GetNotifiedSection.vue";
+export { default as SocialMediaIcons } from "./SocialMediaIcons.vue";
+export { default as ShareIcon } from "./ShareIcon.vue";
+export { default as EntertainmentSideArticle } from "./EntertainmentSideArticle.vue";
+export { default as FooterSocialMedia } from "./FooterSocialMedia.vue";
+export { default as Navbar } from "./Navbar.vue";
+export { default as Datebar } from "./Datebar.vue";
