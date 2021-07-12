@@ -62,6 +62,7 @@ export default {
     }
     .footer-join-btn {
         position: absolute;
+        height: 100%;
         right: 0;
         font-size: var(--h5);
         font-weight: 700;
@@ -88,15 +89,11 @@ export default {
 
 </style>
 
-
 <docs>
 This is the section of the footer with a form that allows the user to subscribe to the newsletter.
 
 ## Variables Used:
---font: Which controls the font of the page. If for whatever reason the font is changed in a theme, it will change here.
---primary-color: If a theme were to change this variable it would also change the color of the button.
-$x-small-screen: A media query breakpoint for extra small devices like phones so that the page is responsive. If this variable is changed, the media query breakpoint will change in all other components. This variable is an SCSS variable because CSS custom properties do not work in media queries.
-
+--font, --primary-color, --accent-color, --h3
 ## Examples
 ```jsx
 <GetNotifiedSection />
