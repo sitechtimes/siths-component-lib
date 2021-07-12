@@ -2,24 +2,24 @@
   <div class="sidebar-article">
     <a :href="articleUrl" target="_blank" rel="noopener noreferrer"><span class="sidebar-img" /></a>
     <div class="sidebar-article-details">
-      <category-icon category="opinion"></category-icon>
+      <category-icon-sidebar category="opinion"></category-icon-sidebar>
       <a :href='articleUrl' target="_blank" rel="noopener noreferrer" id="sidebar-article-details-title">
         {{ title }}
       </a>
-      <author-and-date
+      <author-and-date-sidebar
         :author="author"
         :published="published"
-      ></author-and-date>
+      ></author-and-date-sidebar>
     </div>
   </div>
 </template>
 
 <script>
-import CategoryIcon from "./CategoryIcon.vue";
-import AuthorAndDate from "./AuthorAndDate.vue";
+import CategoryIconSidebar from "./CategoryIconSidebar.vue";
+import AuthorAndDateSidebar from "./AuthorAndDateSidebar.vue";
 
 export default {
-  components: { CategoryIcon, AuthorAndDate },
+  components: { CategoryIconSidebar, AuthorAndDateSidebar },
   name: "Sidebar",
   props: {
     category: String,
@@ -124,7 +124,7 @@ body {
   margin: 0;
 }
 
-.sidebar-article-details-author-date {
+/* .sidebar-article-details-author-date {
   display: flex;
 }
 .sidebar-article-details-author-date > p {
@@ -132,7 +132,7 @@ body {
   //font-size: var(--small-text);
   text-transform: uppercase;
   margin-right: 1.5rem;
-}
+} */
 .sidebar-icon {
   font-size: 1.4rem;
   padding-right: 4px;

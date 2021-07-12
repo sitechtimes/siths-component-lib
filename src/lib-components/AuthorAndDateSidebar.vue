@@ -17,20 +17,31 @@
 
 <script>
 export default {
-  name: "AuthorAndDate",
+  name: "AuthorAndDateSidebar",
   props: ["author", "published"],
 };
 </script>
 
 <style lang="scss">
-
+*,
+html,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+  font-family: var(--font);
+}
 .sidebar-article-details-author-date {
   display: flex;
   //flex-direction: column;
   flex-wrap: wrap;
 }
-.sidebar-article-details-author-date > p {
-  font-size: 1.4rem;
+.sidebar-article-details-author-date > section {
+  display: flex;
+}
+.sidebar-article-details-author-date > section > p {
+  font-size: 0.85rem;
   text-transform: uppercase;
   margin: 0 1.5rem 0 0;
 }
@@ -40,7 +51,7 @@ export default {
 }
 #author-icon,
 #published-icon {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 }
 </style>
 
