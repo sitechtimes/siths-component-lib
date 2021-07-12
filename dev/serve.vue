@@ -7,12 +7,25 @@ export default Vue.extend({
   name: 'ServeDev',
   components: {
     Button,
+  },
+  data () {
+    return {
+      navbar: [
+        {navLink: 'url', navType: 'NEWS'},
+        {navLink: 'url', navType: 'OPINION'},
+        {navLink: 'url', navType: 'POLITICS'},
+        {navLink: 'url', navType: 'ENTERTAINMENT'},
+        {navLink: 'url', navType: 'SCIENCE'},
+        {navLink: 'url', navType: 'ACTIVITIES'},
+        {navLink: 'url', navType: 'EVENTS'} 
+      ]
+    }
   }
 });
 </script>
 
 <template>
   <div id="app">
-    <Navbar />
+  <Navbar :navData='navbar'/>
   </div>
 </template>
