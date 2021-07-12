@@ -25,7 +25,7 @@ export default {
 
     .footer-form-box {
         width: 36rem;
-        margin-left: 18rem;
+        margin: 0 auto;
         padding-bottom: 3.1rem;
         border-bottom: .2rem solid var(--primary-color);
     }
@@ -82,7 +82,6 @@ export default {
             width: 30rem;
         }
         .footer-form-box {
-            margin: 0 auto;
             border-bottom: none;
         }
     }

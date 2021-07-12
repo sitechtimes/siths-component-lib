@@ -31,6 +31,7 @@ export default {
     }
     .footer-nav {
         width: 36rem;
+        margin: 0 auto;
     }
     .footer-nav-li {
         color: var(--primary-color);
