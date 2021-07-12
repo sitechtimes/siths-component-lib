@@ -1,6 +1,6 @@
 <template>
 <div class="footer-social-media-box">
-    <h1 class="footer-header">Social Media</h1>
+    <h2 class="footer-header">Social Media</h2>
     <SocialMediaIcons class="footer-social-media"/>
 </div>
 </template>
@@ -26,7 +26,7 @@ export default {
     }
     @media only screen and (max-width: $x-small-screen) {
         .footer-header {
-            font-size: 2.5rem;
+            font-size: var(--h3);
         }  
         .footer-social-media-box {
             width: 30rem;
