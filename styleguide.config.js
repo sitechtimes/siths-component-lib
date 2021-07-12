@@ -1,7 +1,9 @@
 module.exports = {
   // set your styleguidist configuration here
   title: "Siths Component Library Documentation",
-  defaultExample: true,
+  components: 'src/lib-components/**/[A-Z]*.vue',
+  //defaultExample: true,
+  //exampleMode: "expand",
   sections: [
     {
       name: 'Introduction',
