@@ -69,6 +69,7 @@ export default Vue.extend({
 
     <author-and-date author='Regular' published='Regular 31, 2020' /> 
     <category-icon category='entertainment'/>
+    <Navbar />
   </div>
 </template>
 
