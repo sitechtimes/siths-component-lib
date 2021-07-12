@@ -24,9 +24,7 @@ export default Vue.extend({
     SidebarContainer,
     CategoryIconSidebar,
     AuthorAndDateSidebar,     
-    CategoryIcon, 
     SeeMoreBtn,
-    AuthorAndDate,
     GetNotifiedSection,
     SocialMediaIcons,
     ShareIcon,
@@ -35,6 +33,7 @@ export default Vue.extend({
     Datebar,
     TextBelowArticlePreview,
     FooterNav,
+    Footer,
   },
 });
 </script>
