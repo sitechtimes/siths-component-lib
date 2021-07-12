@@ -1,0 +1,101 @@
+:root {
+  //colors
+  --gold: #d9b75e;
+  --light-gold: #fff3d2;
+  --off-white: #fffaf4;
+  --black: #000;
+  --grey: #374151;
+  --red: #dc2626;
+  --orange: #f59e0b;
+  --dark-orange: #b45309;
+  --green: #10b981;
+  --blue: #3b82f6;
+  --dark-blue: #1d4ed8;
+  --indigo: #312e81;
+  --purple: #5b21b6;
+  --pink: #ec4899;
+  //intentions
+  --primary-color: var(--gold);
+  --accent-color: var(--light-gold);
+  --calendar-band: var(--off-white);
+  --news: var(--dark-blue);
+  --politics: var(--pink);
+  --entertainment: var(--red);
+  --opinion: var(--purple);
+  --science: var(--green);
+  --events: var(--orange);
+  --clubs: var(--blue);
+  --sports: var(--dark-orange);
+  //font size
+  --font: "Josefin Sans", sans-serif;
+  --h1: 5.653rem;
+  --h2: 3.998rem;
+  --h3: 2.827rem;
+  --h4: 1.999rem;
+  --h5: 1.414rem;
+  --small-text: 0.707rem;
+  //boxshadows
+  --level-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --level-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --level-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --level-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+@import 'https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap';
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: white;
+  font-family: var(--font);
+  font-weight: 400;
+  line-height: 1.75;
+  color: #000000;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: var(--font);
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+h5 {
+  font-size: var(--h5);
+}
+
+small,
+.text_small {
+  font-size: var(--small-text);
+}

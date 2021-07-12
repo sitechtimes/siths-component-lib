@@ -9,8 +9,22 @@ export default {
 </script>
 
 
-<style scoped>
+<style lang="scss">
 button {
-  color: red;
+  background: var(--primary-color);
 }
 </style>
+
+<docs>
+This is my test button
+## Examples
+
+Test Button
+
+```jsx
+<Button>Sample Secondary </Button>
+```
+
+    
+   
+</docs>
