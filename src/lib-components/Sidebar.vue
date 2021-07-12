@@ -1,11 +1,11 @@
 <template>
   <div class="sidebar-article">
-    <span class="sidebar-img" />
+    <a :href="articleUrl" target="_blank" rel="noopener noreferrer"><span class="sidebar-img" /></a>
     <div class="sidebar-article-details">
       <category-icon category="opinion"></category-icon>
-      <p id="sidebar-article-details-title">
+      <a :href='articleUrl' target="_blank" rel="noopener noreferrer" id="sidebar-article-details-title">
         {{ title }}
-      </p>
+      </a>
       <author-and-date
         :author="author"
         :published="published"
@@ -27,6 +27,7 @@ export default {
     published: String,
     title: String,
     imgUrl: String,
+    articleUrl: String,
   },
 };
 </script>
@@ -50,8 +51,6 @@ body {
   font-size: 62.5%;
 
   font-family: var(--font);
-
-  transition: all 0.3s ease-out;
 }
 
 /* p {
@@ -75,6 +74,8 @@ body {
 .sidebar-article:hover {
   background-color: var(--hover);
   cursor: pointer;
+
+  transition: all 0.3s ease-out;
 }
 
 /* .sidebar-img {
@@ -116,6 +117,9 @@ body {
   font-weight: bold;
   font-size: 1.6rem;
   line-height: 1.35;
+
+  text-decoration: none;
+  color: var(--black);
 
   margin: 0;
 }

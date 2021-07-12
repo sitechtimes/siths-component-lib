@@ -1,7 +1,7 @@
 {
   "name": "siths-component-lib",
   "version": "1.0.0",
-  "description": "",
+  "description": "1. Clone the repo and install the dependencies  ```bash git clone https://github.com/sitechtimes/siths-component-lib cd siths-component-lib && npm install ```",
   "main": "dist/siths-component-lib.ssr.js",
   "browser": "dist/siths-component-lib.esm.js",
   "module": "dist/siths-component-lib.esm.js",
@@ -23,7 +23,8 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/vue-fontawesome": "^2.0.2",
-    "material-design-icons": "^3.0.1"
+    "material-design-icons": "^3.0.1",
+    "moment": "^2.29.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
@@ -52,5 +53,16 @@
   },
   "engines": {
     "node": ">=12"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sitechtimes/siths-component-lib.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sitechtimes/siths-component-lib/issues"
+  },
+  "homepage": "https://github.com/sitechtimes/siths-component-lib#readme"
 }

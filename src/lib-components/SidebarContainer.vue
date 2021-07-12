@@ -9,6 +9,7 @@
       :published="article.published"
       :title="article.title"
       :imgUrl="article.imgUrl"
+      :articleUrl="article.articleUrl"
     /><!-- css var for imgUrl? -->
 
     <h3 class="sidebar-heading">More Like This</h3>
@@ -19,6 +20,7 @@
       :published="article.published"
       :title="article.title"
       :imgUrl="article.imgUrl"
+      :articleUrl="article.articleUrl"
     />
   </section>
 </template>
@@ -38,6 +40,7 @@ export default {
           published: "Jan 31, 2020",
           title: "Hello this is Dr. Death Defying: MCR ain't dead yet",
           imgUrl: "../assets/temp image.jpg",
+          articleUrl: "https://google.com",
         },
         {
           category: "opinion",
@@ -45,6 +48,7 @@ export default {
           published: "Jan 32, 2020",
           title: "Hello this is Dr. Death Defying: MCR ain't dead yet",
           imgUrl: "../assets/temp image.jpg",
+          articleUrl: "https://google.com",
         },
         {
           category: "opinion",
@@ -52,6 +56,7 @@ export default {
           published: "Jan 33, 2020",
           title: "Hello this is Dr. Death Defying: MCR ain't dead yet",
           imgUrl: "../assets/temp image.jpg",
+          articleUrl: "https://google.com",
         },
       ],
       moreLikeThis: [
@@ -61,6 +66,7 @@ export default {
           published: "Jan 34, 2020",
           title: "Hello this is Dr. Death Defying: MCR ain't dead yet",
           imgUrl: "../assets/temp image.jpg",
+          articleUrl: "https://google.com",
         },
         {
           category: "opinion",
@@ -68,6 +74,7 @@ export default {
           published: "Jan 35, 2020",
           title: "Hello this is Dr. Death Defying: MCR ain't dead yet",
           imgUrl: "../assets/temp image.jpg",
+          articleUrl: "https://google.com",
         },
         {
           category: "opinion",
@@ -75,6 +82,7 @@ export default {
           published: "Jan 36, 2020",
           title: "Hello this is Dr. Death Defying: MCR ain't dead yet",
           imgUrl: "../assets/temp image.jpg",
+          articleUrl: "https://google.com",
         },
       ],
     };

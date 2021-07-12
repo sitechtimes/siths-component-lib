@@ -23,26 +23,14 @@ export default {
 </script>
 
 <style lang="scss">
-*,
-html,
-body {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-size: 62.5%;
-  font-family: var(--font);
-}
 
 .sidebar-article-details-author-date {
   display: flex;
   //flex-direction: column;
   flex-wrap: wrap;
 }
-.sidebar-article-details-author-date > section {
-  display: flex;
-}
-.sidebar-article-details-author-date > section > p {
-  font-size: 0.85rem;
+.sidebar-article-details-author-date > p {
+  font-size: 1.4rem;
   text-transform: uppercase;
   margin: 0 1.5rem 0 0;
 }
@@ -52,16 +40,18 @@ body {
 }
 #author-icon,
 #published-icon {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
 }
 </style>
 
 <docs>
-The Author of the Article and the Date it was published are shown here. Both are inputted to create the component.
+This component is used in a variety of other Components to form a preview of an article. It shows the date it was published and the author's name side-by-side after both props are entered.
 
-##Examples
+## Variables Used:
+--font: Which controls the font of the page. If for whatever reason the font is changed in a theme, it will change here.
 
-Enter an author and a date
+## Examples
+Enter in an Author and Date to see the dynamic change.
 
 ```jsx
 <author-and-date author="Charley Baluja" published="Jan 31, 2020" />
@@ -70,6 +60,7 @@ Enter an author and a date
 ```jsx
 <author-and-date author="Donald Trump" published="Jan 31, 1990" />
 ```
+
 
 ```jsx
 <author-and-date author="Mark Twain" published="Jan 31, 2100" />
