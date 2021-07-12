@@ -13,10 +13,7 @@ export default {
 
 .see-more-btn {
     background-color: var(--primary-color);
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-bottom: 1.4rem;
-    padding-top: 1.7rem;
+    padding: 1.7rem 3rem;
     font: bold 1.74rem var(--font);
     color: var(--white);
     border: none;

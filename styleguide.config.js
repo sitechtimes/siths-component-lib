@@ -4,6 +4,8 @@ module.exports = {
   components: 'src/lib-components/**/[A-Z]*.vue',
   //defaultExample: true,
   //exampleMode: "expand",
+  // defaultExample: true,
+  defaultExample: true,
   sections: [
     {
       name: 'Introduction',

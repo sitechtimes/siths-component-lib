@@ -22,7 +22,7 @@ This component is used on the article page underneath the article's main picture
 The style of this component is identical to the style on the SocialMediaIcons component. 
 
 ```jsx
-<ShareIcon />
+  <ShareIcon /> 
 ```
 
 </docs>

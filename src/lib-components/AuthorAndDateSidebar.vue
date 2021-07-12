@@ -1,36 +1,57 @@
 <template>
   <div class="sidebar-article-details-author-date">
-    <font-awesome-icon icon="user" class="sidebar-icon" id="author-icon" />
-    <p id="sidebar-article-details-author">{{ author }}</p>
-    <font-awesome-icon icon="clock" class="sidebar-icon" id="published-icon" />
-    <p id="sidebar-article-details-date">{{ published }}</p>
+    <section>
+      <font-awesome-icon icon="user" class="sidebar-icon" id="author-icon" />
+      <p id="sidebar-article-details-author">{{ author }}</p>
+    </section>
+    <section>
+      <font-awesome-icon
+        icon="clock"
+        class="sidebar-icon"
+        id="published-icon"
+      />
+      <p id="sidebar-article-details-date">{{ published }}</p>
+    </section>
   </div>
 </template>
 
 <script>
 export default {
-  name: "AuthorAndDate",
+  name: "AuthorAndDateSidebar",
   props: ["author", "published"],
 };
 </script>
 
 <style lang="scss">
-
+*,
+html,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+  font-family: var(--font);
+}
 .sidebar-article-details-author-date {
   display: flex;
+  //flex-direction: column;
+  flex-wrap: wrap;
 }
-.sidebar-article-details-author-date > p {
-  font-size: var(--h5);
+.sidebar-article-details-author-date > section {
+  display: flex;
+}
+.sidebar-article-details-author-date > section > p {
+  font-size: 0.85rem;
   text-transform: uppercase;
-  margin-right: 1.5rem;
+  margin: 0 1.5rem 0 0;
 }
 .sidebar-icon {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   padding-right: 4px;
 }
 #author-icon,
 #published-icon {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 }
 </style>
 
