@@ -39,6 +39,7 @@ export default Vue.extend({
     FooterNav,
     AuthorAndDate,
     CategoryIcon,
+    Footer,
   },
 });
 </script>
