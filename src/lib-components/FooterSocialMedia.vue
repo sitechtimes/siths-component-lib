@@ -20,8 +20,7 @@ export default {
     }
     .footer-social-media-box {
         width: 36rem;
-        margin-left: 18rem;
-        margin-top: 5.1rem;
+        margin: 5.1rem auto;
     }
     .footer-social-media {
         text-align: center;
@@ -30,7 +29,6 @@ export default {
     @media only screen and (max-width: $x-small-screen) {
         .footer-social-media-box {
             width: 30rem;
-            margin: 0 auto;
             border-bottom: none;
         }
     }
