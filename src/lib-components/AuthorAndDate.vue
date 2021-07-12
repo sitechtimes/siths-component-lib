@@ -1,9 +1,9 @@
 <template>
-  <div class="sidebar-article-details-author-date">
-    <font-awesome-icon icon="user" class="sidebar-icon" id="author-icon" />
-    <p id="sidebar-article-details-author">{{ author }}</p>
-    <font-awesome-icon icon="clock" class="sidebar-icon" id="published-icon" />
-    <p id="sidebar-article-details-date">{{ published }}</p>
+  <div class="article-details-author-date">
+    <font-awesome-icon icon="user" class="icon" id="author-icon" />
+    <p id="article-details-author">{{ author }}</p>
+    <font-awesome-icon icon="clock" class="icon" id="published-icon" />
+    <p id="article-details-date">{{ published }}</p>
   </div>
 </template>
 
@@ -15,15 +15,15 @@ export default {
 </script>
 
 <style lang="scss">
-.sidebar-article-details-author-date {
+.article-details-author-date {
   display: flex;
 }
-.sidebar-article-details-author-date > p {
+.article-details-author-date > p {
   font-size: 1.4rem;
   text-transform: uppercase;
   margin-right: 1.5rem;
 }
-.sidebar-icon {
+.icon {
   font-size: 1.4rem;
   padding-right: 4px;
 }

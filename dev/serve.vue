@@ -5,6 +5,7 @@ import { SidebarContainer } from "@/entry.esm";
 import { CategoryIconSidebar } from "@/entry.esm";
 import { AuthorAndDateSidebar } from "@/entry.esm";
 import { AuthorAndDate } from "@/entry.esm";
+import { CategoryIcon } from "@/entry.esm";
 
 
 export default Vue.extend({
@@ -14,6 +15,7 @@ export default Vue.extend({
     CategoryIconSidebar,
     AuthorAndDateSidebar,     
     AuthorAndDate,
+    CategoryIcon,
   },
 });
 </script>
@@ -25,6 +27,7 @@ export default Vue.extend({
     <author-and-date-sidebar author="Charley Baluja" published="Jan 31, 2020" /> 
 
     <author-and-date author='Regular' published='Regular 31, 2020' /> 
+    <category-icon category='entertainment'/>
   </div>
 </template>
 

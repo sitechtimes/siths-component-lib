@@ -1,14 +1,14 @@
 <template>
   <div class="sidebar-article-details-author-date">
     <section>
-      <font-awesome-icon icon="user" class="sidebar-icon" id="author-icon" />
+      <font-awesome-icon icon="user" class="sidebar-icon" id="sidebar-author-icon" />
       <p id="sidebar-article-details-author">{{ author }}</p>
     </section>
     <section>
       <font-awesome-icon
         icon="clock"
         class="sidebar-icon"
-        id="published-icon"
+        id="sidebar-published-icon"
       />
       <p id="sidebar-article-details-date">{{ published }}</p>
     </section>
@@ -49,8 +49,8 @@ body {
   font-size: 1.3rem;
   padding-right: 4px;
 }
-#author-icon,
-#published-icon {
+#sidebar-author-icon,
+#sidebar-published-icon {
   font-size: 1.3rem;
 }
 </style>

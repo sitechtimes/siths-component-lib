@@ -5,3 +5,4 @@ export { default as CategoryIconSidebar } from "./CategoryIconSidebar.vue";
 export { default as AuthorAndDateSidebar } from "./AuthorAndDateSidebar.vue";
 
 export { default as AuthorAndDate } from "./AuthorAndDate.vue";
+export { default as CategoryIcon } from './CategoryIcon.vue';
