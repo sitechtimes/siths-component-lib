@@ -48,6 +48,9 @@ a:active { text-decoration: none;  color: var(--black)}
   height: 21.7rem;
   border-radius: 1.5rem;
 }
+.article-cat {
+  margin-right: 2rem;
+}
 .article-title {
   margin: 0;
   font-family: var(--font);
@@ -58,21 +61,25 @@ a:active { text-decoration: none;  color: var(--black)}
 .article-data {
     padding-top: 1rem;
 }
-#sidebar-article-category{
-    margin-right: 2rem;
-    font-size: 1.4rem;
+
+@media only screen and (max-width: $x-small-screen) {
+  .article-cat {
+    margin-right: 1rem;
+  }
+  .article-data {
+    margin-right: 0.25rem;
+  }
+  .article-info {
+    width: 35rem;
+  }
+  .article-image {
+    width: 37rem;
+  }
+  .article-title {
+    width: 37rem;
+  }
 }
-.sidebar-article-details-author-date > p {
-    font-size: 1.4rem;
-}
-.sidebar-icon {
-  font-size: 1.8rem;
-  padding-right: 4px;
-}
-#author-icon,
-#published-icon {
-  font-size: 1.8rem;
-}
+
 </style>
 
 <docs>
