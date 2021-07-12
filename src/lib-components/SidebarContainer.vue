@@ -105,5 +105,8 @@ export default {
   max-width: none;
   border: none;
 }
+.sidebar-heading {
+  padding: 1.5rem var(--sidebarSidePadding);
+}
 }
 </style>

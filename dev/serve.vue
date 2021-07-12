@@ -4,6 +4,8 @@ import Vue from "vue";
 import { SidebarContainer } from "@/entry.esm";
 import { CategoryIconSidebar } from "@/entry.esm";
 import { AuthorAndDateSidebar } from "@/entry.esm";
+import { AuthorAndDate } from "@/entry.esm";
+import { CategoryIcon } from "@/entry.esm";
 
 import { CategoryIcon } from "@/entry.esm";
 import { SeeMoreBtn } from "@/entry.esm";
@@ -35,6 +37,8 @@ export default Vue.extend({
     Datebar,
     TextBelowArticlePreview,
     FooterNav,
+    AuthorAndDate,
+    CategoryIcon,
   },
 });
 </script>
@@ -59,6 +63,11 @@ export default Vue.extend({
     <FooterNav />
       <EntertainmentSideArticle articleUrl="https://theconversation.com/us/topics/rocket-science-195" imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNAu-JntINSfv0U6b2Df439C-cXbDOOYRzsj9UuhMwwP290pnObcSbtJHXo93jNBpA5Ys&usqp=CAU" category="entertainment" author="Charley Baluja" published="July 12, 2021" title="Podcasts: Radio, But Less Cool"/>
     <Footer />
+    <category-icon-sidebar category="opinion" />
+    <author-and-date-sidebar author="Charley Baluja" published="Jan 31, 2020" /> 
+
+    <author-and-date author='Regular' published='Regular 31, 2020' /> 
+    <category-icon category='entertainment'/>
   </div>
 </template>
 
