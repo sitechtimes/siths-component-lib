@@ -65,13 +65,13 @@
 </style>
 
 <docs>
-This is my test button
+Colored banner at the top of the page. Text updates dynamically to current date.
 ## Examples
 
-Test Button
+Looks funky on the preview.
 
 ```jsx
-<Button>Sample Secondary </Button>
+<Datebar />
 ```
 
     
