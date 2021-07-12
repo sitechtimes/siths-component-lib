@@ -64,6 +64,17 @@
     .calendar-icon {
         padding-top: 0.5rem;
     }
+    @media only screen and (max-width: $small-screen) {
+        .datebar-container {
+            justify-content: flex-start;
+            margin-left: 2rem;
+        }
+    }
+    @media only screen and (max-width: $x-large-screen) {
+        .datebar-container {
+            width: 60rem;
+        }
+    }
 </style>
 
 <docs>
