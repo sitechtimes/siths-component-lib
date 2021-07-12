@@ -30,7 +30,7 @@ export default Vue.extend({
     <GetNotifiedSection />
     <SocialMediaIcons />
       <ShareIcon /> 
-      <EntertainmentSideArticle />
+      <EntertainmentSideArticle articleUrl="https://theconversation.com/us/topics/rocket-science-195" imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNAu-JntINSfv0U6b2Df439C-cXbDOOYRzsj9UuhMwwP290pnObcSbtJHXo93jNBpA5Ys&usqp=CAU" category="entertainment" author="Charley Baluja" published="July 12, 2021" title="Podcasts: Radio, But Less Cool"/>
   </div>
 </template>
 
