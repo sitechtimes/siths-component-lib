@@ -54,6 +54,8 @@ export default {
 html,
 body {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   font-size: 62.5%;
   font-family: var(--font);
 }
@@ -86,6 +88,10 @@ body {
   display: flex;
   flex-direction: row !important;
 }
+.article:hover {
+  background-color: var(--hover);
+  cursor: pointer;
+}
 @media only screen and (min-width: $large-screen) {
   .article {
     width: 846px;
@@ -105,6 +111,12 @@ body {
 
 .text-box-top {
   margin-bottom: 7.48px;
+  height: var(--textBoxTopHeightSmall);
+}
+@media only screen and (min-width: $large-screen) {
+  .text-box-top {
+    height: var(--textBoxTopHeightLarge);
+  }
 }
 
 .category,
@@ -134,12 +146,12 @@ body {
 
   padding: 3.86px 3.96px 2.9px 3.96px;
   border-radius: 7px;
-  margin-right: 31.01px;
+  margin: 0 31.01px 0 0;
   height: 13.52px;
 }
 @media only screen and (min-width: $large-screen) {
   .category {
-    margin-right: 39px;
+    margin: 0 39px 0 0;
     padding: 6.97px 7.61px 5.23px 7.61px;
     border-radius: 8px;
 
@@ -157,14 +169,17 @@ body {
 }
 
 .author {
-  margin-right: 9.16px;
+  margin: 0 9.16px 0 0;
   width: 82px;
 }
 @media only screen and (min-width: $large-screen) {
   .author {
     width: 156px;
-    margin-right: 22px;
+    margin: 0 22px 0 0;
   }
+}
+.date {
+  margin: 0;
 }
 
 .text-box-btm {

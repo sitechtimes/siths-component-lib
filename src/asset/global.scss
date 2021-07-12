@@ -1,4 +1,4 @@
-@import "../assets/variables";
+@import "/src/asset/variables";
 
 :root {
   /* colors */
@@ -40,7 +40,7 @@
   --sports: var(--dark-orange);
   --hover: var(--lightGray);
   /* font size */
-  --font: "Josefin Sans", sans-serif;
+  --font: " Josefin Sans ", sans-serif;
   --h1: 5.653rem;
   --h2: 3.998rem;
   --h3: 2.827rem;
@@ -58,7 +58,6 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap");
-
 *,
 html,
 body {
