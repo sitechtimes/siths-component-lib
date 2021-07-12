@@ -16,5 +16,6 @@ export { default as Navbar } from "./Navbar.vue";
 export { default as Datebar } from "./Datebar.vue";
 export { default as FooterNav } from './FooterNav.vue';
 export { default as Footer } from './Footer.vue';
+export { default as TextBelowArticlePreview} from './TextBelowArticlePreview.vue';
 
 

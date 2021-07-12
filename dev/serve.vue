@@ -19,6 +19,7 @@ import { Datebar } from "@/entry.esm";
 //import TextBelowArticlePreview from "../src/lib-components/TextBelowArticlePreview.vue";
 import { FooterNav } from "@/entry.esm";
 import { Footer } from "@/entry.esm";
+import TextBelowArticlePreview from "../src/lib-components/TextBelowArticlePreview.vue";
 
 export default Vue.extend({
   name: "ServeDev",
@@ -39,7 +40,9 @@ export default Vue.extend({
     FooterNav,
     AuthorAndDate,
     CategoryIcon,
-    Footer,
+    Footer
+    TextBelowArticlePreview,
+    TextBelowArticlePreview
   },
 });
 </script>
