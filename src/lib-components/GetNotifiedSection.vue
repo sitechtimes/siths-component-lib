@@ -1,7 +1,7 @@
 <template>
 <div class="footer-form-box">
-    <h1 class="footer-header">Get Notified</h1>
-    <h2 class="footer-sub-header">Sign up for our newsletter!</h2>
+    <h2 class="footer-header">Get Notified</h2>
+    <h3 class="footer-sub-header">Sign up for our newsletter!</h3>
   <form class="footer-form" action="#">
       <fieldset class="footer-form-field">
             <label for="email"></label>
@@ -35,11 +35,8 @@ export default {
         color: var(--accent-color);
         font-weight: 700;
     }
-    .footer-header {
-        font-size: 4rem;
-    }
     .footer-sub-header {
-        font-size: 1.5rem;
+        font-size: var(--h5);
     }
     .footer-form-field {
         display: flex;
@@ -66,7 +63,7 @@ export default {
     .footer-join-btn {
         position: absolute;
         right: 0;
-        font-size: 1.4rem;
+        font-size: var(--h5);
         font-weight: 700;
         background-color: var(--primary-color);
         text-transform: uppercase;
@@ -77,7 +74,7 @@ export default {
 
     @media only screen and (max-width: $x-small-screen) {
         .footer-header {
-            font-size: 2.5rem;
+            font-size: var(--h3);
         }
         .footer-form-box,
         .footer-email-input {
