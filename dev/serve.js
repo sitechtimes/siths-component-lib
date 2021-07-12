@@ -4,10 +4,12 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { faCalendar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 library.add(faCalendar);
-
 Vue.component("font-awesome-icon", FontAwesomeIcon);
-
 Vue.config.productionTip = false;
+
+import moment from "moment";
+
+Vue.prototype.moment = moment;
 
 // To register individual components where they are used (serve.vue) instead of using the
 // library as a whole, comment/remove this import and it's corresponding "Vue.use" call

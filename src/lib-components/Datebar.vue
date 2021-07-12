@@ -1,15 +1,44 @@
 <template>
     <div class="datebar">
         <div class="datebar-container">
-            <p class="datebar-date">JULY 8TH, 2021 <font-awesome-icon :icon="['fas', 'calendar']" /></p>
+            <p class="datebar-date">
+                <span id="date-text">{{date}} </span>
+                <font-awesome-icon :icon="['fas', 'calendar']" /></p>
         </div>
     </div>
 </template>
 
 <script>
+    import moment from 'moment'
     export default {
     name: 'Datebar', // vue component name
-    };
+    data: function () {{
+        return {
+            date: '',
+        } 
+    }
+    },
+    methods: {
+        getCurrentDate: function(){
+            let today = new Date();
+            let dd = String(today.getDate());
+            let mm = String(today.getMonth() + 1); 
+            let yyyy = today.getFullYear();
+            
+            today = mm + '/' + dd + '/' + yyyy;
+            let todayFormatted = today;
+            let month = moment(todayFormatted).format('MMMM');
+            let day = moment(todayFormatted).format('D');
+            let year = moment(todayFormatted).format('Y');
+            let formattedDate = `${month} ${day}th, ${year}`;
+            console.log(formattedDate);
+            this.date = formattedDate;
+        }
+    },
+    beforeMount() {
+        this.getCurrentDate()
+    },
+    }
 </script>
 
 
@@ -26,11 +55,12 @@
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        align-content: flex-end;
-        align-items: flex-end;
     }
     .datebar-date {
         margin: auto 0;
+        padding: 0.3rem;
+        align-content: center;
+        align-items: center;
     }
 </style>
 
