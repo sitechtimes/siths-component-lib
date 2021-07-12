@@ -1,9 +1,10 @@
 <template>
     <nav>
         <ul class="home-nav-ul">
-            <a v-for="category in navData" 
+            <a v-for="category in navbar" 
             :key="category"
-            href='navLink'>{{navType}}</a>
+            :href='category.navLink'
+            class="home-nav-li">{{category.navType}}</a>
         </ul>
     </nav>
   
@@ -12,7 +13,20 @@
 <script>
     export default {
     name: 'Navbar', // vue component name
-    props: ["navData"]
+    props: [],
+    data () {
+      return {
+        navbar: [
+        {navLink: 'url', navType: 'NEWS'},
+        {navLink: 'url', navType: 'OPINION'},
+        {navLink: 'url', navType: 'POLITICS'},
+        {navLink: 'url', navType: 'ENTERTAINMENT'},
+        {navLink: 'url', navType: 'SCIENCE'},
+        {navLink: 'url', navType: 'ACTIVITIES'},
+        {navLink: 'url', navType: 'EVENTS'} 
+      ]
+    }
+  }
 };
 </script>
 
@@ -37,10 +51,10 @@
 This is the Navigation Bar - it links to all other pages related to a category
 ## Examples
 
-Test Button
+
 
 ```jsx
-<Button>Sample Secondary </Button>
+<Navbar />
 ```
 
     
