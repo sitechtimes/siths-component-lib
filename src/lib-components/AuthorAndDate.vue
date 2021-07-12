@@ -30,7 +30,7 @@ export default {
 }
 #author-icon,
 #published-icon {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 </style>
 

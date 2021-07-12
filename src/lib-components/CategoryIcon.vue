@@ -44,9 +44,9 @@ body {
   color: var(--off-white);
   font-size: 1.4rem;
   font-weight: 500;
-  padding: 0.3rem 0.6rem;
-  border-radius: 0.6rem;
-  margin: 0.3rem 0 0.5rem 0;
+  padding: 0.6rem 1rem;
+  border-radius: 0.8rem;
+  margin: 0.5rem 0 0.5rem 0;
 }
 </style>
 
