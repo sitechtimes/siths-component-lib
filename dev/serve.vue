@@ -4,6 +4,7 @@ import Vue from "vue";
 import { SidebarContainer } from "@/entry.esm";
 import { CategoryIconSidebar } from "@/entry.esm";
 import { AuthorAndDateSidebar } from "@/entry.esm";
+import { AuthorAndDate } from "@/entry.esm";
 
 
 export default Vue.extend({
@@ -12,6 +13,7 @@ export default Vue.extend({
     SidebarContainer,
     CategoryIconSidebar,
     AuthorAndDateSidebar,     
+    AuthorAndDate,
   },
 });
 </script>
@@ -19,8 +21,10 @@ export default Vue.extend({
 <template>
   <div id="app">
     <sidebar-container />
-    <!-- <category-icon-sidebar category="opinion" />
-    <author-and-date-sidebar author="Charley Baluja" published="Jan 31, 2020" />  -->
+    <category-icon-sidebar category="opinion" />
+    <author-and-date-sidebar author="Charley Baluja" published="Jan 31, 2020" /> 
+
+    <author-and-date author='Regular' published='Regular 31, 2020' /> 
   </div>
 </template>
 
