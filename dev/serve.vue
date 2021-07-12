@@ -9,6 +9,8 @@ import { SocialMediaIcons } from "@/entry.esm";
 import { ShareIcon } from "@/entry.esm";
 import { EntertainmentSideArticle } from "@/entry.esm";
 import { FooterSocialMedia } from "@/entry.esm";
+import { Datebar } from "@/entry.esm";
+
 export default Vue.extend({
   name: "ServeDev",
   components: {
@@ -20,7 +22,8 @@ export default Vue.extend({
     ShareIcon,
     EntertainmentSideArticle,
     FooterSocialMedia,
-  },
+    Datebar,
+  }
 });
 </script>
 
@@ -35,6 +38,7 @@ export default Vue.extend({
       <EntertainmentSideArticle />
     <FooterSocialMedia />
     <Navbar />
+    <Datebar />
   </div>
 </template>
 
