@@ -20,7 +20,7 @@ export default {
   display: flex;
 }
 .sidebar-article-details-author-date > p {
-  font-size: 1.4rem;
+  font-size: var(--h5);
   text-transform: uppercase;
   margin-right: 1.5rem;
 }
