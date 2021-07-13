@@ -49,14 +49,14 @@
 
 <docs>
 This is the Navigation Bar - it links to all other pages related to a category
+
+## Variables Used:
+--font
+
 ## Examples
-
-
 
 ```jsx
 <Navbar />
 ```
-
-    
    
 </docs>

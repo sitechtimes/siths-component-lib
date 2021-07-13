@@ -46,3 +46,15 @@ export default {
     }
 
 </style>
+
+<docs>
+The Final Footer that will be seen at the bottom. It uses GetNotifiedSection, FooterSocialMedia, and FooterNav to make a Footer with all the needed information.
+## Variables Used:
+--grey
+
+## Examples:
+
+```jsx
+<Footer />
+```
+</docs>
