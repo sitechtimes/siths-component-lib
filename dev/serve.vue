@@ -33,11 +33,12 @@ export default Vue.extend({
     EntertainmentSideArticle,
     FooterSocialMedia,
     Datebar,
+    TextBelowArticlePreview,
     FooterNav,
     AuthorAndDate,
     CategoryIcon,
     Footer,
-    TextBelowArticlePreview,
+    TextBelowArticlePreview
   },
 });
 </script>
