@@ -54,9 +54,7 @@ body {
 The Category Icon takes the category as aa prop and returns a unique button/tag with a unique color that can be used for each individual category.
 
 ## Variables Used:
---font: Which controls the font of the page. If for whatever reason the font is changed in a theme, it will change here.
-
---off-white: A colour.
+--font, --off-white
 
 ## Examples
 

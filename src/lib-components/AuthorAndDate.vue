@@ -1,8 +1,8 @@
 <template>
   <div class="article-details-author-date">
-    <font-awesome-icon icon="user" class="icon" id="author-icon" />
+    <svg width="1.8rem" height="1.8rem" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="published-icon" class="icon svg-inline--fa fa-clock fa-w-16"><path fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z" class=""></path></svg>
     <p id="article-details-author">{{ author }}</p>
-    <font-awesome-icon icon="clock" class="icon" id="published-icon" />
+    <svg width="1.8rem" height="1.8rem" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="published-icon" class="icon svg-inline--fa fa-clock fa-w-16"><path fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z" class=""></path></svg>
     <p id="article-details-date">{{ published }}</p>
   </div>
 </template>
@@ -37,7 +37,7 @@ export default {
 This component is used in a variety of other Components to form a preview of an article. It shows the date it was published and the author's name side-by-side after both props are entered.
 
 ## Variables Used:
---font: Which controls the font of the page. If for whatever reason the font is changed in a theme, it will change here.
+--font
 
 ## Examples
 Enter in an Author and Date to see the dynamic change.
