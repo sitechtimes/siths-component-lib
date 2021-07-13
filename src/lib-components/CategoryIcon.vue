@@ -1,13 +1,13 @@
 <template>
-  <div>
-    <p
+  <header>
+    <h5
       :style="backgroundColor"
       class="article-details-category"
       id="article-category"
     >
       {{ category }}
-    </p>
-  </div>
+    </h5>
+  </header>
 </template>
 
 <script>
@@ -26,21 +26,11 @@ export default {
 </script>
 
 <style lang="scss">
-*,
-html,
-body {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-size: 62.5%;
-  font-family: var(--font);
-}
 #article-category {
   text-transform: uppercase;
   width: max-content;
   //background-color: var(--opinion);
   color: var(--off-white);
-  font-size: 1.4rem;
   font-weight: 500;
   padding: 0.6rem 1rem;
   border-radius: 0.8rem;
