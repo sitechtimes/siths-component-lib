@@ -11,6 +11,7 @@ import { EntertainmentSideArticle } from "@/entry.esm";
 import { FooterSocialMedia } from "@/entry.esm";
 import { Datebar } from "@/entry.esm";
 import TextBelowArticlePreview from "../src/lib-components/TextBelowArticlePreview.vue";
+import { CategoryArticle } from "@/entry.esm";
 
 export default Vue.extend({
   name: "ServeDev",
@@ -24,7 +25,8 @@ export default Vue.extend({
     EntertainmentSideArticle,
     FooterSocialMedia,
     Datebar,
-    TextBelowArticlePreview
+    TextBelowArticlePreview,
+    CategoryArticle,
   },
 });
 </script>
