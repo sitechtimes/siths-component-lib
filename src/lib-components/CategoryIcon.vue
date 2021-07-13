@@ -33,8 +33,9 @@ export default {
   color: var(--off-white);
   font-weight: 500;
   padding: 0.6rem 1rem;
+  padding-top: 0.9rem;
   border-radius: 0.8rem;
-  margin: 0.5rem 0 0.5rem 0;
+  margin: 0.6rem 0 0.6rem 0;
 }
 </style>
 
