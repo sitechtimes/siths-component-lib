@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <div>
     <h5
       :style="backgroundColor"
       class="sidebar-article-details-category"
@@ -7,7 +7,7 @@
     >
       {{ category }}
     </h5>
-  </header>
+  </div>
 </template>
 
 <script>
