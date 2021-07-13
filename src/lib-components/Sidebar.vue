@@ -1,8 +1,6 @@
 <template>
   <div class="sidebar-article">
-    <a :href="articleUrl" target="_blank" rel="noopener noreferrer"
-      ><span class="sidebar-img"
-    /></a>
+    <img :href="articleUrl" :src="imgUrl" :alt="imgAlt" class="sidebar-img"/>
     <div class="sidebar-article-details">
       <category-icon-sidebar category="opinion"></category-icon-sidebar>
       <a
@@ -34,6 +32,7 @@ export default {
     published: String,
     title: String,
     imgUrl: String,
+    imgAlt: String,
     articleUrl: String,
   },
 };
@@ -47,17 +46,6 @@ export default {
   --sidebarDetailsPaddingLeft: 1.7rem;
   --toggleBorder: none;
   --centerSquareThumbnail: 50% 50%/100% 100% no-repeat;
-}
-
-*,
-html,
-body {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-size: 62.5%;
-
-  font-family: var(--font);
 }
 
 /* p {
@@ -91,7 +79,7 @@ body {
   border: 1px solid black;
 } */
 .sidebar-img {
-  background: url("../assets/temp image.jpg") var(--centerSquareThumbnail); /* 50% 50% centers image in div */
+  //background: url("../assets/temp image.jpg") var(--centerSquareThumbnail); /* 50% 50% centers image in div */
   height: var(--sidebarImgWidth);
   width: var(--sidebarImgWidth);
   border-radius: 1rem;

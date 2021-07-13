@@ -1,9 +1,9 @@
 <template>
     <div class="datebar">
         <div class="datebar-container">
-            <p class="datebar-date">
+            <h5 class="datebar-date">
                 <span id="date-text">{{date}} </span>
-                <font-awesome-icon :icon="['fas', 'calendar']" /></p>
+                <font-awesome-icon :icon="['fas', 'calendar']" /></h5>
         </div>
     </div>
 </template>

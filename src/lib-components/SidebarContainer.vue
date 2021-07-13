@@ -39,7 +39,7 @@ export default {
           author: "Charley Baluja",
           published: "Jan 31, 2020",
           title: "Hello this is Dr. Death Defying: MCR ain't dead yet",
-          imgUrl: "../assets/temp image.jpg",
+          imgUrl: "https://dailyillini.com/wp-content/uploads/2021/01/A0122C1B-0C8D-4299-9E5B-2FA8F790C666.jpeg",
           articleUrl: "https://google.com",
         },
         {
@@ -47,7 +47,7 @@ export default {
           author: "Charley Baluja",
           published: "Jan 32, 2020",
           title: "Hello this is Dr. Death Defying: MCR ain't dead yet",
-          imgUrl: "../assets/temp image.jpg",
+          imgUrl: "https://dailyillini.com/wp-content/uploads/2021/01/A0122C1B-0C8D-4299-9E5B-2FA8F790C666.jpeg",
           articleUrl: "https://google.com",
         },
         {
@@ -55,7 +55,7 @@ export default {
           author: "Charley Baluja",
           published: "Jan 33, 2020",
           title: "Hello this is Dr. Death Defying: MCR ain't dead yet",
-          imgUrl: "../assets/temp image.jpg",
+          imgUrl: "https://dailyillini.com/wp-content/uploads/2021/01/A0122C1B-0C8D-4299-9E5B-2FA8F790C666.jpeg",
           articleUrl: "https://google.com",
         },
       ],
@@ -65,7 +65,7 @@ export default {
           author: "Charley Baluja",
           published: "Jan 34, 2020",
           title: "Hello this is Dr. Death Defying: MCR ain't dead yet",
-          imgUrl: "../assets/temp image.jpg",
+          imgUrl: "https://dailyillini.com/wp-content/uploads/2021/01/A0122C1B-0C8D-4299-9E5B-2FA8F790C666.jpeg",
           articleUrl: "https://google.com",
         },
         {
@@ -73,7 +73,7 @@ export default {
           author: "Charley Baluja",
           published: "Jan 35, 2020",
           title: "Hello this is Dr. Death Defying: MCR ain't dead yet",
-          imgUrl: "../assets/temp image.jpg",
+          imgUrl: "https://dailyillini.com/wp-content/uploads/2021/01/A0122C1B-0C8D-4299-9E5B-2FA8F790C666.jpeg",
           articleUrl: "https://google.com",
         },
         {
@@ -81,7 +81,7 @@ export default {
           author: "Charley Baluja",
           published: "Jan 36, 2020",
           title: "Hello this is Dr. Death Defying: MCR ain't dead yet",
-          imgUrl: "../assets/temp image.jpg",
+          imgUrl: "https://dailyillini.com/wp-content/uploads/2021/01/A0122C1B-0C8D-4299-9E5B-2FA8F790C666.jpeg",
           articleUrl: "https://google.com",
         },
       ],
