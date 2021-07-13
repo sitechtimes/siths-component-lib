@@ -16,7 +16,8 @@ import { Datebar } from "@/entry.esm";
 //import TextBelowArticlePreview from "../src/lib-components/TextBelowArticlePreview.vue";
 import { FooterNav } from "@/entry.esm";
 import { Footer } from "@/entry.esm";
-import TextBelowArticlePreview from "../src/lib-components/TextBelowArticlePreview.vue";
+import { TextBelowArticlePreview } from "@/entry.esm";
+import { MobileNav } from "@/entry.esm";
 
 export default Vue.extend({
   name: "ServeDev",
@@ -38,6 +39,7 @@ export default Vue.extend({
     CategoryIcon,
     Footer,
     TextBelowArticlePreview,
+    MobileNav,
   },
 });
 </script>
@@ -68,6 +70,7 @@ export default Vue.extend({
     <author-and-date author='Regular' published='Regular 31, 2020' /> 
     <category-icon category='entertainment'/>
     <Navbar />
+    <MobileNav />
   </div>
 </template>
 
