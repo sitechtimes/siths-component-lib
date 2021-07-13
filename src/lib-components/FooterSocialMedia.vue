@@ -1,6 +1,6 @@
 <template>
 <div class="footer-social-media-box">
-    <h2 class="footer-header footer-sm-header">Social Media</h2>
+    <h3 class="footer-header footer-sm-header">Social Media</h3>
     <SocialMediaIcons class="footer-social-media"/>
 </div>
 </template>
