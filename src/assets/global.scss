@@ -145,7 +145,7 @@ small,
 
 //The only reason the code is the right size in styleguide.
 .prism-editor > textarea{
-  font-size: 1rem;
+  font-size: 1.5rem;
   border-radius: 0.3rem;
   border-bottom: 1rem;
   border-top: 1rem;
@@ -155,12 +155,12 @@ small,
 }
 .prism-editor {
   font-family: var(--font);
-  font-size: 1rem;
+  font-size: 1.5rem;
   width: 100%;
 }
 
 .token {
- font-size: 1rem;
+ font-size: 1.5rem;
  width: 100%;
  margin-left: 0.01%;
 }
