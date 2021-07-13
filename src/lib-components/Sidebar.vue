@@ -146,11 +146,11 @@ body {
   font-weight: bold;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
+// body {
+//    display: flex;
+//    flex-direction: column;
+//    align-items: flex-end;
+// }
 .example-img {
   border: var(--toggleBorder);
   height: 11.7rem;
