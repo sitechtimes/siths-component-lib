@@ -32,6 +32,7 @@ export default Vue.extend({
 <template>
   <div id="app">
     <Datebar />
+    <CategoryArticle articleUrl="https://theconversation.com/us/topics/rocket-science-195" imageUrl="https://i.dailymail.co.uk/1s/2020/01/24/10/23816570-0-image-a-18_1579862990670.jpg" category="opinion" author="Charley Baluja" published="July 12, 2021" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet."/>
     <category-icon category="opinion"></category-icon>
     <SeeMoreBtn />
     <author-and-date author="Charley Baluja" published="Jan 31, 2020" />
