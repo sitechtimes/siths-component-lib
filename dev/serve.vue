@@ -14,7 +14,8 @@ export default Vue.extend({
 <template>
   <div id="app">
     <ArticlePiece
-      category="Opinion"
+      :style="backgroundColor"
+      category="opinion" 
       author="Daniel Briskman"
       date="Jan 21, 2021"
       title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet. "

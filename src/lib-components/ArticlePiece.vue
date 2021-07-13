@@ -2,7 +2,7 @@
   <div class="article">
     <div class="text-box flex-direction-column">
       <div class="text-box-top flex-direction-row">
-        <h5 class="category">{{ category }}</h5>
+        <h5 :style="backgroundColor" class="category">{{ category }}</h5>
         <h5 class="author author-overflow">{{ author }}</h5>
         <h5 class="date">{{ date }}</h5>
       </div>
@@ -24,7 +24,16 @@ export default {
     title: String,
     category: String,
   },
+  data() {
+    return {};
+  },
+  computed: {
+    backgroundColor: function() {
+      return "background-color: var(--" + this.category + ")";
+    },
+  },
 };
+  
 </script>
 
 <style lang="scss">
@@ -141,7 +150,6 @@ body {
 }
 
 .category {
-  background-color: var(--opinion);
   color: var(--white);
 
   padding: 3.86px 3.96px 2.9px 3.96px;
