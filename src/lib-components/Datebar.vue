@@ -78,7 +78,7 @@
 </style>
 
 <docs>
-Colored banner at the top of the page. Text updates dynamically to current date.
+Colored banner at the top of the page. Text updates dynamically to current date. Uses moment.js library for the time. If the date doesn't show up, check if moment.js is installed.
 ## Examples
 
 Looks funky on the preview.
