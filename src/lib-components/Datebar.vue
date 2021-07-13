@@ -49,6 +49,7 @@
         height: 4rem;
         margin: 0;
         padding: 0;
+        width: 100%;
     }
     .datebar-container {
         width: 120rem;
