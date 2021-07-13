@@ -48,7 +48,6 @@ export default Vue.extend({
 <template>
   <div id="app">
     <sidebar-container />
-    <sidebar>
     <!-- <category-icon-sidebar category="opinion" />
     <author-and-date-sidebar author="Charley Baluja" published="Jan 31, 2020" />  -->
     <Datebar />
