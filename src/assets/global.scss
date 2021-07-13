@@ -47,6 +47,8 @@
   --h4: 1.999rem;
   --h5: 1.414rem;
   --small-text: 0.707rem;
+  --article-description: 2.5rem;
+  --paragraph-text: 1.8rem;
   /* boxshadows */
   --level-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --level-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
@@ -91,7 +93,7 @@ h3,
 h4,
 h5 {
   font-family: var(--font);
-  font-weight: 400;
+  font-weight: 900;
   line-height: 1.3;
 }
 
@@ -121,10 +123,9 @@ small,
   font-size: var(--small-text);
 }
 
-@media only screen and (max-width: $x-small-screen)  {
+@media only screen and (max-width: $x-small-screen) {
 }
 @media only screen and (min-width: calc($small-screen + 1px)) and (max-width: $mid-screen) {
-
 }
 @media only screen and (min-width: calc($mid-screen + 1px)) and (max-width: $large-screen) {
   *,
@@ -144,7 +145,7 @@ small,
 }
 
 //The only reason the code is the right size in styleguide.
-.prism-editor > textarea{
+.prism-editor > textarea {
   font-size: 1rem;
   border-radius: 0.3rem;
   border-bottom: 1rem;
@@ -160,9 +161,9 @@ small,
 }
 
 .token {
- font-size: 1rem;
- width: 100%;
- margin-left: 0.01%;
+  font-size: 1rem;
+  width: 100%;
+  margin-left: 0.01%;
 }
 
 pre {

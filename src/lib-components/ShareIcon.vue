@@ -1,18 +1,16 @@
 <template>
   <div>
-        <font-awesome-icon class="social-media-icon" :icon="['fa', 'share']" />
+    <font-awesome-icon class="social-media-icon" :icon="['fa', 'share']" />
   </div>
 </template>
 
 <script>
 export default {
-name: "ShareIcon"
-}
+  name: "ShareIcon",
+};
 </script>
 
-<style>
-
-</style>
+<style></style>
 
 <docs>
 This component is used on the article page underneath the article's main picture. It isn't used in the footer, which is why it's a separate component. It will take the user to the Tech Times social media pages when the Tech Times has social media pages. 
