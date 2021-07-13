@@ -1,5 +1,5 @@
 <template>
-  <div class="entertainment-side">
+  <article class="entertainment-side">
     <div class="entertainment-img-div">
     <a :href="articleUrl"><img :href="articleUrl" :src="imageUrl" :alt="imageAlt" class="entertainment-side-img"></a>
     </div>
@@ -10,7 +10,7 @@
        </div>
        <h3 class="entertainment-title">{{title}}</h3>
        </div>
-  </div>
+  </article>
 </template>
 
 <script>

@@ -1,7 +1,7 @@
 <template>
     <div class="footer-nav">
-        <h2 class="footer-header footer-nav-header">Navigation</h2>
-        <nav>
+        <h4 class="footer-header footer-nav-header">Navigation</h4>
+        <div>
         <ul class="footer-nav-ul">
             <a href=""><li class="footer-nav-li">News</li></a>
             <a href=""><li class="footer-nav-li">Politics</li></a>
@@ -11,7 +11,7 @@
             <a href=""><li class="footer-nav-li">Activities</li></a>
             <a href=""><li class="footer-nav-li">Events</li></a>
         </ul>
-    </nav>
+    </div>
     </div>
 </template>
 

@@ -9,7 +9,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../assets/_variables.scss";
 
 .see-more-btn {
     background-color: var(--primary-color);

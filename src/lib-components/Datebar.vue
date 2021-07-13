@@ -1,9 +1,9 @@
 <template>
     <div class="datebar">
         <div class="datebar-container">
-            <p class="datebar-date">
+            <h5 class="datebar-date">
                 <span id="date-text">{{date}} </span>
-                <font-awesome-icon :icon="['fas', 'calendar']" /></p>
+                <font-awesome-icon :icon="['fas', 'calendar']" /></h5>
         </div>
     </div>
 </template>
@@ -65,7 +65,7 @@
 </style>
 
 <docs>
-Colored banner at the top of the page. Text updates dynamically to current date.
+Colored banner at the top of the page. Text updates dynamically to current date. Uses moment.js library for the time. If the date doesn't show up, check if moment.js is installed.
 
 ## Variables Used:
 --accent-color

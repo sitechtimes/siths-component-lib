@@ -1,9 +1,14 @@
 <template>
   <div class="sidebar-article">
-    <a :href="articleUrl" target="_blank" rel="noopener noreferrer"><span class="sidebar-img" /></a>
+    <img :href="articleUrl" :src="imgUrl" :alt="imgAlt" class="sidebar-img"/>
     <div class="sidebar-article-details">
       <category-icon-sidebar category="opinion"></category-icon-sidebar>
-      <a :href='articleUrl' target="_blank" rel="noopener noreferrer" id="sidebar-article-details-title">
+      <a
+        :href="articleUrl"
+        target="_blank"
+        rel="noopener noreferrer"
+        id="sidebar-article-details-title"
+      >
         {{ title }}
       </a>
       <author-and-date-sidebar
@@ -27,6 +32,7 @@ export default {
     published: String,
     title: String,
     imgUrl: String,
+    imgAlt: String,
     articleUrl: String,
   },
 };
@@ -41,6 +47,7 @@ export default {
   --toggleBorder: none;
   --centerSquareThumbnail: 50% 50%/100% 100% no-repeat;
 }
+
 
 .temp-img {
   width: 30vw;
@@ -69,7 +76,7 @@ export default {
   border: 1px solid black;
 } */
 .sidebar-img {
-  background: url("../assets/temp image.jpg") var(--centerSquareThumbnail); /* 50% 50% centers image in div */
+  //background: url("../assets/temp image.jpg") var(--centerSquareThumbnail); /* 50% 50% centers image in div */
   height: var(--sidebarImgWidth);
   width: var(--sidebarImgWidth);
   border-radius: 1rem;
@@ -131,11 +138,6 @@ export default {
   font-weight: bold;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
 .example-img {
   border: var(--toggleBorder);
   height: 11.7rem;
@@ -143,32 +145,32 @@ body {
 }
 
 @media only screen and (max-width: $mid-screen) {
-:root {
-  --sidebarArticleWidth: 100vw;
-  --sidebarSidePadding: 15vw;
-}
-.sidebar-container {
-  max-width: none;
-  border: none;
-}
-.sidebar-article {
-  max-width: none;
-  padding: 2.5rem var(--sidebarSidePadding);
-}
-.sidebar-article-details {
-  max-width: none;
-}
+  :root {
+    --sidebarArticleWidth: 100vw;
+    --sidebarSidePadding: 15vw;
+  }
+  .sidebar-container {
+    max-width: none;
+    border: none;
+  }
+  .sidebar-article {
+    max-width: none;
+    padding: 2.5rem var(--sidebarSidePadding);
+  }
+  .sidebar-article-details {
+    max-width: none;
+  }
 }
 
 @media only screen and (max-width: 450px) {
-:root {
-  --sidebarSidePadding: 12vw;
-}
+  :root {
+    --sidebarSidePadding: 12vw;
+  }
 }
 @media only screen and (max-width: 380px) {
-:root {
-  --sidebarSidePadding: 8vw;
-}
+  :root {
+    --sidebarSidePadding: 8vw;
+  }
 }
 </style>
 

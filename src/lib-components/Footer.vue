@@ -1,9 +1,9 @@
 <template>
-  <div class="footer-container">
+  <footer class="footer-container">
       <GetNotifiedSection class="form"/>
       <FooterSocialMedia class="social"/>
       <FooterNav class="nav"/>
-  </div>
+  </footer>
 </template>
 
 <script>
