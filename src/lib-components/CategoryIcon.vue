@@ -50,7 +50,7 @@ body {
 
 
 <docs>
-The Category Icon takes the category as aa prop and returns a unique button/tag with a unique color that can be used for each individual category.
+The Category Icon takes the category as a prop and returns a unique button/tag with a unique color that can be used for each individual category.
 
 ## Variables Used:
 --font, --off-white

@@ -42,21 +42,6 @@ export default {
   --centerSquareThumbnail: 50% 50%/100% 100% no-repeat;
 }
 
-*,
-html,
-body {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-size: 62.5%;
-
-  font-family: var(--font);
-}
-
-/* p {
-  font-size: 1.6rem;
-} */
-
 .temp-img {
   width: 30vw;
   height: auto;
@@ -188,3 +173,16 @@ body {
 </style>
 
 /* Ripple effect on click? */
+
+<docs>
+The Sidebar article is the article found in the sidebar and has an image on one side and the article's info on the other
+
+## Variables Used:
+--sidebarSidePadding, --sidebarArticleWidth, --sidebarSidePadding, --toggleBorder, --sidebarDetailsPaddingLeft, --sidebarImgWidth, --centerSquareThumbnail, --
+
+## Examples:
+
+```jsx
+<Sidebar author="Daniel Briskman" published="November 42, 2780" title="One Piece is Bad and here's why"/>
+```
+</docs>

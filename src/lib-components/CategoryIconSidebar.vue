@@ -51,7 +51,7 @@ body {
 </style>
 
 <docs>
-The Category Icon takes the category as aa prop and returns a unique button/tag with a unique color that can be used for each individual category.
+This component is the same as above, with different width and height
 
 ## Variables Used:
 --font, --off-white
@@ -61,20 +61,8 @@ The Category Icon takes the category as aa prop and returns a unique button/tag 
 Category Icons
 
 ```jsx
-<category-icon category="opinion"></category-icon>
-```
-
-```jsx
-<category-icon category="entertainment"></category-icon>
-```
-
-```jsx
-<category-icon category="sports"></category-icon>
-```
-
-```jsx
-<category-icon category="sports"></category-icon>
-<category-icon category="entertainment"></category-icon>
+<CategoryIconSidebar category="sports"/>
+<CategoryIconSidebar category="entertainment"/>
 ```
 
 

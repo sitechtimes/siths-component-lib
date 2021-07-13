@@ -17,6 +17,7 @@ import { Datebar } from "@/entry.esm";
 import { FooterNav } from "@/entry.esm";
 import { Footer } from "@/entry.esm";
 import TextBelowArticlePreview from "../src/lib-components/TextBelowArticlePreview.vue";
+import Sidebar from "../src/lib-components/Sidebar.vue";
 
 export default Vue.extend({
   name: "ServeDev",
@@ -38,6 +39,7 @@ export default Vue.extend({
     AuthorAndDate,
     CategoryIcon,
     Footer,
+    Sidebar,
     TextBelowArticlePreview
   },
 });
@@ -46,6 +48,7 @@ export default Vue.extend({
 <template>
   <div id="app">
     <sidebar-container />
+    <sidebar>
     <!-- <category-icon-sidebar category="opinion" />
     <author-and-date-sidebar author="Charley Baluja" published="Jan 31, 2020" />  -->
     <Datebar />

@@ -66,6 +66,10 @@
 
 <docs>
 Colored banner at the top of the page. Text updates dynamically to current date.
+
+## Variables Used:
+--accent-color
+
 ## Examples
 
 Looks funky on the preview.
