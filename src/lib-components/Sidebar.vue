@@ -1,9 +1,16 @@
 <template>
   <div class="sidebar-article">
-    <a :href="articleUrl" target="_blank" rel="noopener noreferrer"><span class="sidebar-img" /></a>
+    <a :href="articleUrl" target="_blank" rel="noopener noreferrer"
+      ><span class="sidebar-img"
+    /></a>
     <div class="sidebar-article-details">
       <category-icon-sidebar category="opinion"></category-icon-sidebar>
-      <a :href='articleUrl' target="_blank" rel="noopener noreferrer" id="sidebar-article-details-title">
+      <a
+        :href="articleUrl"
+        target="_blank"
+        rel="noopener noreferrer"
+        id="sidebar-article-details-title"
+      >
         {{ title }}
       </a>
       <author-and-date-sidebar
@@ -146,11 +153,6 @@ body {
   font-weight: bold;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
 .example-img {
   border: var(--toggleBorder);
   height: 11.7rem;
@@ -158,32 +160,32 @@ body {
 }
 
 @media only screen and (max-width: $mid-screen) {
-:root {
-  --sidebarArticleWidth: 100vw;
-  --sidebarSidePadding: 15vw;
-}
-.sidebar-container {
-  max-width: none;
-  border: none;
-}
-.sidebar-article {
-  max-width: none;
-  padding: 2.5rem var(--sidebarSidePadding);
-}
-.sidebar-article-details {
-  max-width: none;
-}
+  :root {
+    --sidebarArticleWidth: 100vw;
+    --sidebarSidePadding: 15vw;
+  }
+  .sidebar-container {
+    max-width: none;
+    border: none;
+  }
+  .sidebar-article {
+    max-width: none;
+    padding: 2.5rem var(--sidebarSidePadding);
+  }
+  .sidebar-article-details {
+    max-width: none;
+  }
 }
 
 @media only screen and (max-width: 450px) {
-:root {
-  --sidebarSidePadding: 12vw;
-}
+  :root {
+    --sidebarSidePadding: 12vw;
+  }
 }
 @media only screen and (max-width: 380px) {
-:root {
-  --sidebarSidePadding: 8vw;
-}
+  :root {
+    --sidebarSidePadding: 8vw;
+  }
 }
 </style>
 
