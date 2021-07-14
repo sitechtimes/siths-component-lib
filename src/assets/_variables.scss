@@ -9,5 +9,13 @@ $small-screen: /* max-width */ 640px;
 /* Medium devices (landscape tablets, 768px and up) */
 $mid-screen: /* max-width */ 768px;
 
+$midlarge-screen: 950px;
+
 /* Large devices (laptops/desktops, 992px and up) */
 $large-screen: /* max-width */ 1280px;
+
+$desktop-container: 120rem;
+$large-container: 100rem;
+$midlarge-container: 80rem;
+$mid-container: 60rem;
+$small-container: 30rem;

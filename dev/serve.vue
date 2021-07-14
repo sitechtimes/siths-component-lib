@@ -58,6 +58,8 @@ export default Vue.extend({
     <!-- <category-icon-sidebar category="opinion" />
     <author-and-date-sidebar author="Charley Baluja" published="Jan 31, 2020" />  -->
     <Datebar />
+    <Navbar />
+    <div class="global-container">
     <CategoryArticle
       articleUrl="https://theconversation.com/us/topics/rocket-science-195"
       imageUrl="https://i.dailymail.co.uk/1s/2020/01/24/10/23816570-0-image-a-18_1579862990670.jpg"
@@ -74,7 +76,6 @@ export default Vue.extend({
     <SocialMediaIcons />
     <ShareIcon />
     <FooterSocialMedia />
-    <Navbar />
     <!-- <text-below-article-preview articleUrl="https://theconversation.com/us/topics/rocket-science-195" author="Daniel Briskman" published="Jan 31, 2020" category="opinion" imageAlt="Space X Rocket" title="I hate rockets, and this is why you should too" imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNAu-JntINSfv0U6b2Df439C-cXbDOOYRzsj9UuhMwwP290pnObcSbtJHXo93jNBpA5Ys&usqp=CAU"/> -->
     <text-below-article-preview
       articleUrl="https://theconversation.com/us/topics/rocket-science-195"
@@ -104,6 +105,7 @@ export default Vue.extend({
     <MobileNav />
     <OpinionSlider />
     <MobileCategoryArticle category="entertainment" author="Daniel Briskman" published="July 14, 2021" title="Pokemon Gen 4 Sucks"/>
+    </div>
   </div>
 </template>
 
