@@ -17,13 +17,13 @@
     data () {
       return {
         navbar: [
-        {navLink: 'url', navType: 'NEWS'},
-        {navLink: 'url', navType: 'OPINION'},
-        {navLink: 'url', navType: 'POLITICS'},
-        {navLink: 'url', navType: 'ENTERTAINMENT'},
-        {navLink: 'url', navType: 'SCIENCE'},
-        {navLink: 'url', navType: 'ACTIVITIES'},
-        {navLink: 'url', navType: 'EVENTS'} 
+        {navLink: 'news', navType: 'NEWS'},
+        {navLink: 'opinion', navType: 'OPINION'},
+        {navLink: 'politics', navType: 'POLITICS'},
+        {navLink: 'entertainment', navType: 'ENTERTAINMENT'},
+        {navLink: 'science', navType: 'SCIENCE'},
+        {navLink: 'activities', navType: 'ACTIVITIES'},
+        {navLink: 'events', navType: 'EVENTS'} 
       ]
     }
   }
