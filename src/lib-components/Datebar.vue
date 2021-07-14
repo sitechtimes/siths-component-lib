@@ -58,7 +58,7 @@
         width: 100rem;
     }
 }
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: $midlarge-screen) {
     .datebar-container {
         width: 80rem;
     }

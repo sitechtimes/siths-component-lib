@@ -58,6 +58,8 @@ export default Vue.extend({
     <Datebar />
     <Navbar />
     <sidebar-container />
+
+    <div class="global-container">
     <category-icon-sidebar category="opinion" />
     <author-and-date-sidebar author="Charley Baluja" published="Jan 31, 2020" />
     <OpinionSlider />
@@ -97,6 +99,8 @@ export default Vue.extend({
     <FooterSocialMedia />
     <Footer />
 
+
+    </div>
   </div>
 </template>
 
