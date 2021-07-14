@@ -18,14 +18,15 @@ import { FooterNav } from "@/entry.esm";
 import { Footer } from "@/entry.esm";
 import TextBelowArticlePreview from "../src/lib-components/TextBelowArticlePreview.vue";
 import Sidebar from "../src/lib-components/Sidebar.vue";
+import { OpinionSlider } from "@/entry.esm";
 
 export default Vue.extend({
   name: "ServeDev",
   components: {
     SidebarContainer,
     CategoryIconSidebar,
-    AuthorAndDateSidebar,     
-    CategoryIcon, 
+    AuthorAndDateSidebar,
+    CategoryIcon,
     SeeMoreBtn,
     AuthorAndDate,
     GetNotifiedSection,
@@ -40,7 +41,8 @@ export default Vue.extend({
     CategoryIcon,
     Footer,
     Sidebar,
-    TextBelowArticlePreview
+    TextBelowArticlePreview,
+    OpinionSlider,
   },
 });
 </script>
@@ -50,56 +52,68 @@ export default Vue.extend({
     <!-- <category-icon-sidebar category="opinion" />
     <author-and-date-sidebar author="Charley Baluja" published="Jan 31, 2020" />  -->
     <Datebar />
+    <sidebar-container />
     <category-icon category="opinion"></category-icon>
     <SeeMoreBtn />
     <author-and-date author="Charley Baluja" published="Jan 31, 2020" />
     <GetNotifiedSection />
     <SocialMediaIcons />
-      <ShareIcon /> 
+    <ShareIcon />
     <FooterSocialMedia />
     <Navbar />
     <!-- <text-below-article-preview articleUrl="https://theconversation.com/us/topics/rocket-science-195" author="Daniel Briskman" published="Jan 31, 2020" category="opinion" imageAlt="Space X Rocket" title="I hate rockets, and this is why you should too" imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNAu-JntINSfv0U6b2Df439C-cXbDOOYRzsj9UuhMwwP290pnObcSbtJHXo93jNBpA5Ys&usqp=CAU"/> -->
     <Datebar />
-    <text-below-article-preview articleUrl="https://theconversation.com/us/topics/rocket-science-195" author="Daniel Briskman" published="Jan 31, 2020" category="opinion" imageAlt="Space X Rocket" title="I hate rockets, and this is why you should too" imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNAu-JntINSfv0U6b2Df439C-cXbDOOYRzsj9UuhMwwP290pnObcSbtJHXo93jNBpA5Ys&usqp=CAU"/>
+    <text-below-article-preview
+      articleUrl="https://theconversation.com/us/topics/rocket-science-195"
+      author="Daniel Briskman"
+      published="Jan 31, 2020"
+      category="opinion"
+      imageAlt="Space X Rocket"
+      title="I hate rockets, and this is why you should too"
+      imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNAu-JntINSfv0U6b2Df439C-cXbDOOYRzsj9UuhMwwP290pnObcSbtJHXo93jNBpA5Ys&usqp=CAU"
+    />
     <FooterNav />
-      <EntertainmentSideArticle articleUrl="https://theconversation.com/us/topics/rocket-science-195" imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNAu-JntINSfv0U6b2Df439C-cXbDOOYRzsj9UuhMwwP290pnObcSbtJHXo93jNBpA5Ys&usqp=CAU" category="entertainment" author="Charley Baluja" published="July 12, 2021" title="Podcasts: Radio, But Less Cool"/>
+    <EntertainmentSideArticle
+      articleUrl="https://theconversation.com/us/topics/rocket-science-195"
+      imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNAu-JntINSfv0U6b2Df439C-cXbDOOYRzsj9UuhMwwP290pnObcSbtJHXo93jNBpA5Ys&usqp=CAU"
+      category="entertainment"
+      author="Charley Baluja"
+      published="July 12, 2021"
+      title="Podcasts: Radio, But Less Cool"
+    />
     <Footer />
     <category-icon-sidebar category="opinion" />
-    <author-and-date-sidebar author="Charley Baluja" published="Jan 31, 2020" /> 
+    <author-and-date-sidebar author="Charley Baluja" published="Jan 31, 2020" />
 
-    <author-and-date author='Regular' published='Regular 31, 2020' /> 
-    <category-icon category='entertainment'/>
+    <author-and-date author="Regular" published="Regular 31, 2020" />
+    <category-icon category="entertainment" />
     <Navbar />
+    <OpinionSlider />
   </div>
 </template>
 
 <style lang="scss">
-
-@media only screen and (min-width: $x-large-screen) {
-}
-
-@media only screen and (max-width: $x-large-screen) {
+@media only screen and (max-width: $large-screen) {
   *,
   html,
   body {
-    font-size: 44.5%;
-  }
-}
-
-@media only screen and  (max-width: $large-screen) {
-  *,
-  html,
-  body {
-    font-size: 44.5%;
+    font-size: 58%;
   }
 }
 
 @media only screen and (max-width: $mid-screen) {
-
+  *,
+  html,
+  body {
+    font-size: 50%;
+  }
 }
 
-@media only screen and (max-width: $x-small-screen)  {
+@media only screen and (max-width: $x-small-screen) {
+  *,
+  html,
+  body {
+    font-size: 45%;
+  }
 }
-
-
 </style>

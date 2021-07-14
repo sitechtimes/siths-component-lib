@@ -36,8 +36,8 @@ a:active { text-decoration: none;  color: var(--black)}
   display: flex;
   flex-direction: column;
   width: 46.1rem;
-  height: 37.1rem;
-  vertical-align: middle;
+  height: 37rem;
+  margin-right: 3rem;
 }
 .article-info {
   display: flex;
