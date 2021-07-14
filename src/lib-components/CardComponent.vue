@@ -38,9 +38,8 @@ a:active { text-decoration: none;  color: var(--black)}
     cursor: pointer;
     width: 67.3rem;
     height: 57.8rem;
-    border-radius: 15px;
+    border-radius: 1.5rem;
     position: relative;
-
 }
 .card-component-image {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(132, 132, 132, 0.29) 54.17%, rgba(0, 0, 0, 0.5) 65.1%),  url("../assets/card-comp-tempimg.jpg");
@@ -56,7 +55,6 @@ a:active { text-decoration: none;  color: var(--black)}
     display: flex;
     flex-direction: row;
 }
-
 
 .card-component-text-container{
     width: 80.2%;
@@ -82,11 +80,11 @@ a:active { text-decoration: none;  color: var(--black)}
 }
 .text-overflow {
     display: block;
-  display: -webkit-box;
-  -webkit-line-clamp: 5; //The Number of Lines Shown Before Cutting Off the Text
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; //The Number of Lines Shown Before Cutting Off the Text
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
     @media only screen and (max-width: $large-screen) {
         -webkit-line-clamp: 5;
@@ -106,7 +104,3 @@ a:active { text-decoration: none;  color: var(--black)}
 }
 
 </style>
-
-<docs>
-
-</docs>
