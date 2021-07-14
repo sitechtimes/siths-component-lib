@@ -21,6 +21,7 @@ import { MobileNav } from "@/entry.esm";
 import { CategoryArticle } from "@/entry.esm";
 import Sidebar from "../src/lib-components/Sidebar.vue";
 import { OpinionSlider } from "@/entry.esm";
+import { MobileCategoryArticle } from "@/entry.esm";
 
 export default Vue.extend({
   name: "ServeDev",
@@ -47,6 +48,7 @@ export default Vue.extend({
     TextBelowArticlePreview,
     MobileNav,
     OpinionSlider,
+    MobileCategoryArticle,
   },
 });
 </script>
@@ -67,6 +69,7 @@ export default Vue.extend({
       published="July 12, 2021"
       title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet."
     />
+    <MobileCategoryArticle category="entertainment" author="Daniel Briskman" published="July 14, 2021" title="Pokemon Gen 4 Sucks"/>
     <text-below-article-preview
       articleUrl="https://theconversation.com/us/topics/rocket-science-195"
       author="Daniel Briskman"
@@ -93,6 +96,7 @@ export default Vue.extend({
     <ShareIcon />
     <FooterSocialMedia />
     <Footer />
+
   </div>
 </template>
 
