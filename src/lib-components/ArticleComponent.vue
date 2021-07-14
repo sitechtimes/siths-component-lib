@@ -7,7 +7,7 @@
     <section class="article-metadata">
       <author-and-date
         class="article-author-and-date"
-        author="Michael Whalen Whalen Whalen Whalen Whalen Whalen Whalen"
+        author="Michael Whalen"
         published="Feb 1, 2021"
       />
       <div class="article-metadata-actions">
