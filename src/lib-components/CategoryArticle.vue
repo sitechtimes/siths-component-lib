@@ -20,7 +20,7 @@ props: ["articleUrl", "imageUrl", "imageAlt", "category", "author", "published",
 }
 </script>
 
-<style>
+<style lang="scss">
     .category-article{
     display: flex;
     flex-direction: row;
