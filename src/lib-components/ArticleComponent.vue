@@ -5,7 +5,11 @@
     <p class="article-description">{{ description }}</p>
     <img class="article-main-img" src="../assets/article temp img.jpg" alt="" />
     <section class="article-metadata">
-      <author-and-date author="Michael Whalen" published="Feb 1, 2021" />
+      <author-and-date
+        class="article-author-and-date"
+        author="Michael Whalen Whalen Whalen Whalen Whalen Whalen Whalen"
+        published="Feb 1, 2021"
+      />
       <div class="article-metadata-actions">
         <social-media-icons />
         <share-icon />
@@ -76,6 +80,10 @@ export default {
   display: flex;
   justify-content: space-between;
   margin: 4rem auto;
+  flex-wrap: wrap;
+}
+.article-author-and-date {
+  margin-bottom: 2rem;
 }
 .article-metadata-actions {
   display: flex;
