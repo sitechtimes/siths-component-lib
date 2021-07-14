@@ -80,13 +80,6 @@ export default {
     // }
 
     @media only screen and (max-width: $x-small-screen) {
-        .footer-header {
-            font-size: var(--h3);
-        }
-        .footer-form-box,
-        .footer-email-input {
-            width: 30rem;
-        }
         .footer-form-box {
             border-bottom: none;
         }
