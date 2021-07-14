@@ -87,12 +87,22 @@ a:active { text-decoration: none;  color: var(--black)}
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+
+    @media only screen and (max-width: $large-screen) {
+        -webkit-line-clamp: 5;
+    }
+    @media only screen and (max-width: $mid-screen) {
+        -webkit-line-clamp: 4;
+    }
+    @media only screen and (max-width: $x-small-screen) {
+        -webkit-line-clamp: 4;
+    }
 }
 .card-component-title {
-font-weight: bold;
-font-size: 36px;
-line-height: 40px;
-color: var(--white);
+    font-weight: bold;
+    font-size: 3.6rem;
+    line-height: 4rem;
+    color: var(--white);
 }
 
 </style>
