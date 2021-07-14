@@ -140,3 +140,41 @@ pre {
   height: calc(100% - 0.2rem);
   -webkit-font-smoothing: antialiased;
 }
+
+.global-container {
+  width: $desktop-container;
+  margin: auto;
+  padding: 2rem;
+}
+
+@media only screen and (max-width: $large-screen) {
+  .global-container {
+    width: $large-container;
+    margin: auto;
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: $midlarge-screen) {
+  .global-container {
+    width: $midlarge-container;
+    margin: auto;
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: $mid-screen) {
+  .global-container {
+    width: $mid-container;
+    margin: auto;
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: $small-screen) {
+  .global-container {
+    width: $small-container;
+    margin: auto;
+    padding: 2rem;
+  }
+}

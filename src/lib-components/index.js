@@ -19,4 +19,5 @@ export { default as FooterNav } from "./FooterNav.vue";
 export { default as Footer } from "./Footer.vue";
 export { default as TextBelowArticlePreview } from "./TextBelowArticlePreview.vue";
 export { default as OpinionSlider } from "./OpinionSlider.vue";
+export { default as CardComponent } from "./CardComponent.vue";
 export { default as MobileCategoryArticle } from "./MobileCategoryArticle.vue";
