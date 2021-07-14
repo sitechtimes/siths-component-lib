@@ -27,10 +27,6 @@ export default {
         margin-top: 1.5rem;
     }
     @media only screen and (max-width: $x-small-screen) {
-        .footer-social-media-box {
-            width: 30rem;
-            border-bottom: none;
-        }
     }
 </style>
 

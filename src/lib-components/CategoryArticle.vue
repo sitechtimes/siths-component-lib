@@ -20,7 +20,7 @@ props: ["articleUrl", "imageUrl", "imageAlt", "category", "author", "published",
 }
 </script>
 
-<style>
+<style lang="scss">
     .category-article{
     display: flex;
     flex-direction: row;
@@ -52,6 +52,82 @@ props: ["articleUrl", "imageUrl", "imageAlt", "category", "author", "published",
         margin: auto 0;
         line-height: 2.2rem;
         padding-top: 1rem;
+    }
+    @media only screen and (max-width: $mid-screen) {
+        .category-article{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            margin: auto
+        }
+        .category-article-img{
+            height: 16rem;
+            width: 22rem;
+            border-radius: 1.5rem;
+        }
+        .category-article-img-content{
+            width: 40vw;
+            margin: 0 15rem 0 0;
+        }
+        .category-title{
+            font-size: 2rem;
+            font-weight: 700;
+            width: 45rem;
+            padding-top: 1rem;
+        }
+        .category-article-icon {
+            width: 3rem;
+            padding-right: 1.5rem;
+            height: 3rem;
+        } 
+        .category-article-authdate {
+            margin-left: 7rem;
+            line-height: 2.2rem;
+            padding-top: 1rem;
+        }
+        .category-labels{
+            margin-top: 2rem;
+            display: flex;
+            width: 40rem;
+        }
+    }
+    @media only screen and (max-width: $small-screen) {
+        .category-article{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            margin: auto
+        }
+        .category-article-img{
+            height: 12rem;
+            width: 16.5rem;
+            border-radius: 1.5rem;
+        }
+        .category-article-img-content{
+            width: 40vw;
+            margin: 0 15rem 0 0;
+        }
+        .category-title{
+            font-size: 1.8rem;
+            font-weight: 700;
+            width: 40rem;
+            padding-top: 1rem;
+        }
+        .category-article-icon {
+            width: 3rem;
+            padding-right: 1.5rem;
+            height: 3rem;
+        } 
+        .category-article-authdate {
+            margin-left: 7rem;
+            line-height: 2.2rem;
+            padding-top: 1rem;
+        }
+        .category-labels{
+            margin-top: 2rem;
+            display: flex;
+            width: 40rem;
+        }
     }
 </style>
 

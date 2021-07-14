@@ -16,11 +16,13 @@ import { Datebar } from "@/entry.esm";
 //import TextBelowArticlePreview from "../src/lib-components/TextBelowArticlePreview.vue";
 import { FooterNav } from "@/entry.esm";
 import { Footer } from "@/entry.esm";
-import TextBelowArticlePreview from "../src/lib-components/TextBelowArticlePreview.vue";
+import { TextBelowArticlePreview } from "@/entry.esm";
+import { MobileNav } from "@/entry.esm";
 import { CategoryArticle } from "@/entry.esm";
 import Sidebar from "../src/lib-components/Sidebar.vue";
 import { OpinionSlider } from "@/entry.esm";
 import { CardComponent } from "../src/lib-components";
+import { MobileCategoryArticle } from "@/entry.esm";
 
 export default Vue.extend({
   name: "ServeDev",
@@ -45,8 +47,10 @@ export default Vue.extend({
     Footer,
     Sidebar,
     TextBelowArticlePreview,
+    MobileNav,
     OpinionSlider,
     CardComponent
+    MobileCategoryArticle,
   },
 });
 </script>
@@ -59,6 +63,8 @@ export default Vue.extend({
     articleUrl="https://www.thetravel.com/best-surfing-spots-california/" author="Daniel Briskman" published="Jan 21, 2021" category="sports" imageTitle="A Girl Surfing" title="Girl almost eaten by shark but makes friends with shark and then betrays it and rides it like a surfboard." 
     />
     <Datebar />
+    <Navbar />
+    <div class="global-container">
     <CategoryArticle
       articleUrl="https://theconversation.com/us/topics/rocket-science-195"
       imageUrl="https://i.dailymail.co.uk/1s/2020/01/24/10/23816570-0-image-a-18_1579862990670.jpg"
@@ -75,7 +81,6 @@ export default Vue.extend({
     <SocialMediaIcons />
     <ShareIcon />
     <FooterSocialMedia />
-    <Navbar />
     <!-- <text-below-article-preview articleUrl="https://theconversation.com/us/topics/rocket-science-195" author="Daniel Briskman" published="Jan 31, 2020" category="opinion" imageAlt="Space X Rocket" title="I hate rockets, and this is why you should too" imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNAu-JntINSfv0U6b2Df439C-cXbDOOYRzsj9UuhMwwP290pnObcSbtJHXo93jNBpA5Ys&usqp=CAU"/> -->
     <text-below-article-preview
       articleUrl="https://theconversation.com/us/topics/rocket-science-195"
@@ -102,7 +107,10 @@ export default Vue.extend({
     <author-and-date author="Regular" published="Regular 31, 2020" />
     <category-icon category="entertainment" />
     <Navbar />
+    <MobileNav />
     <OpinionSlider />
+    <MobileCategoryArticle category="entertainment" author="Daniel Briskman" published="July 14, 2021" title="Pokemon Gen 4 Sucks"/>
+    </div>
   </div>
 </template>
 

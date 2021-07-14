@@ -19,15 +19,7 @@ export default {
     border-radius: 3.5rem;
     text-transform: uppercase;
 }
-@media only screen and (max-width: $x-small-screen) {
-  .see-more-btn {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 1.2rem;
-    padding-top: 1.4rem;
-    font-size: 1.2rem;
-  }
-}
+
 </style>
 
 <docs>
