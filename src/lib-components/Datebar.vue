@@ -46,46 +46,54 @@
 }
 .calendar-icon {
   padding-top: 0.5rem;
-}
-@media only screen and (max-width: $small-screen) {
-  .datebar-container {
-    justify-content: flex-start;
-    margin-left: 2rem;
-  }
-}
-.datebar {
-  background-color: var(--accent-color);
-  height: 4rem;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-.datebar-container {
-  width: 120rem;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-.datebar-date {
-  margin: auto 0;
-  padding: 0.3rem;
-  align-content: center;
-  align-items: center;
-  font-size: 2.5rem;
-  line-height: auto;
-}
-.calendar-icon {
-  padding-top: 0.5rem;
   width: 1.5rem;
   height: 2rem;
 }
-@media only screen and (max-width: $small-screen) {
-  .datebar-container {
-    justify-content: flex-start;
-    margin-left: 2rem;
-  }
+@media only screen and (max-width: $large-screen) {
+    .datebar-date {
+        font-size: 2.8rem;
+        line-height: 3rem;
+    }
+    .datebar-container {
+        width: 100rem;
+    }
 }
+@media only screen and (max-width: 950px) {
+    .datebar-container {
+        width: 80rem;
+    }
+}
+@media only screen and (max-width: $mid-screen) {
+    .datebar-container {
+        justify-content: flex-start;
+        margin-left: 2rem;
+    }
+    .datebar-date {
+        font-size: 3.5rem;
+        line-height: 3.2rem;
+    }
+    .calendar-icon {
+    padding-top: 0.6rem;
+    }
+    .datebar-container {
+        width: 60rem;
+    }
+}
+@media only screen and (max-width: $small-screen) {
+    .datebar-container {
+        justify-content: flex-start;
+        margin-left: 2rem;
+    }
+    .datebar-date {
+        font-size: 3.5rem;
+        line-height: 3.2rem;
+    }
+    .calendar-icon {
+        padding-top: 0.6rem;
+    }
+}
+
+
 </style>
 
 <docs>
