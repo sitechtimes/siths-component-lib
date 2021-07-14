@@ -35,6 +35,7 @@ a:hover { text-decoration: none;  color: var(--black)}
 a:active { text-decoration: none;  color: var(--black)}
 
 .card-component{
+    cursor: pointer;
     width: 67.3rem;
     height: 57.8rem;
     border-radius: 15px;
