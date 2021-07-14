@@ -41,7 +41,7 @@ margin-left: 2rem;
   font-weight: 700;
 }
 .entertainment-labels{
-  margin-top: 2rem;
+ margin: 2rem 0 1.7rem 0rem;
 }
 </style>
 
