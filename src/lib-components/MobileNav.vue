@@ -100,7 +100,7 @@ export default {
 
 #nav-icon4 {
   width: 5rem;
-  height: 4rem;
+  height: 5rem;
   position: relative;
   margin-left: 90vw;
   -webkit-transform: rotate(0deg);
@@ -181,11 +181,29 @@ export default {
   left: .8rem;
 }
 
-     @media only screen and (max-width: $mid-screen) {
+    @media only screen and (max-width: $mid-screen) {
         .mobile-nav-box {
           display: block;
         }
     }
+    @media only screen and (max-width: $x-small-screen) {
+        #nav-icon4 span:nth-child(1) {
+          top: 1.25rem;
+        }
+        #nav-icon4 span:nth-child(2) {
+          top: 2.75rem;
+        }
+        #nav-icon4 span:nth-child(3) {
+          top: 4.25rem;
+        }
+        #nav-icon4.open span:nth-child(1) {
+          top: 1rem;
+        }
+        #nav-icon4.open span:nth-child(3) {
+          top: 4.5rem;
+        }
+    }
+    
 </style>
 
 <docs>
