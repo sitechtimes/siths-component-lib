@@ -98,7 +98,6 @@ export default Vue.extend({
     <category-icon-sidebar category="entertainment" />
     <author-and-date-sidebar author="Charley Baluja" published="Jan 31, 2020" />
     </div>
-     <MobileNav />
     <SeeMoreBtn />
     <GetNotifiedSection />
     <SocialMediaIcons />
