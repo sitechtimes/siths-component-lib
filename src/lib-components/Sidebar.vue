@@ -138,6 +138,7 @@ export default {
   font-weight: bold;
 }
 
+
 .example-img {
   border: var(--toggleBorder);
   height: 11.7rem;
