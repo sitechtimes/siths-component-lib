@@ -1,12 +1,12 @@
 <template>
-   <div class="text-below-preview-article">
+   <article class="text-below-preview-article">
        <a :href="articleUrl"><img :href="articleUrl" :src="imageUrl" :alt="imageAlt" class="article-image"></a>
-       <div class="article-info">
+       <header class="article-info">
             <category-icon :category="category" class="article-cat"/>
             <author-and-date :author="author" :published="published" class="article-data" />
-       </div>
+       </header>
        <a :href="articleUrl" class="article-title">{{title}}</a>
-   </div>
+   </article>
 </template>
 
 <script>
@@ -37,6 +37,7 @@ a:active { text-decoration: none;  color: var(--black)}
   flex-direction: column;
   width: 46.1rem;
   height: 37.1rem;
+  vertical-align: middle;
 }
 .article-info {
   display: flex;
@@ -77,6 +78,8 @@ a:active { text-decoration: none;  color: var(--black)}
     width: 37rem;
   }
 }
+
+
 </style>
 
 <docs>
