@@ -4,13 +4,10 @@
 $x-small-screen: /* max-width */ 600px;
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-$small-screen: /* min-width */ 600px;
+$small-screen: /* max-width */ 640px;
 
 /* Medium devices (landscape tablets, 768px and up) */
-$mid-screen: /* min-width */ 768px;
+$mid-screen: /* max-width */ 768px;
 
 /* Large devices (laptops/desktops, 992px and up) */
-$large-screen: /* min-width */ 992px;
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-$x-large-screen: /* min-width */ 1200px;
+$large-screen: /* max-width */ 1280px;
