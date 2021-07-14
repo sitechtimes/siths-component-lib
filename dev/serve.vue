@@ -17,6 +17,7 @@ import { Datebar } from "@/entry.esm";
 import { FooterNav } from "@/entry.esm";
 import { Footer } from "@/entry.esm";
 import TextBelowArticlePreview from "../src/lib-components/TextBelowArticlePreview.vue";
+import { CategoryArticle } from "@/entry.esm";
 import Sidebar from "../src/lib-components/Sidebar.vue";
 import { OpinionSlider } from "@/entry.esm";
 
@@ -36,6 +37,7 @@ export default Vue.extend({
     FooterSocialMedia,
     Datebar,
     TextBelowArticlePreview,
+    CategoryArticle,
     FooterNav,
     AuthorAndDate,
     CategoryIcon,
@@ -52,6 +54,14 @@ export default Vue.extend({
     <!-- <category-icon-sidebar category="opinion" />
     <author-and-date-sidebar author="Charley Baluja" published="Jan 31, 2020" />  -->
     <Datebar />
+    <CategoryArticle
+      articleUrl="https://theconversation.com/us/topics/rocket-science-195"
+      imageUrl="https://i.dailymail.co.uk/1s/2020/01/24/10/23816570-0-image-a-18_1579862990670.jpg"
+      category="opinion"
+      author="Charley Baluja"
+      published="July 12, 2021"
+      title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet."
+    />
     <sidebar-container />
     <category-icon category="opinion"></category-icon>
     <SeeMoreBtn />
