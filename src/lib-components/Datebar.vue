@@ -68,6 +68,8 @@
     }
     .calendar-icon {
         padding-top: 0.5rem;
+        width: 1.5rem;
+        height: 2rem;
     }
     @media only screen and (max-width: $small-screen) {
         .datebar-container {
