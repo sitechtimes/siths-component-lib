@@ -27,15 +27,16 @@ export default {
 
 <style lang="scss">
 #sidebar-article-category {
- text-transform: uppercase;
+  text-transform: uppercase;
   width: max-content;
   //background-color: var(--opinion);
   color: var(--off-white);
   font-size: 0.8rem;
   font-weight: 500;
-  padding: 0.25rem 0.6rem;
   border-radius: 0.6rem;
   margin: 0.3rem 0 0.5rem 0;
+
+  padding: 0.4em 0.6rem 0.2em 0.6rem;
 }
 </style>
 

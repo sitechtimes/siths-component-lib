@@ -27,7 +27,7 @@ export default {
             "social nav"; 
         margin: 0 auto;
         background-color: var(--grey);
-        padding: 3rem;
+        padding: 3rem 15%;
     }
     .form { 
         grid-area: form; 
@@ -38,7 +38,12 @@ export default {
     .nav { 
         grid-area: nav;
     }
-     @media only screen and (max-width: $x-small-screen) {
+    @media only screen and (max-width: $large-screen) {
+        .footer-container {
+            padding: 3rem;
+        }
+    }
+     @media only screen and (max-width: $mid-screen) {
         .footer-container {
             display: flex;
             flex-direction: column;
