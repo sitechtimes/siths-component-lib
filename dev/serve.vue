@@ -20,6 +20,7 @@ import TextBelowArticlePreview from "../src/lib-components/TextBelowArticlePrevi
 import { CategoryArticle } from "@/entry.esm";
 import Sidebar from "../src/lib-components/Sidebar.vue";
 import { OpinionSlider } from "@/entry.esm";
+import { CardComponent } from "../src/lib-components";
 
 export default Vue.extend({
   name: "ServeDev",
@@ -45,6 +46,7 @@ export default Vue.extend({
     Sidebar,
     TextBelowArticlePreview,
     OpinionSlider,
+    CardComponent
   },
 });
 </script>
@@ -53,6 +55,7 @@ export default Vue.extend({
   <div id="app">
     <!-- <category-icon-sidebar category="opinion" />
     <author-and-date-sidebar author="Charley Baluja" published="Jan 31, 2020" />  -->
+    <CardComponent />
     <Datebar />
     <CategoryArticle
       articleUrl="https://theconversation.com/us/topics/rocket-science-195"
