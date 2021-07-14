@@ -30,14 +30,6 @@
   --events: var(--orange);
   --clubs: var(--blue);
   --sports: var(--dark-orange);
-  --news: var(--dark-blue);
-  --politics: var(--pink);
-  --entertainment: var(--red);
-  --opinion: var(--purple);
-  --science: var(--green);
-  --events: var(--orange);
-  --clubs: var(--blue);
-  --sports: var(--dark-orange);
   --hover: var(--lightGray);
   /* font size */
   --font: "Josefin Sans", sans-serif;
@@ -121,26 +113,30 @@ small,
   font-size: var(--small-text);
 }
 
-@media only screen and (max-width: $x-small-screen)  {
+@media only screen and (min-width: $x-large-screen) {
 }
-@media only screen and (min-width: calc($small-screen + 1px)) and (max-width: $mid-screen) {
+
+@media only screen and (max-width: $x-large-screen) {
+  *,
+  html,
+  body {
+    font-size: 44.5%;
+  }
+}
+
+@media only screen and  (max-width: $large-screen) {
+  *,
+  html,
+  body {
+    font-size: 44.5%;
+  }
+}
+
+@media only screen and (max-width: $mid-screen) {
 
 }
-@media only screen and (min-width: calc($mid-screen + 1px)) and (max-width: $large-screen) {
-  *,
-  html,
-  body {
-    font-size: 44.5%;
-  }
-}
-@media only screen and (min-width: calc($large-screen + 1px)) and (max-width: $x-large-screen) {
-  *,
-  html,
-  body {
-    font-size: 44.5%;
-  }
-}
-@media only screen and (min-width: $x-large-screen) {
+
+@media only screen and (max-width: $x-small-screen)  {
 }
 
 //The only reason the code is the right size in styleguide.
