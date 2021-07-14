@@ -50,6 +50,7 @@ export default Vue.extend({
     <!-- <category-icon-sidebar category="opinion" />
     <author-and-date-sidebar author="Charley Baluja" published="Jan 31, 2020" />  -->
     <Datebar />
+    <sidebar-container />
     <category-icon category="opinion"></category-icon>
     <SeeMoreBtn />
     <author-and-date author="Charley Baluja" published="Jan 31, 2020" />
@@ -111,5 +112,28 @@ export default Vue.extend({
   body {
     font-size: 45%;
   }
+@media only screen and (min-width: $x-large-screen) {
+}
+
+@media only screen and (max-width: $x-large-screen) {
+  *,
+  html,
+  body {
+    font-size: 44.5%;
+  }
+}
+
+@media only screen and (max-width: $large-screen) {
+  *,
+  html,
+  body {
+    font-size: 44.5%;
+  }
+}
+
+@media only screen and (max-width: $mid-screen) {
+}
+
+@media only screen and (max-width: $x-small-screen) {
 }
 </style>

@@ -90,6 +90,44 @@ export default {
     margin-left: 2rem;
   }
 }
+.datebar {
+  background-color: var(--accent-color);
+  height: 4rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.datebar-container {
+  width: 120rem;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.datebar-date {
+  margin: auto 0;
+  padding: 0.3rem;
+  align-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  line-height: auto;
+}
+.calendar-icon {
+  padding-top: 0.5rem;
+  width: 1.5rem;
+  height: 2rem;
+}
+@media only screen and (max-width: $small-screen) {
+  .datebar-container {
+    justify-content: flex-start;
+    margin-left: 2rem;
+  }
+}
+@media only screen and (max-width: $x-large-screen) {
+  .datebar-container {
+    width: 60rem;
+  }
+}
 </style>
 
 <docs>

@@ -185,6 +185,6 @@ The Sidebar article is the article found in the sidebar and has an image on one 
 ## Examples:
 
 ```jsx
-<Sidebar author="Daniel Briskman" published="November 42, 2780" title="One Piece is Bad and here's why"/>
+<Sidebar author="Daniel Briskman" published="November 42, 2780" title="One Piece is Bad and here's why" imgUrl="https://dailyillini.com/wp-content/uploads/2021/01/A0122C1B-0C8D-4299-9E5B-2FA8F790C666.jpeg" imgAlt="Sad Man"/>
 ```
 </docs>
