@@ -1,6 +1,6 @@
 <template>
   <div class="sidebar-article">
-    <img :href="articleUrl" :src="imgUrl" :alt="imgAlt" class="sidebar-img"/>
+    <img :href="articleUrl" :src="imgUrl" :alt="imgAlt" class="sidebar-img" />
     <div class="sidebar-article-details">
       <category-icon-sidebar category="opinion"></category-icon-sidebar>
       <a
@@ -47,7 +47,6 @@ export default {
   --toggleBorder: none;
   --centerSquareThumbnail: 50% 50%/100% 100% no-repeat;
 }
-
 
 .temp-img {
   width: 30vw;
@@ -138,12 +137,13 @@ export default {
   font-weight: bold;
 }
 
-
 .example-img {
   border: var(--toggleBorder);
   height: 11.7rem;
   width: 40rem;
 }
+
+/* 968px make it go to teh bottom? */
 
 @media only screen and (max-width: $mid-screen) {
   :root {

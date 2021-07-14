@@ -30,15 +30,6 @@ export default Vue.extend({
 <template>
   <div id="app">
     <sidebar-container />
-    <category-icon category="opinion"></category-icon>
-
-    <author-and-date author="Charley Baluja" published="Jan 31, 2020" />
-
-    <category-icon-sidebar category="opinion" />
-    <author-and-date-sidebar author="Charley Baluja" published="Jan 31, 2020" />
-
-    <author-and-date author="Regular" published="Regular 31, 2020" />
-    <category-icon category="entertainment" />
   </div>
 </template>
 
