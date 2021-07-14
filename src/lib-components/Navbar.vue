@@ -1,13 +1,10 @@
 <template>
     <nav>
         <ul class="home-nav-ul">
-            <a href=""><li class="home-nav-li">NEWS</li></a>
-            <a href=""><li class="home-nav-li">POLITICS</li></a>
-            <a href=""><li class="home-nav-li">ENTERTAINMENT</li></a>
-            <a href=""><li class="home-nav-li">OPINION</li></a>
-            <a href=""><li class="home-nav-li">SCIENCE</li></a>
-            <a href=""><li class="home-nav-li">ACTIVITIES</li></a>
-            <a href=""><li class="home-nav-li">EVENTS</li></a>
+            <a v-for="category in navbar" 
+            :key="category"
+            :href='category.navLink'
+            class="home-nav-li">{{category.navType}}</a>
         </ul>
     </nav>
   
@@ -16,7 +13,21 @@
 <script>
     export default {
     name: 'Navbar', // vue component name
-    };
+    props: [],
+    data () {
+      return {
+        navbar: [
+        {navLink: 'url', navType: 'NEWS'},
+        {navLink: 'url', navType: 'OPINION'},
+        {navLink: 'url', navType: 'POLITICS'},
+        {navLink: 'url', navType: 'ENTERTAINMENT'},
+        {navLink: 'url', navType: 'SCIENCE'},
+        {navLink: 'url', navType: 'ACTIVITIES'},
+        {navLink: 'url', navType: 'EVENTS'} 
+      ]
+    }
+  }
+};
 </script>
 
 
@@ -37,15 +48,15 @@
 </style>
 
 <docs>
-This is my test button
+This is the Navigation Bar - it links to all other pages related to a category
+
+## Variables Used:
+--font
+
 ## Examples
 
-Test Button
-
 ```jsx
-<Button>Sample Secondary </Button>
+<Navbar />
 ```
-
-    
    
 </docs>

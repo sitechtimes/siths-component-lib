@@ -32,7 +32,6 @@ a:link { text-decoration: none; color: var(--black)}
 a:visited { text-decoration: none;  color: var(--black)}
 a:hover { text-decoration: none;  color: var(--black)}
 a:active { text-decoration: none;  color: var(--black)}
-
 .text-below-preview-article {
   display: flex;
   flex-direction: column;
@@ -61,7 +60,6 @@ a:active { text-decoration: none;  color: var(--black)}
 .article-data {
     padding-top: 1rem;
 }
-
 @media only screen and (max-width: $x-small-screen) {
   .article-cat {
     margin-right: 1rem;
@@ -79,39 +77,13 @@ a:active { text-decoration: none;  color: var(--black)}
     width: 37rem;
   }
 }
-
 </style>
 
 <docs>
 This is one of the ways articles on the homepage will be represented (currently Opinion and News).
 
-## Used
-
-This component has a lot of props - a detailed explanation of how to use it is below:
-
-1) AuthorAndDate - the following are inputted into the other component AuthorAndDate
-
-"author": The author of the article being written
-
-"published": The date the article was published
-
-2) CategoryIcon - the following are inputted into the other component CategoryIcon
-
-"category": The category of the article (Opinion, entertainment etc)
-
-3) Unique
-
-"articleUrl": This should be the link to the article being advertized, whatever webpage it is
-
-"imageUrl": All Articles should have an image - this image should be linked here which will put the image ontop of the article for the User
-
-"imageAlt": This is in case the image cannot load: The text inputted will instead appear
-
-"title": The Title of the article which will appear on the bottom in this case.
-
 ## Variables Used:
-
---font: If a them changes the font the font's in this component will change
+--font
 
 ## Examples
 

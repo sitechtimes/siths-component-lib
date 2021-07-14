@@ -1,7 +1,9 @@
 <template>
 <div class="footer-form-box">
-    <h2 class="footer-header">Get Notified</h2>
-    <h3 class="footer-sub-header">Sign up for our newsletter!</h3>
+    <h2 class="footer-header-container">
+        <span class="footer-header">Get Notified</span>
+        <span class="footer-sub-header">Sign up for our newsletter!</span>
+    </h2>
   <form class="footer-form" action="#">
       <fieldset class="footer-form-field">
             <label for="email"></label>
@@ -22,15 +24,19 @@ export default {
 
 <style lang="scss"> 
 @import "../assets/_variables.scss";
-
+    .footer-header-container {
+        display: flex;
+        flex-direction: column;
+    }
     .footer-form-box {
         width: 36rem;
-        margin-left: 18rem;
+        margin: 0 auto;
         padding-bottom: 3.1rem;
         border-bottom: .2rem solid var(--primary-color);
     }
     .footer-header, 
     .footer-sub-header {
+        font-size: var(--h2);
         text-align: center;
         color: var(--accent-color);
         font-weight: 700;
@@ -62,6 +68,7 @@ export default {
     }
     .footer-join-btn {
         position: absolute;
+        height: 100%;
         right: 0;
         font-size: var(--h5);
         font-weight: 700;
@@ -81,22 +88,17 @@ export default {
             width: 30rem;
         }
         .footer-form-box {
-            margin: 0 auto;
             border-bottom: none;
         }
     }
 
 </style>
 
-
 <docs>
 This is the section of the footer with a form that allows the user to subscribe to the newsletter.
 
 ## Variables Used:
---font: Which controls the font of the page. If for whatever reason the font is changed in a theme, it will change here.
---primary-color: If a theme were to change this variable it would also change the color of the button.
-$x-small-screen: A media query breakpoint for extra small devices like phones so that the page is responsive. If this variable is changed, the media query breakpoint will change in all other components. This variable is an SCSS variable because CSS custom properties do not work in media queries.
-
+--font, --primary-color, --accent-color, --h3
 ## Examples
 ```jsx
 <GetNotifiedSection />
