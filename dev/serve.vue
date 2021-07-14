@@ -74,4 +74,33 @@ export default Vue.extend({
   </div>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss">
+
+@media only screen and (min-width: $x-large-screen) {
+}
+
+@media only screen and (max-width: $x-large-screen) {
+  *,
+  html,
+  body {
+    font-size: 44.5%;
+  }
+}
+
+@media only screen and  (max-width: $large-screen) {
+  *,
+  html,
+  body {
+    font-size: 44.5%;
+  }
+}
+
+@media only screen and (max-width: $mid-screen) {
+
+}
+
+@media only screen and (max-width: $x-small-screen)  {
+}
+
+
+</style>
