@@ -51,30 +51,19 @@ export default Vue.extend({
     OpinionSlider,
     CardComponent,
     MobileCategoryArticle,
+    MobileNav,
   },
 });
 </script>
 
 <template>
   <div id="app">
-
-    <!-- <category-icon-sidebar category="opinion" />
-    <author-and-date-sidebar author="Charley Baluja" published="Jan 31, 2020" />  -->
-    <CardComponent
-      articleUrl="https://www.thetravel.com/best-surfing-spots-california/"
-      author="Daniel Briskman"
-      published="Jan 21, 2021"
-      category="sports"
-      imageTitle="A Girl Surfing"
-      title="Girl almost eaten by shark but makes friends with shark and then betrays it and rides it like a surfboard."
-    />
     <Datebar />
     <Navbar />
+    <MobileNav />
     <sidebar-container />
 
     <div class="global-container">
-    <category-icon-sidebar category="opinion" />
-    <author-and-date-sidebar author="Charley Baluja" published="Jan 31, 2020" />
     <OpinionSlider />
     <CategoryArticle
       articleUrl="https://theconversation.com/us/topics/rocket-science-195"
@@ -103,10 +92,12 @@ export default Vue.extend({
       title="Podcasts: Radio, But Less Cool"
     />
     <CardComponent 
-    articleUrl="https://www.thetravel.com/best-surfing-spots-california/" author="Daniel Briskman" published="Jan 21, 2021" category="sports" imageTitle="A Girl Surfing" title="Girl almost eaten by shark but makes friends with shark and then betrays it and rides it like a surfboard." 
-
-    <author-and-date author="Regular" published="Regular 31, 2020" />
+    articleUrl="https://www.thetravel.com/best-surfing-spots-california/" author="Daniel Briskman" published="Jan 21, 2021" category="sports" imageTitle="A Girl Surfing" title="Girl almost eaten by shark but makes friends with shark and then betrays it and rides it like a surfboard." />
     <category-icon category="entertainment" />
+    <author-and-date author="Charley Baluja" published="Jan 31, 2020" />
+    <category-icon-sidebar category="entertainment" />
+    <author-and-date-sidebar author="Charley Baluja" published="Jan 31, 2020" />
+    </div>
      <MobileNav />
     <SeeMoreBtn />
     <GetNotifiedSection />
@@ -114,62 +105,6 @@ export default Vue.extend({
     <ShareIcon />
     <FooterSocialMedia />
     <Footer />
-
-
-      <CategoryArticle
-        articleUrl="https://theconversation.com/us/topics/rocket-science-195"
-        imageUrl="https://i.dailymail.co.uk/1s/2020/01/24/10/23816570-0-image-a-18_1579862990670.jpg"
-        category="opinion"
-        author="Charley Baluja"
-        published="July 12, 2021"
-        title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet."
-      />
-      <sidebar-container />
-      <category-icon category="opinion"></category-icon>
-      <SeeMoreBtn />
-      <author-and-date author="Charley Baluja" published="Jan 31, 2020" />
-      <GetNotifiedSection />
-      <SocialMediaIcons />
-      <ShareIcon />
-      <FooterSocialMedia />
-      <!-- <text-below-article-preview articleUrl="https://theconversation.com/us/topics/rocket-science-195" author="Daniel Briskman" published="Jan 31, 2020" category="opinion" imageAlt="Space X Rocket" title="I hate rockets, and this is why you should too" imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNAu-JntINSfv0U6b2Df439C-cXbDOOYRzsj9UuhMwwP290pnObcSbtJHXo93jNBpA5Ys&usqp=CAU"/> -->
-      <text-below-article-preview
-        articleUrl="https://theconversation.com/us/topics/rocket-science-195"
-        author="Daniel Briskman"
-        published="Jan 31, 2020"
-        category="opinion"
-        imageAlt="Space X Rocket"
-        title="I hate rockets, and this is why you should too"
-        imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNAu-JntINSfv0U6b2Df439C-cXbDOOYRzsj9UuhMwwP290pnObcSbtJHXo93jNBpA5Ys&usqp=CAU"
-      />
-      <FooterNav />
-      <EntertainmentSideArticle
-        articleUrl="https://theconversation.com/us/topics/rocket-science-195"
-        imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNAu-JntINSfv0U6b2Df439C-cXbDOOYRzsj9UuhMwwP290pnObcSbtJHXo93jNBpA5Ys&usqp=CAU"
-        category="entertainment"
-        author="Charley Baluja"
-        published="July 12, 2021"
-        title="Podcasts: Radio, But Less Cool"
-      />
-      <Footer />
-      <category-icon-sidebar category="opinion" />
-      <author-and-date-sidebar
-        author="Charley Baluja"
-        published="Jan 31, 2020"
-      />
-
-      <author-and-date author="Regular" published="Regular 31, 2020" />
-      <category-icon category="entertainment" />
-      <Navbar />
-      <MobileNav />
-      <OpinionSlider />
-      <MobileCategoryArticle
-        category="entertainment"
-        author="Daniel Briskman"
-        published="July 14, 2021"
-        title="Pokemon Gen 4 Sucks"
-      />
-    </div>
   </div>
 </template>
 
