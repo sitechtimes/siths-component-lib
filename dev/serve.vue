@@ -62,7 +62,6 @@ export default Vue.extend({
     <FooterSocialMedia />
     <Navbar />
     <!-- <text-below-article-preview articleUrl="https://theconversation.com/us/topics/rocket-science-195" author="Daniel Briskman" published="Jan 31, 2020" category="opinion" imageAlt="Space X Rocket" title="I hate rockets, and this is why you should too" imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNAu-JntINSfv0U6b2Df439C-cXbDOOYRzsj9UuhMwwP290pnObcSbtJHXo93jNBpA5Ys&usqp=CAU"/> -->
-    <Datebar />
     <text-below-article-preview
       articleUrl="https://theconversation.com/us/topics/rocket-science-195"
       author="Daniel Briskman"
