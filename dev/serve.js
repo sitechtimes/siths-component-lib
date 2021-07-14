@@ -15,10 +15,6 @@ library.add(faCalendar);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.config.productionTip = false;
 
-import moment from "moment";
-
-Vue.prototype.moment = moment;
-
 // To register individual components where they are used (serve.vue) instead of using the
 // library as a whole, comment/remove this import and it's corresponding "Vue.use" call
 import SithsComponentLib from "@/entry.esm";
@@ -32,6 +28,9 @@ library.add(faFacebook);
 library.add(faShare);
 // library.add(faBars);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
+
+import { createDateFilter } from "vue-date-fns";
+Vue.filter("date", createDateFilter("LLLL do, yyyy"));
 
 new Vue({
   render: (h) => h(Dev),

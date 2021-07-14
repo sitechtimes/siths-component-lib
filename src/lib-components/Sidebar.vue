@@ -1,9 +1,14 @@
 <template>
   <div class="sidebar-article">
-    <a :href="articleUrl" target="_blank" rel="noopener noreferrer"><span class="sidebar-img" /></a>
+    <img :href="articleUrl" :src="imgUrl" :alt="imgAlt" class="sidebar-img"/>
     <div class="sidebar-article-details">
       <category-icon-sidebar category="opinion"></category-icon-sidebar>
-      <a :href='articleUrl' target="_blank" rel="noopener noreferrer" id="sidebar-article-details-title">
+      <a
+        :href="articleUrl"
+        target="_blank"
+        rel="noopener noreferrer"
+        id="sidebar-article-details-title"
+      >
         {{ title }}
       </a>
       <author-and-date-sidebar
@@ -27,6 +32,7 @@ export default {
     published: String,
     title: String,
     imgUrl: String,
+    imgAlt: String,
     articleUrl: String,
   },
 };
@@ -42,20 +48,6 @@ export default {
   --centerSquareThumbnail: 50% 50%/100% 100% no-repeat;
 }
 
-*,
-html,
-body {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-size: 62.5%;
-
-  font-family: var(--font);
-}
-
-/* p {
-  font-size: 1.6rem;
-} */
 
 .temp-img {
   width: 30vw;
@@ -84,7 +76,7 @@ body {
   border: 1px solid black;
 } */
 .sidebar-img {
-  background: url("../assets/temp image.jpg") var(--centerSquareThumbnail); /* 50% 50% centers image in div */
+  //background: url("../assets/temp image.jpg") var(--centerSquareThumbnail); /* 50% 50% centers image in div */
   height: var(--sidebarImgWidth);
   width: var(--sidebarImgWidth);
   border-radius: 1rem;
@@ -146,11 +138,7 @@ body {
   font-weight: bold;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
+
 .example-img {
   border: var(--toggleBorder);
   height: 11.7rem;
@@ -158,33 +146,46 @@ body {
 }
 
 @media only screen and (max-width: $mid-screen) {
-:root {
-  --sidebarArticleWidth: 100vw;
-  --sidebarSidePadding: 15vw;
-}
-.sidebar-container {
-  max-width: none;
-  border: none;
-}
-.sidebar-article {
-  max-width: none;
-  padding: 2.5rem var(--sidebarSidePadding);
-}
-.sidebar-article-details {
-  max-width: none;
-}
+  :root {
+    --sidebarArticleWidth: 100vw;
+    --sidebarSidePadding: 15vw;
+  }
+  .sidebar-container {
+    max-width: none;
+    border: none;
+  }
+  .sidebar-article {
+    max-width: none;
+    padding: 2.5rem var(--sidebarSidePadding);
+  }
+  .sidebar-article-details {
+    max-width: none;
+  }
 }
 
 @media only screen and (max-width: 450px) {
-:root {
-  --sidebarSidePadding: 12vw;
-}
+  :root {
+    --sidebarSidePadding: 12vw;
+  }
 }
 @media only screen and (max-width: 380px) {
-:root {
-  --sidebarSidePadding: 8vw;
-}
+  :root {
+    --sidebarSidePadding: 8vw;
+  }
 }
 </style>
 
 /* Ripple effect on click? */
+
+<docs>
+The Sidebar article is the article found in the sidebar and has an image on one side and the article's info on the other
+
+## Variables Used:
+--sidebarSidePadding, --sidebarArticleWidth, --sidebarSidePadding, --toggleBorder, --sidebarDetailsPaddingLeft, --sidebarImgWidth, --centerSquareThumbnail, --
+
+## Examples:
+
+```jsx
+<Sidebar author="Daniel Briskman" published="November 42, 2780" title="One Piece is Bad and here's why" imgUrl="https://dailyillini.com/wp-content/uploads/2021/01/A0122C1B-0C8D-4299-9E5B-2FA8F790C666.jpeg" imgAlt="Sad Man"/>
+```
+</docs>

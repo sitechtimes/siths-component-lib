@@ -1,12 +1,12 @@
 <template>
   <div>
-    <p
+    <h5
       :style="backgroundColor"
       class="sidebar-article-details-category"
       id="sidebar-article-category"
     >
       {{ category }}
-    </p>
+    </h5>
   </div>
 </template>
 
@@ -26,17 +26,6 @@ export default {
 </script>
 
 <style lang="scss">
-*,
-html,
-body {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-size: 62.5%;
-
-  font-family: var(--font);
-}
-
 #sidebar-article-category {
  text-transform: uppercase;
   width: max-content;
@@ -51,32 +40,18 @@ body {
 </style>
 
 <docs>
-The Category Icon takes the category as aa prop and returns a unique button/tag with a unique color that can be used for each individual category.
+This component is the same as above, with different width and height
 
 ## Variables Used:
---font: Which controls the font of the page. If for whatever reason the font is changed in a theme, it will change here.
-
---off-white: A colour.
+--font, --off-white
 
 ## Examples
 
 Category Icons
 
 ```jsx
-<category-icon category="opinion"></category-icon>
-```
-
-```jsx
-<category-icon category="entertainment"></category-icon>
-```
-
-```jsx
-<category-icon category="sports"></category-icon>
-```
-
-```jsx
-<category-icon category="sports"></category-icon>
-<category-icon category="entertainment"></category-icon>
+<CategoryIconSidebar category="sports"/>
+<CategoryIconSidebar category="entertainment"/>
 ```
 
 

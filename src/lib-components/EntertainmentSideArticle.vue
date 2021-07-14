@@ -1,5 +1,5 @@
 <template>
-  <div class="entertainment-side">
+  <article class="entertainment-side">
     <div class="entertainment-img-div">
     <a :href="articleUrl"><img :href="articleUrl" :src="imageUrl" :alt="imageAlt" class="entertainment-side-img"></a>
     </div>
@@ -10,7 +10,7 @@
        </div>
        <h3 class="entertainment-title">{{title}}</h3>
        </div>
-  </div>
+  </article>
 </template>
 
 <script>
@@ -41,12 +41,17 @@ margin-left: 2rem;
   font-weight: 700;
 }
 .entertainment-labels{
-  margin-top: 2rem;
+ margin: 2rem 0 1.7rem 0rem;
 }
 </style>
 
 <docs>
 This component is used in the entertainment category. It is one of the two side articles on the side of the main entertainment article picture. 
+
+## Variables Used
+N/A
+
+## Examples
 
 ```jsx
   <EntertainmentSideArticle articleUrl="https://theconversation.com/us/topics/rocket-science-195" imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNAu-JntINSfv0U6b2Df439C-cXbDOOYRzsj9UuhMwwP290pnObcSbtJHXo93jNBpA5Ys&usqp=CAU" category="entertainment" author="Charley Baluja" published="July 12, 2021" title="Podcasts: Radio, But Less Cool"/>

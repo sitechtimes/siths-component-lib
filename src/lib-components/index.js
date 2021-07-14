@@ -13,8 +13,10 @@ export { default as EntertainmentSideArticle } from "./EntertainmentSideArticle.
 export { default as FooterSocialMedia } from "./FooterSocialMedia.vue";
 export { default as Navbar } from "./Navbar.vue";
 export { default as Datebar } from "./Datebar.vue";
-export { default as FooterNav } from './FooterNav.vue';
-export { default as Footer } from './Footer.vue';
-export { default as TextBelowArticlePreview} from './TextBelowArticlePreview.vue';
 export { default as MobileNav } from './MobileNav.vue';
+export { default as CategoryArticle } from "./CategoryArticle.vue";
+export { default as FooterNav } from "./FooterNav.vue";
+export { default as Footer } from "./Footer.vue";
+export { default as TextBelowArticlePreview } from "./TextBelowArticlePreview.vue";
+export { default as OpinionSlider } from "./OpinionSlider.vue";
 

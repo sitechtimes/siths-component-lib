@@ -1,7 +1,9 @@
 <template>
 <div class="footer-form-box">
-    <h2 class="footer-header">Get Notified</h2>
-    <h3 class="footer-sub-header">Sign up for our newsletter!</h3>
+    <h2 class="footer-header-container">
+        <span class="footer-header">Get Notified</span>
+        <span class="footer-sub-header">Sign up for our newsletter!</span>
+    </h2>
   <form class="footer-form" action="#">
       <fieldset class="footer-form-field">
             <label for="email"></label>
@@ -22,7 +24,10 @@ export default {
 
 <style lang="scss"> 
 @import "../assets/_variables.scss";
-
+    .footer-header-container {
+        display: flex;
+        flex-direction: column;
+    }
     .footer-form-box {
         width: 36rem;
         margin: 0 auto;
@@ -31,6 +36,7 @@ export default {
     }
     .footer-header, 
     .footer-sub-header {
+        font-size: var(--h2);
         text-align: center;
         color: var(--accent-color);
         font-weight: 700;
