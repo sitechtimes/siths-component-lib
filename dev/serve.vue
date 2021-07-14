@@ -55,7 +55,9 @@ export default Vue.extend({
   <div id="app">
     <!-- <category-icon-sidebar category="opinion" />
     <author-and-date-sidebar author="Charley Baluja" published="Jan 31, 2020" />  -->
-    <CardComponent />
+    <CardComponent 
+    articleUrl="https://www.thetravel.com/best-surfing-spots-california/" author="Daniel Briskman" published="Jan 21, 2021" category="sports" imageTitle="A Girl Surfing" title="Girl almost eaten by shark but makes friends with shark and then betrays it and rides it like a surfboard." 
+    />
     <Datebar />
     <CategoryArticle
       articleUrl="https://theconversation.com/us/topics/rocket-science-195"
