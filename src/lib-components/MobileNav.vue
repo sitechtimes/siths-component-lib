@@ -1,14 +1,14 @@
 <template>
     <!-- <font-awesome-icon class="mobile-nav-icon" :icon="['fas', 'bars']" />
   <FooterNav class="mobile-nav"/> -->
-<div>
-    <div id="nav-icon4" :class="spanClass" v-on:click="changeMenu()">
+<div class="mobile-nav-box" :style="backgroundColor">
+    <div id="nav-icon4" :class="spanClass" v-on:click="navFunction()">
         <span></span>
         <span></span>
         <span></span>
     </div>
 
-<div class="mobile-nav">
+<div class="mobile-nav" v-show="show">
         <ul class="mobile-nav-ul">
             <a href=""><li class="mobile-nav-li">News</li></a>
             <a href=""><li class="mobile-nav-li">Politics</li></a>
@@ -29,7 +29,14 @@ export default {
     data() {
         return {
             spanClass: "",
+            show: false,
+            bgColor: "",
         }
+    },
+    computed: {
+      backgroundColor: function () {
+      return "background-color: " + this.bgColor;
+    },
     },
     methods: {
         changeMenu: function() {
@@ -39,21 +46,53 @@ export default {
                 this.spanClass = "";
             }
 
+        }, 
+        openNav: function() {
+          this.show = !this.show;
         },
+        toggleBackground: function() {
+          if (this.bgColor === "") {
+            this.bgColor = "var(--primary-color)";
+          } else {
+            this.bgColor = "";
+          }
+        },
+        navFunction: function() {
+          this.toggleBackground();
+          this.openNav();
+          this.changeMenu();
+        }
     }
 }
 
 </script>
 
 <style lang="scss">
- 
+
+ .mobile-nav {
+   width: 100vw;
+   height: 100vh;
+   background-color: var(--primary-color);
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+ }
+ .mobile-nav li {
+   list-style: none;
+   font-size: 3rem;
+   margin: 5vh;
+   color: var(--white);
+ }
 /* Icon 4 */
 
 #nav-icon4 {
-  width: 6rem;
-  height: 4.5rem;
+  z-index: 1;
+  width: 3.5rem;
+  height: 2.5rem;
   position: relative;
   margin: 5rem auto;
+  margin-left: 90vw;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -67,7 +106,7 @@ export default {
 #nav-icon4 span {
   display: block;
   position: absolute;
-  height: .6rem;
+  height: .4rem;
   width: 100%;
   background: var(--primary-color);
   border-radius: 1rem;
@@ -92,7 +131,7 @@ export default {
 }
 
 #nav-icon4 span:nth-child(2) {
-  top: 1.5rem;
+  top: 1rem;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
@@ -100,7 +139,7 @@ export default {
 }
 
 #nav-icon4 span:nth-child(3) {
-  top: 3rem;
+  top: 2rem;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
@@ -108,12 +147,11 @@ export default {
 }
 
 #nav-icon4.open span:nth-child(1) {
-  background: var(--white);
+  background: var(--black);
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
-  top: -.3rem;
   left: .8rem;
 }
 
@@ -123,12 +161,12 @@ export default {
 }
 
 #nav-icon4.open span:nth-child(3) {
-  background: var(--white);
+  background: var(--black);
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  top: 3.9rem;
+  top: 2.5rem;
   left: .8rem;
 }
 
