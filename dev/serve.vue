@@ -21,6 +21,7 @@ import { MobileNav } from "@/entry.esm";
 import { CategoryArticle } from "@/entry.esm";
 import Sidebar from "../src/lib-components/Sidebar.vue";
 import { OpinionSlider } from "@/entry.esm";
+import { CardComponent } from "../src/lib-components";
 import { MobileCategoryArticle } from "@/entry.esm";
 
 export default Vue.extend({
@@ -48,6 +49,7 @@ export default Vue.extend({
     TextBelowArticlePreview,
     MobileNav,
     OpinionSlider,
+    CardComponent
     MobileCategoryArticle,
   },
 });
@@ -57,6 +59,9 @@ export default Vue.extend({
   <div id="app">
     <!-- <category-icon-sidebar category="opinion" />
     <author-and-date-sidebar author="Charley Baluja" published="Jan 31, 2020" />  -->
+    <CardComponent 
+    articleUrl="https://www.thetravel.com/best-surfing-spots-california/" author="Daniel Briskman" published="Jan 21, 2021" category="sports" imageTitle="A Girl Surfing" title="Girl almost eaten by shark but makes friends with shark and then betrays it and rides it like a surfboard." 
+    />
     <Datebar />
     <Navbar />
     <div class="global-container">
