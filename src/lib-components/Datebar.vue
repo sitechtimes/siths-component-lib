@@ -123,11 +123,6 @@ export default {
     margin-left: 2rem;
   }
 }
-@media only screen and (max-width: $x-large-screen) {
-  .datebar-container {
-    width: 60rem;
-  }
-}
 </style>
 
 <docs>
