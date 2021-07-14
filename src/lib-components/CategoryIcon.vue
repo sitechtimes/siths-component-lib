@@ -32,10 +32,10 @@ export default {
   //background-color: var(--opinion);
   color: var(--off-white);
   font-weight: 500;
-  padding: 0.6rem 1rem;
+  padding: 0.3rem 1rem;
   padding-top: 0.9rem;
   border-radius: 0.8rem;
-  margin: 0.6rem 0 0.6rem 0;
+  margin: 0.3rem 0 0.3rem 0;
 }
 </style>
 
