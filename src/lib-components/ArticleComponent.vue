@@ -1,26 +1,30 @@
 <template>
   <div id="article-component">
     <category-icon category="entertainment" />
-    <h2 class="article-title">{{ title }}</h2>
-    <p class="article-description">{{ description }}</p>
-    <img class="article-main-img" src="../assets/article temp img.jpg" alt="" />
-    <section class="article-metadata">
+    <h2 class="main-article-title">{{ title }}</h2>
+    <p class="main-article-description">{{ description }}</p>
+    <img
+      class="main-article-img"
+      src="../assets/big article temp img.jpg"
+      alt=""
+    />
+    <section class="main-article-metadata">
       <author-and-date
         class="article-author-and-date"
         author="Michael Whalen"
         published="Feb 1, 2021"
       />
-      <div class="article-metadata-actions">
+      <div class="main-article-metadata-actions">
         <social-media-icons />
         <share-icon />
       </div>
     </section>
     <section
-      class="article-text-section"
+      class="main-article-text-section"
       v-for="paragraph in articleText"
       :key="paragraph"
     >
-      <p class="article-text">{{ paragraph }}</p>
+      <p class="main-article-text">{{ paragraph }}</p>
     </section>
   </div>
 </template>
@@ -58,34 +62,35 @@ export default {
 </script>
 
 <style lang="scss">
-.article-title {
+.main-article-title {
   margin: 2rem auto;
+  font-weight: 600;
 }
-.article-description,
-.article-text {
-  font-size: var(--paragraph-text);
+.main-article-description,
+.main-article-text {
+  font-size: 1.8rem;
 }
-.article-description {
+.main-article-description {
   font-style: italic;
-  font-size: var(--article-description);
+  font-size: 2.2rem;
   margin: 2rem auto;
 }
 
-.article-main-img {
+.main-article-img {
   width: 100%;
   height: auto;
 }
 
-.article-metadata {
+.main-article-metadata {
   display: flex;
   justify-content: space-between;
   margin: 4rem auto;
   flex-wrap: wrap;
 }
-.article-author-and-date {
+.main-article-author-and-date {
   margin-bottom: 2rem;
 }
-.article-metadata-actions {
+.main-article-metadata-actions {
   display: flex;
 }
 </style>
