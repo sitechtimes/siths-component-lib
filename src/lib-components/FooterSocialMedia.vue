@@ -14,7 +14,8 @@ export default {
 }
 </script>
 
-<style lang="scss"> 
+<style lang="scss">
+@import '../assets/variables';
     .footer-sm-header {
         font-size: var(--h3);
     }

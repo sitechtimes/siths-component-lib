@@ -7,8 +7,7 @@
         <span></span>
         <span></span>
     </div>
-
-<div class="mobile-nav" v-show="show">
+<div class="mobile-nav" v-if="show">
         <ul class="mobile-nav-ul">
             <a href=""><li class="mobile-nav-li">News</li></a>
             <a href=""><li class="mobile-nav-li">Politics</li></a>
@@ -69,11 +68,16 @@ export default {
 
 <style lang="scss">
 
+@import '../assets/variables';
 .mobile-nav-box {
   display: none;
   padding-top: 5vh;
   width: 100vw;
+  max-height: 100vh;
   overflow: hidden;
+  z-index: 1;
+  position: fixed;
+  top: 0;
 }
  .mobile-nav {
    width: 100vw;
@@ -84,9 +88,12 @@ export default {
    justify-content: center;
    align-items: center;
  }
+ .mobile-nav-ul {
+   margin-bottom: 10vh;
+ }
  .mobile-nav li {
    list-style: none;
-   font-size: 4rem;
+   font-size: 3.5rem;
    margin: 4vh;
    color: var(--white);
    transition: all .3s;
@@ -100,7 +107,8 @@ export default {
 
 #nav-icon4 {
   width: 5rem;
-  height: 5rem;
+  height: 7vh;
+  padding: 2rem;
   position: relative;
   margin-left: 90vw;
   -webkit-transform: rotate(0deg);

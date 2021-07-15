@@ -21,6 +21,7 @@ props: ["articleUrl", "imageUrl", "imageAlt", "category", "author", "published",
 </script>
 
 <style lang="scss">
+@import '../assets/variables';
     .category-article{
     display: flex;
     flex-direction: row;

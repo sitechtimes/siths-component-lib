@@ -26,6 +26,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../assets/variables';
 #article-category {
   text-transform: uppercase;
   width: max-content;

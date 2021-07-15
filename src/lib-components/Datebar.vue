@@ -22,6 +22,7 @@
 
 
 <style lang="scss">
+@import '../assets/variables';
 .datebar {
   background-color: var(--accent-color);
   height: 4rem;

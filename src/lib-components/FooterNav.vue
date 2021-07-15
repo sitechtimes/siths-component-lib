@@ -22,6 +22,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../assets/variables';
     .footer-nav-header {
         font-size: var(--h3);
     }

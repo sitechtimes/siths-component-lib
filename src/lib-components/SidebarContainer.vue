@@ -91,6 +91,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../assets/variables';
 .sidebar-container {
   border-left: 2px solid #d9b75e;
   max-width: 50rem;

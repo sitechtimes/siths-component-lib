@@ -1,10 +1,10 @@
 <template>
    <article class="text-below-preview-article">
        <a :href="articleUrl"><img :href="articleUrl" :src="imageUrl" :alt="imageAlt" class="article-image"></a>
-       <header class="article-info">
+       <h5 class="article-info">
             <category-icon :category="category" class="article-cat"/>
             <author-and-date :author="author" :published="published" class="article-data" />
-       </header>
+       </h5>
        <a :href="articleUrl" class="article-title">{{title}}</a>
    </article>
 </template>
@@ -19,6 +19,8 @@ export default {
 </script>
 
 <style lang="scss">
+
+@import '../assets/variables';
 *,
 html,
 body {
