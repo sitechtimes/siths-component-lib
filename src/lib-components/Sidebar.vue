@@ -39,6 +39,8 @@ export default {
 </script>
 
 <style lang="scss">
+
+@import '../assets/variables';
 :root {
   --sidebarArticleWidth: 30vw;
   --sidebarImgWidth: 9rem;

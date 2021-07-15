@@ -68,6 +68,7 @@ export default {
 
 <style lang="scss">
 
+@import '../assets/variables';
 .mobile-nav-box {
   display: none;
   padding-top: 5vh;
