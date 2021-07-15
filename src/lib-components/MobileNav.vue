@@ -2,11 +2,12 @@
     <!-- <font-awesome-icon class="mobile-nav-icon" :icon="['fas', 'bars']" />
   <FooterNav class="mobile-nav"/> -->
 <div class="mobile-nav-box" :style="backgroundColor">
+  
     <div id="nav-icon4" :class="spanClass" v-on:click="navFunction()">
         <span></span>
         <span></span>
         <span></span>
-    </div>
+  </div>
 <div class="mobile-nav" v-if="show">
         <ul class="mobile-nav-ul">
             <a href=""><li class="mobile-nav-li">News</li></a>
@@ -104,13 +105,12 @@ export default {
    border-radius: 5rem;
  }
 /* Icon 4 */
-
 #nav-icon4 {
   width: 5rem;
   height: 7vh;
   padding: 2rem;
   position: relative;
-  margin-left: 90vw;
+  margin-left: 87vw;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
