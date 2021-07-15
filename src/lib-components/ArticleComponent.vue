@@ -3,7 +3,11 @@
     <category-icon category="entertainment" />
     <h2 class="article-title">{{ title }}</h2>
     <p class="article-description">{{ description }}</p>
-    <img class="article-main-img" src="../assets/article temp img.jpg" alt="" />
+    <img
+      class="article-main-img"
+      src="../assets/big article temp img.jpg"
+      alt=""
+    />
     <section class="article-metadata">
       <author-and-date
         class="article-author-and-date"
