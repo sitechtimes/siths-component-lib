@@ -4,7 +4,7 @@
             <a v-for="category in navbar" 
             :key="category"
             :href='category.navLink'
-            class="home-nav-li"><h4>{{category.navType}}</h4></a>
+            class="home-nav-li"><li>{{category.navType}}</li></a>
         </ul>
     </nav>
   
@@ -39,11 +39,18 @@
     .home-nav-li {
         font-family: var(--font);
         display: inline;
-        padding: 5rem;
+        //width: calc(100% / 7 + 2rem);
+        list-style-type: none;
+        font-size: var(--h4);
     }
     .home-nav-ul {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        padding-left: 10%;
+        padding-right: 10%;
         width: 100%;
     }
 </style>
