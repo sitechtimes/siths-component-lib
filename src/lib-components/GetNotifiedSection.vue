@@ -5,13 +5,11 @@
         <span class="footer-sub-header">Sign up for our newsletter!</span>
     </h2>
   <form class="footer-form" action="#">
-      <fieldset class="footer-form-field">
             <label for="email"></label>
             <div class="footer-inputs">
                 <input class="footer-email-input" type="text" for="email" placeholder="Email" name="mail" required>
                 <input class="footer-join-btn" type="submit" value="Join">
             </div>
-      </fieldset>
   </form>
 </div>
 </template>
@@ -44,7 +42,7 @@ export default {
     .footer-sub-header {
         font-size: var(--h5);
     }
-    .footer-form-field {
+    .footer-form {
         display: flex;
         justify-content: center;
         border: none;
