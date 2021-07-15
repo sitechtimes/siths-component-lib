@@ -14,12 +14,4 @@ Screen Size
 
 Containers
 
-\$desktop-container: 120rem;
-
-\$large-container: 100rem;
-
-\$midlarge-container: 80rem;
-
-\$mid-container: 60rem;
-
-\$small-container: 30rem;
+\$container: 1200px;

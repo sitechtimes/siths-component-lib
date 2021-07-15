@@ -142,12 +142,12 @@ pre {
 }
 
 .global-container {
-  width: $desktop-container;
+  max-width: $container;
   margin: auto;
   padding: 2rem;
 }
 
-@media only screen and (max-width: $large-screen) {
+/* @media only screen and (max-width: $large-screen) {
   .global-container {
     width: $large-container;
     margin: auto;
@@ -177,4 +177,4 @@ pre {
     margin: auto;
     padding: 2rem;
   }
-}
+} */
