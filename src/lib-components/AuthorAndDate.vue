@@ -15,6 +15,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../assets/variables';
 .article-details-author-date {
   display: flex;
 }

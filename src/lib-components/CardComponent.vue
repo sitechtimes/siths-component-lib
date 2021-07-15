@@ -19,6 +19,7 @@ export default ({
 
 <style lang="scss">
 
+@import '../assets/variables';
 a:link { text-decoration: none; color: var(--black)}
 a:visited { text-decoration: none;  color: var(--black)}
 a:hover { text-decoration: none;  color: var(--black)}

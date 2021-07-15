@@ -55,6 +55,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../assets/variables';
 .sidebar-article-details-author-date {
   display: flex;
   //flex-direction: column;

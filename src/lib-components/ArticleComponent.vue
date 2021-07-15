@@ -58,6 +58,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../assets/variables';
 .article-title {
   margin: 2rem auto;
 }
