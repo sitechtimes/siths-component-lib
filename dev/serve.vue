@@ -23,6 +23,7 @@ import Sidebar from "../src/lib-components/Sidebar.vue";
 import { OpinionSlider } from "@/entry.esm";
 import { CardComponent } from "../src/lib-components";
 import { MobileCategoryArticle } from "@/entry.esm";
+import ArticleComponent from "../src/lib-components/ArticleComponent.vue";
 
 export default Vue.extend({
   name: "ServeDev",
@@ -51,6 +52,7 @@ export default Vue.extend({
     OpinionSlider,
     CardComponent,
     MobileCategoryArticle,
+    ArticleComponent,
     MobileNav,
   },
 });
@@ -62,8 +64,8 @@ export default Vue.extend({
     <Navbar />
     <MobileNav />
     <sidebar-container />
-
     <div class="global-container">
+    <article-component />
     <OpinionSlider />
     <CategoryArticle
       articleUrl="https://theconversation.com/us/topics/rocket-science-195"
