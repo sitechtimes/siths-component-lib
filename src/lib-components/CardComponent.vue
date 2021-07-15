@@ -18,16 +18,7 @@ export default ({
 </script>
 
 <style lang="scss">
-@import '../assets/variables';
-	*,
-html,
-body {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-size: 62.5%;
-  font-family: var(--font);
-}
+
 a:link { text-decoration: none; color: var(--black)}
 a:visited { text-decoration: none;  color: var(--black)}
 a:hover { text-decoration: none;  color: var(--black)}
@@ -40,9 +31,9 @@ a:active { text-decoration: none;  color: var(--black)}
     position: relative;
 }
 .card-component-image {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(132, 132, 132, 0.29) 54.17%, rgba(0, 0, 0, 0.5) 65.1%),  url("../assets/card-comp-tempimg.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
+    background: var(--greyToBlack) ,  url("../assets/card-comp-tempimg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .flex-col {
     display: flex;
