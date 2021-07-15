@@ -1,9 +1,17 @@
 Variables used by Media Queries to determine when to change the page to match the device being used
 
-$x-small-screen: 600px;
+Screen Size
 
-$small-screen: 640px;
+\$x-small-screen: 600px;
 
-$mid-screen: 768px;
+\$small-screen: 640px;
 
-$large-screen: 1280px;
+\$mid-screen: 768px;
+
+\$midlarge-screen: 950px;
+
+\$large-screen: 1280px;
+
+Containers
+
+\$container: 1200px;
