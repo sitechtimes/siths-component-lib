@@ -35,3 +35,13 @@ props: ["category", "author", "published", "title"]
   font-weight: 700;
 }
 </style>
+
+<docs>
+This is what the articles on the individual category pages will look like. There is no picture for this component, only a label, author, date, and title. 
+## Variables Used:
+--primary-color
+## Examples
+```jsx
+ <MobileCategoryArticle category="entertainment" author="Daniel Briskman" published="July 14, 2021" title="Pokemon Gen 4 Sucks"/>
+```
+</docs>
