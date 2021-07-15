@@ -1,0 +1,1 @@
+The project was designed with a full team of: Charlie Baluja, Daniel Briskman, Ethan Liang, Carol Lian, Alston Chan, Melvin Aziz, and Edis Gonuler from Staten Island Technical Highschool. All work done here is courtesy of these team members.

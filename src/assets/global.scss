@@ -1,10 +1,14 @@
+@import "../assets/variables";
+
 :root {
-  //colors
+  /* colors */
   --gold: #d9b75e;
   --light-gold: #fff3d2;
   --off-white: #fffaf4;
+  --white: #ffffff;
   --black: #000;
   --grey: #374151;
+  --lightGray: #ececec;
   --red: #dc2626;
   --orange: #f59e0b;
   --dark-orange: #b45309;
@@ -14,7 +18,7 @@
   --indigo: #312e81;
   --purple: #5b21b6;
   --pink: #ec4899;
-  //intentions
+  /* intentions */
   --primary-color: var(--gold);
   --accent-color: var(--light-gold);
   --calendar-band: var(--off-white);
@@ -26,7 +30,8 @@
   --events: var(--orange);
   --clubs: var(--blue);
   --sports: var(--dark-orange);
-  //font size
+  --hover: var(--lightGray);
+  /* font size */
   --font: "Josefin Sans", sans-serif;
   --h1: 5.653rem;
   --h2: 3.998rem;
@@ -34,7 +39,7 @@
   --h4: 1.999rem;
   --h5: 1.414rem;
   --small-text: 0.707rem;
-  //boxshadows
+  /* boxshadows */
   --level-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --level-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -44,14 +49,28 @@
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
-@import 'https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap';
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap");
+
+*,
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
 
 body {
-  background: white;
+  background: var(--white);
   font-family: var(--font);
   font-weight: 400;
   line-height: 1.75;
-  color: #000000;
+  color: var(--black);
 }
 
 p {
@@ -63,9 +82,8 @@ h2,
 h3,
 h4,
 h5 {
-  margin: 3rem 0 1.38rem;
   font-family: var(--font);
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.3;
 }
 
@@ -93,4 +111,70 @@ h5 {
 small,
 .text_small {
   font-size: var(--small-text);
+}
+
+//The only reason the code is the right size in styleguide.
+.prism-editor > textarea {
+  font-size: 1.5rem;
+  border-radius: 0.3rem;
+  border-bottom: 1rem;
+  border-top: 1rem;
+  border-left: 1rem;
+  border-right: 1rem;
+  //width: calc(100% + 0.2rem);
+}
+.prism-editor {
+  font-family: var(--font);
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.token {
+  font-size: 1.5rem;
+  width: 100%;
+  margin-left: 0.01%;
+}
+
+pre {
+  width: calc(100% - 0.2rem);
+  height: calc(100% - 0.2rem);
+  -webkit-font-smoothing: antialiased;
+}
+
+.global-container {
+  width: $desktop-container;
+  margin: auto;
+  padding: 2rem;
+}
+
+@media only screen and (max-width: $large-screen) {
+  .global-container {
+    width: $large-container;
+    margin: auto;
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: $midlarge-screen) {
+  .global-container {
+    width: $midlarge-container;
+    margin: auto;
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: $mid-screen) {
+  .global-container {
+    width: $mid-container;
+    margin: auto;
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: $small-screen) {
+  .global-container {
+    width: $small-container;
+    margin: auto;
+    padding: 2rem;
+  }
 }
