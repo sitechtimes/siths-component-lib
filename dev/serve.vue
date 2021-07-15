@@ -49,7 +49,7 @@ export default Vue.extend({
     TextBelowArticlePreview,
     MobileNav,
     OpinionSlider,
-    CardComponent
+    CardComponent,
     MobileCategoryArticle,
   },
 });
