@@ -5,7 +5,7 @@
                 <category-icon :category="category" class="card-component-category" />
                 <author-and-date :author="author" :published="published" class="card-component-author-and-date" />
             </div>
-            <div class="text-overflow card-component-title"> {{title}}</div>
+            <h2 class="text-overflow card-component-title"> {{title}}</h2>
         </a>
     </div>
 </template>
@@ -83,7 +83,6 @@ a:active { text-decoration: none;  color: var(--black)}
 }
 .card-component-title {
     font-weight: bold;
-    font-size: 3.6rem;
     line-height: 4rem;
     color: var(--white);
 }
