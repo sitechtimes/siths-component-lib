@@ -94,13 +94,13 @@ export default Vue.extend({
       title="Podcasts: Radio, But Less Cool"
     />
     <CardComponent 
-    CardComponentImg="https://static0.thetravelimages.com/wordpress/wp-content/uploads/2019/11/California_Surfing_1710x900.png?q=50&fit=crop&w=960&h=500&dpr=1.5"
-    CardComponentImgAlt="A Girl Surfing" 
-    articleUrl="https://www.thetravel.com/best-surfing-spots-california/" 
-    author="Daniel Briskman" 
-    published="Jan 21, 2021" 
-    category="sports" 
-    title="Girl almost eaten by shark but makes friends with shark and then betrays it and rides it like a surfboard." 
+      CardComponentImg="https://static0.thetravelimages.com/wordpress/wp-content/uploads/2019/11/California_Surfing_1710x900.png?q=50&fit=crop&w=960&h=500&dpr=1.5"
+      CardComponentImgAlt="A Girl Surfing" 
+      articleUrl="https://www.thetravel.com/best-surfing-spots-california/" 
+      author="Daniel Briskman" 
+      published="Jan 21, 2021" 
+      category="sports" 
+      title="Girl almost eaten by shark but makes friends with shark and then betrays it and rides it like a surfboard." 
     />
     <category-icon category="entertainment" />
     <author-and-date author="Charley Baluja" published="Jan 31, 2020" />
