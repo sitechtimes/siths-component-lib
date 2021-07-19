@@ -1,12 +1,13 @@
 <template>
-  <div class="card-component card-component-image" title="Humanoid Entity Surfing In The Ocean at Dusk">
-        <a :href="articleUrl" class="flex-col card-component-text-container">
+  <div class="card-component card-component-image" >
+        <img :src="CardComponentImg" :alt="CardComponentImgAlt">
+        <div class="flex-col card-component-text-container">
             <div class="flex-row card-component-category-author-date">
                 <category-icon :category="category" class="card-component-category" />
                 <author-and-date :author="author" :published="published" class="card-component-author-and-date" />
             </div>
-            <h2 class="text-overflow card-component-title"> {{title}}</h2>
-        </a>
+            <a :href="articleUrl"><h2 class="text-overflow card-component-title"> {{title}}</h2></a>
+        </div>
     </div>
 </template>
 
@@ -44,9 +45,9 @@ a:active { text-decoration: none;  color: var(--black)}
     flex-direction: row;
 }
 .card-component-text-container{
-    width: 80.2%;
+    width: 85%;
     max-height: 50%;
-    margin: 0 5.2rem auto;
+    margin: 0 5rem auto;
     position: absolute;
     top: 50%;
 }
