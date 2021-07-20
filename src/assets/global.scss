@@ -153,3 +153,37 @@ pre {
   margin: auto;
   padding: 2rem;
 }
+
+.warm-theme {
+  :root {
+    --gold: #e7a65a;
+    --light-gold: rgb(247, 215, 174) d2;
+    --off-white: #fdf2e4;
+    --white: #ffffff;
+    --black: #000;
+    --grey: #374151;
+    --lightGray: #dbdbdb;
+    --red: #c73535;
+    --orange: #f57c0b;
+    --dark-orange: #be8227;
+    --green: #1eb910;
+    --blue: #58c0f0;
+    --dark-blue: #1d4ed8;
+    --indigo: #45428f;
+    --purple: #8447e7;
+    --pink: #fc7fbd;
+
+    --primary-color: var(--gold);
+    --accent-color: var(--light-gold);
+    --calendar-band: var(--off-white);
+    --news: var(--dark-blue);
+    --politics: var(--pink);
+    --entertainment: var(--red);
+    --opinion: var(--purple);
+    --science: var(--green);
+    --events: var(--orange);
+    --clubs: var(--blue);
+    --sports: var(--dark-orange);
+    --hover: var(--lightGray);
+  }
+}
