@@ -20,10 +20,6 @@ export default ({
 
 <style lang="scss">
 
-a:link { text-decoration: none; color: var(--black)}
-a:visited { text-decoration: none;  color: var(--black)}
-a:hover { text-decoration: none;  color: var(--black)}
-a:active { text-decoration: none;  color: var(--black)}
 .card-component{
     cursor: pointer;
     width: 67.3rem;
