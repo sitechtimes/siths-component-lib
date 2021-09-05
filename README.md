@@ -1,5 +1,6 @@
 # siths-component-lib
-
+***CURRENTLY NOT MAINTAINED***
+<br />
 1. Clone the repo and install the dependencies 
 ```bash
 git clone https://github.com/sitechtimes/siths-component-lib
